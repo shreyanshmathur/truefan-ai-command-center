@@ -44,14 +44,14 @@ Import the GitHub repo in Netlify. Netlify will use the included `netlify.toml`.
 
 ### GitHub Pages
 
-The included GitHub Actions workflow deploys the app to Pages on every push to `main`.
+The included GitHub Actions workflow can deploy the app to Pages when manually run.
 
-After pushing the repo:
+For private repositories, GitHub Pages requires a plan that supports private Pages. If the repository is public or private Pages is available:
 
 1. Open the repository on GitHub.
 2. Go to `Settings -> Pages`.
 3. Set source to `GitHub Actions`.
-4. Run the `Deploy to GitHub Pages` workflow or push to `main`.
+4. Run the `Deploy to GitHub Pages` workflow.
 
 ## Notes
 

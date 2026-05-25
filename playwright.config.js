@@ -31,6 +31,13 @@ export default defineConfig({
         ...devices["Desktop Chrome"],
         viewport: { width: 1024, height: 900 }
       }
+    },
+    {
+      name: "mobile",
+      use: {
+        ...devices["Pixel 5"],
+        viewport: { width: 390, height: 844 }
+      }
     }
   ]
 });

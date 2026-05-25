@@ -1704,6 +1704,150 @@ td select,
     padding: 16px;
   }
 
+  .app-shell {
+    display: block;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    height: auto;
+    padding: 12px 12px 10px;
+    gap: 10px;
+    box-shadow: 0 8px 22px rgba(20, 28, 45, 0.08);
+  }
+
+  .brand {
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+  }
+
+  .brand img {
+    width: 132px;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 2px 2px 6px;
+    scrollbar-width: thin;
+  }
+
+  .nav-item {
+    width: auto;
+    min-width: max-content;
+    padding: 9px 11px;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+
+  .topbar {
+    position: static;
+    min-height: 0;
+    gap: 12px;
+  }
+
+  .topbar h2 {
+    font-size: 20px;
+  }
+
+  .topbar-actions {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+  }
+
+  .search-shell {
+    grid-column: 1 / -1;
+    min-width: 0;
+  }
+
+  .role-pill {
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .ghost-button {
+    min-width: 0;
+  }
+
+  .login-panel {
+    padding: 22px;
+  }
+
+  .login-brand {
+    gap: 18px;
+    margin-bottom: 22px;
+  }
+
+  .login-brand img {
+    width: 170px;
+  }
+
+  .login-brand h1 {
+    font-size: 34px;
+    line-height: 1.02;
+  }
+
+  .login-card {
+    min-height: 0;
+    padding: 16px;
+  }
+
+  .login-side {
+    display: none;
+  }
+
+  .metric-card {
+    min-height: 98px;
+    padding: 14px;
+  }
+
+  .metric-card strong {
+    font-size: 22px;
+  }
+
+  .panel {
+    padding: 14px;
+  }
+
+  .project-list {
+    max-height: 420px;
+  }
+
+  .project-hero {
+    padding: 16px;
+  }
+
+  .project-hero h2 {
+    font-size: 30px;
+  }
+
+  .health-card {
+    width: 100%;
+  }
+
+  .kanban-board {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(245px, 84vw);
+    grid-template-columns: none;
+    padding-bottom: 8px;
+  }
+
+  .kanban-column {
+    min-height: 430px;
+  }
+
+  .gantt-row {
+    grid-template-columns: minmax(190px, 42vw) minmax(360px, 1fr);
+  }
+
   .metric-grid,
   .metric-grid.compact,
   .bandwidth-grid,
@@ -1719,11 +1863,12 @@ td select,
   }
 
   .sidebar-nav {
-    grid-template-columns: 1fr;
+    grid-template-columns: none;
   }
 
   .simple-timeline article,
   .mini-bandwidth > div,
+  .alert-row,
   .mapping-row,
   .rule-row {
     grid-template-columns: 1fr;
@@ -1740,5 +1885,96 @@ td select,
   .filter-bar input {
     max-width: none;
     min-width: 0;
+  }
+
+  .filter-row select {
+    max-width: none;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .content-area,
+  .topbar,
+  .login-screen {
+    padding: 12px;
+  }
+
+  .brand img {
+    width: 112px;
+  }
+
+  .brand span {
+    font-size: 11px;
+  }
+
+  .nav-item {
+    padding: 8px 10px;
+  }
+
+  .nav-item svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .topbar-actions {
+    grid-template-columns: 1fr auto;
+  }
+
+  .role-pill {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .notification-wrap,
+  .ghost-button {
+    width: 100%;
+  }
+
+  .icon-button,
+  .ghost-button {
+    width: 100%;
+  }
+
+  .login-brand img {
+    width: 146px;
+  }
+
+  .login-brand h1 {
+    font-size: 30px;
+  }
+
+  .credential-strip span {
+    width: 100%;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+  }
+
+  .section-heading .soft-button,
+  .section-heading .primary-button {
+    width: 100%;
+  }
+
+  .project-list-panel {
+    max-height: none;
+  }
+
+  .status-count-grid div,
+  .bandwidth-stats span {
+    padding: 8px;
+  }
+
+  .timeline-head {
+    display: grid;
+  }
+
+  .task-meta {
+    display: grid;
+  }
+
+  .table-shell {
+    margin-inline: -2px;
   }
 }

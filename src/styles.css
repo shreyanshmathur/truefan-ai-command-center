@@ -1,4 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap');
+/* Self-hosted fonts (latin subset) — generated from Google Fonts */
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/bricolage-grotesque-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/bricolage-grotesque-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('./fonts/bricolage-grotesque-800.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/hanken-grotesk-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/hanken-grotesk-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/hanken-grotesk-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/hanken-grotesk-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/ibm-plex-mono-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/ibm-plex-mono-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/ibm-plex-mono-700.woff2') format('woff2');
+}
 
 :root {
   color: #172033;
@@ -122,8 +192,20 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: var(--bg);
+  background:
+    radial-gradient(1100px 560px at 6% -8%, rgba(239, 43, 135, 0.06), transparent 58%),
+    radial-gradient(950px 480px at 102% -4%, rgba(120, 56, 214, 0.05), transparent 55%),
+    var(--bg);
+  background-attachment: fixed;
   overflow-x: hidden;
+}
+
+:root[data-theme="dark"] body {
+  background:
+    radial-gradient(1100px 560px at 6% -8%, rgba(255, 77, 151, 0.10), transparent 58%),
+    radial-gradient(950px 480px at 102% -4%, rgba(157, 107, 240, 0.09), transparent 55%),
+    var(--bg);
+  background-attachment: fixed;
 }
 
 button,
@@ -456,9 +538,26 @@ h3,
 
 .sidebar-nav {
   display: grid;
-  gap: 5px;
+  gap: 14px;
   overflow-y: auto;
   padding-right: 2px;
+  align-content: start;
+}
+
+.nav-group {
+  display: grid;
+  gap: 3px;
+}
+
+.nav-group-label {
+  margin: 0 0 3px;
+  padding: 0 12px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0.75;
 }
 
 .nav-item {
@@ -851,6 +950,23 @@ h3,
   border-color: rgba(239, 43, 135, 0.28);
 }
 
+.metric-card.clickable {
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+.metric-card.clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(20, 28, 45, 0.10);
+  border-color: rgba(239, 43, 135, 0.28);
+}
+
+.metric-body {
+  min-width: 0;
+}
+
 .metric-card strong {
   display: block;
   margin-top: 10px;
@@ -858,6 +974,25 @@ h3,
   line-height: 1.05;
   font-weight: 600;
 }
+
+.metric-meter {
+  margin-top: 12px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--track);
+  overflow: hidden;
+}
+
+.metric-meter span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--pink), var(--violet));
+  transition: width 0.4s ease;
+}
+
+.metric-meter.success span { background: var(--green); }
+.metric-meter.warning span { background: var(--amber); }
 
 .metric-card small {
   display: block;

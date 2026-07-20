@@ -58,22 +58,24 @@ const SESSION_KEY = "truefan-command-center-session-v2-login";
 const dayMs = 24 * 60 * 60 * 1000;
 
 const navItems = [
-  { id: "overview", label: "Overview", icon: LayoutDashboard, roles: ["sales", "delivery", "finance", "admin"] },
-  { id: "sales", label: "Sales Dashboard", icon: BarChart3, roles: ["sales", "admin"] },
-  { id: "create-project", label: "Project Creation", icon: FolderPlus, roles: ["sales", "admin"] },
-  { id: "create-sample", label: "Sample Creation", icon: Sparkles, roles: ["sales", "admin"] },
-  { id: "projects", label: "Project Detail", icon: FolderKanban, roles: ["sales", "delivery", "finance", "admin"] },
-  { id: "delivery-board", label: "Delivery Task Board", icon: ClipboardList, roles: ["delivery", "admin"] },
-  { id: "scrum", label: "Daily Scrum", icon: ListChecks, roles: ["delivery", "admin"] },
-  { id: "timeline", label: "Timeline Builder", icon: CalendarDays, roles: ["delivery", "admin"] },
-  { id: "gantt", label: "Gantt Timeline", icon: LineChart, roles: ["delivery", "admin"] },
-  { id: "status-logs", label: "Status Logs", icon: FileText, roles: ["sales", "delivery", "admin"] },
-  { id: "escalations", label: "Escalations", icon: AlertTriangle, roles: ["sales", "admin"] },
-  { id: "finance", label: "Finance Dashboard", icon: CreditCard, roles: ["finance", "admin"] },
-  { id: "team", label: "Team Bandwidth", icon: Users, roles: ["delivery", "admin"] },
-  { id: "admin", label: "Admin Panel", icon: Settings, roles: ["admin"] },
-  { id: "activity", label: "Activity Log", icon: Activity, roles: ["admin"] }
+  { id: "overview", label: "Overview", icon: LayoutDashboard, group: "Command", roles: ["sales", "delivery", "finance", "admin"] },
+  { id: "projects", label: "Project Detail", icon: FolderKanban, group: "Command", roles: ["sales", "delivery", "finance", "admin"] },
+  { id: "sales", label: "Sales Dashboard", icon: BarChart3, group: "Commercial", roles: ["sales", "admin"] },
+  { id: "create-project", label: "Project Creation", icon: FolderPlus, group: "Commercial", roles: ["sales", "admin"] },
+  { id: "create-sample", label: "Sample Creation", icon: Sparkles, group: "Commercial", roles: ["sales", "admin"] },
+  { id: "escalations", label: "Escalations", icon: AlertTriangle, group: "Commercial", roles: ["sales", "admin"] },
+  { id: "finance", label: "Finance Dashboard", icon: CreditCard, group: "Commercial", roles: ["finance", "admin"] },
+  { id: "delivery-board", label: "Delivery Task Board", icon: ClipboardList, group: "Delivery", roles: ["delivery", "admin"] },
+  { id: "scrum", label: "Daily Scrum", icon: ListChecks, group: "Delivery", roles: ["delivery", "admin"] },
+  { id: "timeline", label: "Timeline Builder", icon: CalendarDays, group: "Delivery", roles: ["delivery", "admin"] },
+  { id: "gantt", label: "Gantt Timeline", icon: LineChart, group: "Delivery", roles: ["delivery", "admin"] },
+  { id: "status-logs", label: "Status Logs", icon: FileText, group: "Delivery", roles: ["sales", "delivery", "admin"] },
+  { id: "team", label: "Team Bandwidth", icon: Users, group: "Delivery", roles: ["delivery", "admin"] },
+  { id: "admin", label: "Admin Panel", icon: Settings, group: "Admin", roles: ["admin"] },
+  { id: "activity", label: "Activity Log", icon: Activity, group: "Admin", roles: ["admin"] }
 ];
+
+const navGroupOrder = ["Command", "Commercial", "Delivery", "Admin"];
 
 const dateInputDefault = (offset = 7) => {
   const date = new Date();
@@ -568,15 +570,23 @@ function App() {
           </button>
         </div>
         <nav className="sidebar-nav" aria-label="Main navigation">
-          {allowedNav.map((item) => {
-            const Icon = item.icon;
-            return (
-              <button key={item.id} className={page === item.id ? "nav-item active" : "nav-item"} onClick={() => { setPage(item.id); setMenuOpen(false); }} type="button">
-                <Icon size={18} />
-                <span>{item.label}</span>
-              </button>
-            );
-          })}
+          {navGroupOrder
+            .map((group) => ({ group, items: allowedNav.filter((item) => item.group === group) }))
+            .filter((section) => section.items.length > 0)
+            .map((section) => (
+              <div className="nav-group" key={section.group}>
+                <p className="nav-group-label">{section.group}</p>
+                {section.items.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <button key={item.id} className={page === item.id ? "nav-item active" : "nav-item"} onClick={() => { setPage(item.id); setMenuOpen(false); }} type="button">
+                      <Icon size={18} />
+                      <span>{item.label}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            ))}
         </nav>
         <div className="sidebar-footer">
           <span className="eyebrow">Logged in as</span>
@@ -905,6 +915,12 @@ function OverviewDashboard({ store, session, setPage, setSelectedProjectId }) {
   const overdueTasks = tasks.filter((task) => isOverdue(task.endDate, task.status));
   const invoicesRaised = finance.filter((record) => record.invoiceStatus === "invoice raised").length;
   const pendingPayments = finance.reduce((sum, record) => sum + Number(record.pendingAmount || 0), 0);
+  const revenueBooked = finance.reduce((sum, record) => sum + Number(record.revenueBooked || 0), 0);
+  const receivedPayments = Math.max(0, revenueBooked - pendingPayments);
+  const receivedPct = revenueBooked ? Math.round((receivedPayments / revenueBooked) * 100) : 0;
+  const poReceived = finance.filter((record) => record.poStatus === "received").length;
+  const poPending = finance.filter((record) => record.poStatus !== "received").length;
+  const poPct = finance.length ? Math.round((poReceived / finance.length) * 100) : 0;
   const recentEscalations = store.escalations
     .filter((item) => projectIds.includes(item.projectId))
     .slice()
@@ -919,15 +935,14 @@ function OverviewDashboard({ store, session, setPage, setSelectedProjectId }) {
   return (
     <div className="page-stack">
       <section className="metric-grid">
-        <MetricCard label="Active projects" value={projects.filter(isLiveProject).length} icon={FolderKanban} />
-        <MetricCard label="Active samples" value={samples.filter((sample) => sample.status !== "completed").length} icon={Sparkles} />
-        <MetricCard label="Projects at risk" value={atRisk.length} icon={AlertTriangle} tone="danger" />
-        <MetricCard label="Overdue tasks" value={overdueTasks.length} icon={Clock} tone="danger" />
-        <MetricCard label="Revenue booked" value={formatMoney(finance.reduce((sum, record) => sum + record.revenueBooked, 0))} icon={CreditCard} />
-        <MetricCard label="PO received" value={finance.filter((record) => record.poStatus === "received").length} icon={CheckCircle2} tone="success" />
-        <MetricCard label="PO pending" value={finance.filter((record) => record.poStatus !== "received").length} icon={AlertTriangle} tone="warning" />
-        <MetricCard label="Invoices raised" value={invoicesRaised} icon={FileText} />
-        <MetricCard label="Pending payments" value={formatMoney(pendingPayments)} icon={CreditCard} tone="warning" />
+        <MetricCard label="Active projects" value={projects.filter(isLiveProject).length} icon={FolderKanban} detail={`${projects.filter((p) => p.status === "completed").length} delivered`} onClick={() => setPage("projects")} />
+        <MetricCard label="Active samples" value={samples.filter((sample) => sample.status !== "completed").length} icon={Sparkles} onClick={() => setPage("projects")} />
+        <MetricCard label="Projects at risk" value={atRisk.length} icon={AlertTriangle} tone="danger" detail="Open in Project Detail" onClick={() => setPage("projects")} />
+        <MetricCard label="Overdue tasks" value={overdueTasks.length} icon={Clock} tone="danger" detail="Open Task Board" onClick={() => setPage(session.role === "delivery" || session.role === "admin" ? "delivery-board" : "projects")} />
+        <MetricCard label="Revenue booked" value={formatMoney(revenueBooked)} icon={CreditCard} detail={`${formatMoney(receivedPayments)} received`} meter={receivedPct} meterTone="success" onClick={() => setPage(session.role === "finance" || session.role === "admin" ? "finance" : "projects")} />
+        <MetricCard label="PO status" value={`${poReceived}/${finance.length}`} icon={CheckCircle2} tone="success" detail={`${poPending} pending`} meter={poPct} meterTone="success" onClick={() => setPage(session.role === "finance" || session.role === "admin" ? "finance" : "projects")} />
+        <MetricCard label="Invoices raised" value={invoicesRaised} icon={FileText} detail={`of ${finance.length} projects`} meter={finance.length ? Math.round((invoicesRaised / finance.length) * 100) : 0} />
+        <MetricCard label="Pending payments" value={formatMoney(pendingPayments)} icon={CreditCard} tone="warning" detail={`${100 - receivedPct}% of booked revenue`} meter={100 - receivedPct} meterTone="warning" onClick={() => setPage(session.role === "finance" || session.role === "admin" ? "finance" : "projects")} />
       </section>
 
       <section className="two-column">
@@ -1004,6 +1019,7 @@ function SalesDashboard({ store, session, setPage, setSelectedProjectId }) {
   const projects = getAccessibleProjects(store, "sales", session.userId);
   const warnings = projects.filter((project) => project.sowStatus !== "uploaded" || project.poStatus !== "received");
   const conflicts = projects.flatMap((project) => findDeliveryConflicts(store, project.expectedDeliveryDate, project.id, 1).map((conflict) => ({ project, conflict })));
+  const clashingProjects = new Set(conflicts.map((entry) => entry.project.id)).size;
   const creditRows = salesUsers
     .map((user) => ({ user, ...sampleCreditsFor(store, user.id) }))
     .sort((a, b) => b.used - a.used);
@@ -1015,8 +1031,8 @@ function SalesDashboard({ store, session, setPage, setSelectedProjectId }) {
     <div className="page-stack">
       <section className="metric-grid compact">
         <MetricCard label="Samples this cycle" value={totalUsed} icon={Sparkles} detail={`across ${salesUsers.length} SDMs · ${totalCap - totalUsed} credits left`} />
-        <MetricCard label="Commercial warnings" value={warnings.length} icon={AlertTriangle} tone="warning" />
-        <MetricCard label="Date conflicts" value={conflicts.length} icon={CalendarDays} tone="warning" />
+        <MetricCard label="Commercial warnings" value={warnings.length} icon={AlertTriangle} tone="warning" detail="Missing SOW or PO — open list" onClick={() => setPage("projects")} />
+        <MetricCard label="Delivery-week clashes" value={clashingProjects} icon={CalendarDays} tone="warning" detail={`${clashingProjects === 1 ? "project shares" : "projects share"} a delivery week`} onClick={() => setPage("projects")} />
       </section>
 
       <section className="panel">
@@ -3051,16 +3067,23 @@ function ActivityLogPage({ store }) {
   );
 }
 
-function MetricCard({ label, value, icon: Icon, detail, tone = "neutral" }) {
+function MetricCard({ label, value, icon: Icon, detail, tone = "neutral", meter, meterTone, onClick }) {
+  const clickable = typeof onClick === "function";
+  const Tag = clickable ? "button" : "article";
   return (
-    <article className={`metric-card ${tone}`}>
-      <div>
+    <Tag className={`metric-card ${tone}${clickable ? " clickable" : ""}`} {...(clickable ? { type: "button", onClick } : {})}>
+      <div className="metric-body">
         <span>{label}</span>
         <strong>{value}</strong>
         {detail && <small>{detail}</small>}
+        {typeof meter === "number" && (
+          <div className={`metric-meter${meterTone ? ` ${meterTone}` : ""}`}>
+            <span style={{ width: `${Math.max(0, Math.min(100, meter))}%` }} />
+          </div>
+        )}
       </div>
       <Icon size={21} />
-    </article>
+    </Tag>
   );
 }
 

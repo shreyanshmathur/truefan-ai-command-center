@@ -59,6 +59,7 @@ const dayMs = 24 * 60 * 60 * 1000;
 
 const navItems = [
   { id: "overview", label: "Overview", icon: LayoutDashboard, group: "Command", roles: ["sales", "delivery", "finance", "admin"] },
+  { id: "insights", label: "Insights", icon: LineChart, group: "Command", roles: ["sales", "delivery", "finance", "admin"] },
   { id: "projects", label: "Project Detail", icon: FolderKanban, group: "Command", roles: ["sales", "delivery", "finance", "admin"] },
   { id: "sales", label: "Sales Dashboard", icon: BarChart3, group: "Commercial", roles: ["sales", "admin"] },
   { id: "create-project", label: "Project Creation", icon: FolderPlus, group: "Commercial", roles: ["sales", "admin"] },
@@ -920,6 +921,7 @@ function PageRouter(props) {
     escalations: <EscalationPage {...props} />,
     finance: <FinanceDashboard {...props} />,
     team: <TeamBandwidthPage {...props} />,
+    insights: <InsightsPage {...props} />,
     reminders: <RemindersPage {...props} />,
     admin: <AdminPanel {...props} />,
     activity: <ActivityLogPage {...props} />
@@ -3250,6 +3252,234 @@ function ActivityLogPage({ store }) {
             </article>
           ))}
         </div>
+      </section>
+    </div>
+  );
+}
+
+function monthKey(value) {
+  const date = dateOnly(value);
+  return date ? `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}` : null;
+}
+
+function monthsSpan(dates) {
+  const valid = dates.map(dateOnly).filter(Boolean);
+  if (!valid.length) return [];
+  const min = new Date(Math.min(...valid));
+  const max = new Date(Math.max(...valid));
+  const out = [];
+  const cursor = new Date(min.getFullYear(), min.getMonth(), 1);
+  while (cursor <= max) {
+    out.push({
+      key: `${cursor.getFullYear()}-${String(cursor.getMonth() + 1).padStart(2, "0")}`,
+      label: cursor.toLocaleDateString("en-GB", { month: "short", year: "2-digit" })
+    });
+    cursor.setMonth(cursor.getMonth() + 1);
+  }
+  return out;
+}
+
+// Vertical stacked-bar chart (CSS, theme-aware). series: [{ key, label, color }]
+function StackedColumns({ months, byMonth, series, format }) {
+  const totals = months.map((month) => series.reduce((sum, part) => sum + (byMonth[month.key]?.[part.key] || 0), 0));
+  const max = Math.max(1, ...totals);
+  return (
+    <div className="chart">
+      <div className="chart-cols">
+        {months.map((month, index) => (
+          <div className="chart-col" key={month.key} title={`${month.label}: ${format ? format(totals[index]) : totals[index]}`}>
+            <div className="chart-stack">
+              {series.map((part) => {
+                const value = byMonth[month.key]?.[part.key] || 0;
+                if (!value) return null;
+                return <span key={part.key} style={{ height: `${(value / max) * 100}%`, background: part.color }} title={`${part.label}: ${value}`} />;
+              })}
+            </div>
+            <small>{month.label}</small>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function HBars({ rows, color }) {
+  const max = Math.max(1, ...rows.map((row) => row.value));
+  return (
+    <div className="hbars">
+      {rows.map((row) => (
+        <div className="hbar-row" key={row.label}>
+          <span className="hbar-label">{row.label}</span>
+          <div className="hbar-track"><span style={{ width: `${(row.value / max) * 100}%`, background: row.color || color }} /></div>
+          <span className="hbar-value">{row.value}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function Donut({ segments, centerTop, centerBottom }) {
+  const total = Math.max(1, segments.reduce((sum, part) => sum + part.value, 0));
+  const R = 54;
+  const C = 2 * Math.PI * R;
+  let offset = 0;
+  return (
+    <div className="donut">
+      <svg viewBox="0 0 140 140" role="img">
+        <circle cx="70" cy="70" r={R} fill="none" stroke="var(--track)" strokeWidth="16" />
+        {segments.map((part) => {
+          const len = (part.value / total) * C;
+          const el = (
+            <circle key={part.label} cx="70" cy="70" r={R} fill="none" stroke={part.color} strokeWidth="16"
+              strokeDasharray={`${len} ${C - len}`} strokeDashoffset={-offset} transform="rotate(-90 70 70)">
+              <title>{`${part.label}: ${part.value}`}</title>
+            </circle>
+          );
+          offset += len;
+          return el;
+        })}
+        <text x="70" y="66" textAnchor="middle" className="donut-top">{centerTop}</text>
+        <text x="70" y="86" textAnchor="middle" className="donut-bottom">{centerBottom}</text>
+      </svg>
+    </div>
+  );
+}
+
+function ChartLegend({ items }) {
+  return (
+    <div className="chart-legend">
+      {items.map((item) => (
+        <span key={item.label}><i style={{ background: item.color }} />{item.label}</span>
+      ))}
+    </div>
+  );
+}
+
+function InsightsPage({ store, session }) {
+  const projects = getAccessibleProjects(store, session.role, session.userId);
+  const projectIds = new Set(projects.map((project) => project.id));
+  const tasks = store.tasks.filter((task) => projectIds.has(task.projectId));
+
+  const insights = useMemo(() => {
+    // Pipeline & revenue by delivery month
+    const pipeline = {};
+    const revenue = {};
+    projects.forEach((project) => {
+      const key = monthKey(project.expectedDeliveryDate);
+      if (!key) return;
+      pipeline[key] = pipeline[key] || {};
+      pipeline[key][project.status] = (pipeline[key][project.status] || 0) + 1;
+      revenue[key] = (revenue[key] || 0) + Number(project.revenue || 0);
+    });
+    // Completion velocity by month
+    const velocity = {};
+    tasks.filter((task) => task.status === "completed" && task.endDate).forEach((task) => {
+      const key = monthKey(task.endDate);
+      if (!key) return;
+      velocity[key] = velocity[key] || {};
+      velocity[key].done = (velocity[key].done || 0) + 1;
+    });
+    const months = monthsSpan([
+      ...projects.map((project) => project.expectedDeliveryDate),
+      ...tasks.filter((task) => task.status === "completed").map((task) => task.endDate)
+    ].filter(Boolean));
+    // Health mix
+    const health = { Healthy: 0, Watch: 0, "At Risk": 0 };
+    projects.forEach((project) => { health[calculateHealth(project, store).label] += 1; });
+    // Workload by DM
+    const dmRows = store.users
+      .filter((user) => user.role === "delivery" && user.active)
+      .map((user) => ({ label: user.name, value: projects.filter((project) => project.deliveryManagerId === user.id && isLiveProject(project)).length }))
+      .filter((row) => row.value > 0)
+      .sort((a, b) => b.value - a.value)
+      .slice(0, 8);
+    // headline stats
+    const totalRevenue = projects.reduce((sum, project) => sum + Number(project.revenue || 0), 0);
+    const doneProjects = projects.filter((project) => project.status === "completed").length;
+    const doneTasks = tasks.filter((task) => task.status === "completed").length;
+    const lateTasks = tasks.filter((task) => task.status !== "completed" && isOverdue(task.endDate, task.status)).length;
+    const onTimePct = doneTasks + lateTasks > 0 ? Math.round((doneTasks / (doneTasks + lateTasks)) * 100) : 100;
+    return { pipeline, revenue, velocity, months, health, dmRows, totalRevenue, doneProjects, onTimePct };
+  }, [store, projects, tasks]);
+
+  const statusSeries = [
+    { key: "active", label: "Active", color: "var(--blue)" },
+    { key: "hold", label: "On hold", color: "var(--amber)" },
+    { key: "completed", label: "Completed", color: "var(--green)" }
+  ];
+  const healthColors = { Healthy: "var(--green)", Watch: "var(--amber)", "At Risk": "var(--red)" };
+
+  return (
+    <div className="page-stack">
+      <section className="metric-grid">
+        <MetricCard label="Total revenue" value={formatMoney(insights.totalRevenue)} icon={CreditCard} detail="Across all projects" />
+        <MetricCard label="Delivered projects" value={insights.doneProjects} icon={CheckCircle2} tone="success" detail={`of ${projects.length}`} meter={projects.length ? Math.round((insights.doneProjects / projects.length) * 100) : 0} meterTone="success" />
+        <MetricCard label="On-time task rate" value={`${insights.onTimePct}%`} icon={Clock} tone={insights.onTimePct >= 80 ? "success" : "warning"} meter={insights.onTimePct} meterTone={insights.onTimePct >= 80 ? "success" : "warning"} />
+        <MetricCard label="Active delivery managers" value={insights.dmRows.length} icon={Users} detail="With live projects" />
+      </section>
+
+      <section className="two-column">
+        <div className="panel">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Pipeline</p>
+              <h3>Projects by delivery month</h3>
+            </div>
+            <ChartLegend items={statusSeries} />
+          </div>
+          <StackedColumns months={insights.months} byMonth={insights.pipeline} series={statusSeries} />
+        </div>
+        <div className="panel">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Throughput</p>
+              <h3>Tasks completed per month</h3>
+            </div>
+          </div>
+          <StackedColumns months={insights.months} byMonth={insights.velocity} series={[{ key: "done", label: "Completed", color: "var(--violet)" }]} />
+        </div>
+      </section>
+
+      <section className="two-column">
+        <div className="panel">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Commercials</p>
+              <h3>Revenue by delivery month</h3>
+            </div>
+          </div>
+          <StackedColumns months={insights.months} byMonth={Object.fromEntries(Object.entries(insights.revenue).map(([key, value]) => [key, { rev: value }]))} series={[{ key: "rev", label: "Revenue", color: "var(--pink)" }]} format={formatMoney} />
+        </div>
+        <div className="panel">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Risk</p>
+              <h3>Project health mix</h3>
+            </div>
+          </div>
+          <div className="donut-row">
+            <Donut
+              segments={Object.entries(insights.health).map(([label, value]) => ({ label, value, color: healthColors[label] }))}
+              centerTop={projects.length}
+              centerBottom="projects"
+            />
+            <ChartLegend items={Object.entries(insights.health).map(([label, value]) => ({ label: `${label} (${value})`, color: healthColors[label] }))} />
+          </div>
+        </div>
+      </section>
+
+      <section className="panel">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Capacity</p>
+            <h3>Live projects by delivery manager</h3>
+          </div>
+        </div>
+        {insights.dmRows.length === 0 ? (
+          <EmptyState title="No live projects" text="Nothing active to chart right now." />
+        ) : (
+          <HBars rows={insights.dmRows} color="linear-gradient(90deg, var(--pink), var(--violet))" />
+        )}
       </section>
     </div>
   );

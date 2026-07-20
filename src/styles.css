@@ -1831,6 +1831,153 @@ td select,
   flex-wrap: wrap;
 }
 
+/* ---- charts ---- */
+.chart {
+  overflow-x: auto;
+}
+
+.chart-cols {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 200px;
+  min-width: min-content;
+  padding-top: 6px;
+}
+
+.chart-col {
+  flex: 1 1 0;
+  min-width: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+}
+
+.chart-stack {
+  width: 100%;
+  max-width: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  gap: 2px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.chart-stack span {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  min-height: 2px;
+  transition: height 0.4s ease;
+}
+
+.chart-col small {
+  color: var(--muted);
+  font-size: 11px;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.chart-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.chart-legend i {
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.hbars {
+  display: grid;
+  gap: 10px;
+}
+
+.hbar-row {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr) 34px;
+  align-items: center;
+  gap: 12px;
+}
+
+.hbar-label {
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hbar-track {
+  height: 12px;
+  background: var(--track);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.hbar-track span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.hbar-value {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.donut-row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.donut {
+  width: 150px;
+  flex: none;
+}
+
+.donut svg {
+  width: 100%;
+  height: auto;
+}
+
+.donut-top {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 26px;
+  fill: var(--ink);
+}
+
+.donut-bottom {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  fill: var(--muted);
+}
+
 .muted-note {
   margin: 0 0 16px;
   color: var(--muted);

@@ -1623,6 +1623,55 @@ function SampleCreationPage({ store, setStore, session, addActivity, addNotifica
   );
 }
 
+function AiSummaryPanel({ store, project }) {
+  const [state, setState] = useState({ loading: false, text: "", error: "" });
+
+  const run = async () => {
+    setState({ loading: true, text: "", error: "" });
+    const config = loadReminderConfig();
+    const logs = store.statusLogs.filter((log) => log.projectId === project.id).slice(0, 10).map((log) => `- ${log.date}: ${log.text}`).join("\n");
+    const tasks = store.tasks.filter((task) => task.projectId === project.id);
+    const taskSummary = ["completed", "in-progress", "not-started", "delayed", "blocked"].map((status) => `${status} ${tasks.filter((task) => task.status === status).length}`).join(", ");
+    const escs = store.escalations.filter((item) => item.projectId === project.id && item.status !== "resolved").map((item) => `- ${item.severity} ${item.escalationType}: ${item.reason}`).join("\n");
+    const prompt = `You are a delivery operations assistant. Summarise this project for a delivery lead in exactly 3 short bullet points, then a final line starting "Next action:". Be concise and specific; no preamble.\n\nClient: ${project.clientName}\nProject: ${project.projectName}\nCategory: ${project.templateName}\nStatus: ${project.status}\nSOW: ${project.sowStatus}, PO: ${project.poStatus}\nTasks — ${taskSummary}\nNotes: ${project.notes || "none"}\nRecent updates:\n${logs || "none"}\nOpen escalations:\n${escs || "none"}`;
+    try {
+      const res = await fetch("/.netlify/functions/ai-summary", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", ...(config.apiKey ? { "x-api-key": config.apiKey } : {}) },
+        body: JSON.stringify({ prompt })
+      });
+      const data = await res.json();
+      if (res.ok) setState({ loading: false, text: data.text, error: "" });
+      else setState({ loading: false, text: "", error: data.error || "Request failed" });
+    } catch (error) {
+      setState({ loading: false, text: "", error: `Could not reach the AI function — deploy to Netlify with a free GEMINI_API_KEY. ${String(error?.message || error)}` });
+    }
+  };
+
+  return (
+    <section className="panel">
+      <div className="section-heading">
+        <div>
+          <p className="eyebrow">AI assist</p>
+          <h3>Project summary</h3>
+        </div>
+        <button className="soft-button" type="button" onClick={run} disabled={state.loading}>
+          <Sparkles size={16} />
+          {state.loading ? "Summarising…" : "Summarise with AI"}
+        </button>
+      </div>
+      {state.error && <p className="svc-result err">{state.error}</p>}
+      {state.text ? (
+        <pre className="reminder-body ai-body">{state.text}</pre>
+      ) : (!state.error && (
+        <p className="muted-note" style={{ margin: 0 }}>
+          Generate a concise status summary and next action from this project&apos;s updates, tasks, and escalations. Powered by Gemini (free tier) via a Netlify Function — set <code>GEMINI_API_KEY</code> to enable.
+        </p>
+      ))}
+    </section>
+  );
+}
+
 function ProjectsPage({ store, setStore, session, selectedProjectId, setSelectedProjectId, setPage, addActivity, addNotification }) {
   const projects = getAccessibleProjects(store, session.role, session.userId);
   const deliveryManagers = store.users.filter((user) => user.title === "Delivery Manager");
@@ -1842,6 +1891,8 @@ function ProjectDetail({ project, store, setStore, session, setPage, addActivity
           <ProgressBar value={tasks.length ? Math.round((tasks.filter((task) => task.status === "completed").length / tasks.length) * 100) : 0} />
         </div>
       </section>
+
+      <AiSummaryPanel store={store} project={project} />
 
       <section className="panel">
         <div className="section-heading">

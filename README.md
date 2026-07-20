@@ -35,6 +35,18 @@ Add free SMTP credentials (e.g. a **Gmail App Password**) as Netlify env vars:
 `REMINDER_API_KEY`). Recipient emails are prefilled from each user and editable
 on the page.
 
+## Insights & AI
+
+- **Insights** page — pipeline, throughput, revenue, health, and capacity
+  charts derived entirely from the data's existing timestamps. Client-side, no
+  cost.
+- **Cmd/Ctrl-K** — a command palette to jump to any page, project, or task.
+- **AI project summary** — the "Summarise with AI" button on Project Detail
+  calls `netlify/functions/ai-summary.js`, which proxies **Google Gemini**
+  (free tier). Set `GEMINI_API_KEY` (from
+  [aistudio.google.com/apikey](https://aistudio.google.com/apikey), optional
+  `GEMINI_MODEL`) in Netlify env vars to enable; the key stays server-side.
+
 ## Build And Test
 
 ```bash

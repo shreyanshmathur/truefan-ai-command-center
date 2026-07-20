@@ -159,7 +159,7 @@ function isDeliveryReady(project) {
 function findDeliveryConflicts(store, selectedDate, projectId = null, windowDays = 2) {
   if (!selectedDate) return [];
   const projectConflicts = store.projects
-    .filter((project) => project.id !== projectId && isOpenWorkItem(project))
+    .filter((project) => project.id !== projectId && isOpenWorkItem(project) && project.expectedDeliveryDate)
     .filter((project) => Math.abs(daysBetween(selectedDate, project.expectedDeliveryDate)) <= windowDays)
     .map((project) => ({
       id: `project-${project.id}`,
@@ -170,7 +170,7 @@ function findDeliveryConflicts(store, selectedDate, projectId = null, windowDays
     }));
 
   const taskConflicts = store.tasks
-    .filter((task) => Math.abs(daysBetween(selectedDate, task.endDate)) <= windowDays && task.status !== "completed")
+    .filter((task) => task.endDate && Math.abs(daysBetween(selectedDate, task.endDate)) <= windowDays && task.status !== "completed")
     .map((task) => ({
       id: `task-${task.id}`,
       type: "Task",
@@ -1040,7 +1040,7 @@ function ProjectCreationPage({ store, setStore, session, setPage, setSelectedPro
       sowStatus: form.sowStatus,
       poStatus: form.poStatus,
       notes: form.notes,
-      status: "in-progress",
+      status: "active",
       createdAt: new Date().toISOString(),
       deliveryConflict: conflicts.length > 0
     };
@@ -1300,9 +1300,8 @@ function ProjectsPage({ store, setStore, session, selectedProjectId, setSelected
           <select value={statusFilter} onChange={(event) => setStatusFilter(event.target.value)}>
             <option value="all">All statuses</option>
             <option value="live">Live active</option>
-            <option value="in-progress">In progress</option>
+            <option value="active">Active</option>
             <option value="hold">On hold</option>
-            <option value="upcoming">Upcoming</option>
             <option value="completed">Completed</option>
           </select>
           <select value={typeFilter} onChange={(event) => setTypeFilter(event.target.value)}>
@@ -1652,9 +1651,8 @@ function DeliveryTaskBoard({ store, setStore, session, addActivity, addNotificat
         <select value={filters.projectStatus} onChange={(event) => setFilters((current) => ({ ...current, projectStatus: event.target.value }))}>
           <option value="all">All project statuses</option>
           <option value="live">Live active</option>
-          <option value="in-progress">In progress</option>
+          <option value="active">Active</option>
           <option value="hold">On hold</option>
-          <option value="upcoming">Upcoming</option>
           <option value="completed">Completed</option>
         </select>
       </section>
@@ -1986,9 +1984,8 @@ function DailyScrumPage({ store, setStore, session, addActivity, addNotification
         <select value={filters.projectStatus} onChange={(event) => setFilters((current) => ({ ...current, projectStatus: event.target.value }))}>
           <option value="all">All project statuses</option>
           <option value="live">Live active</option>
-          <option value="in-progress">In progress</option>
+          <option value="active">Active</option>
           <option value="hold">On hold</option>
-          <option value="upcoming">Upcoming</option>
           <option value="completed">Completed</option>
         </select>
         <button className="soft-button" type="button" onClick={exportScrum}>
@@ -2557,9 +2554,8 @@ function TeamBandwidthPage({ store }) {
           <select value={filters.projectStatus} onChange={(event) => setFilters((current) => ({ ...current, projectStatus: event.target.value }))}>
             <option value="all">All project statuses</option>
             <option value="live">Live active</option>
-            <option value="in-progress">In progress</option>
+            <option value="active">Active</option>
             <option value="hold">On hold</option>
-            <option value="upcoming">Upcoming</option>
             <option value="completed">Completed</option>
           </select>
         </div>
@@ -2574,7 +2570,7 @@ function TeamBandwidthPage({ store }) {
                 <StatusBadge status={row.workloadStatus} />
               </div>
               <div className="bandwidth-score">
-                <ProgressBar value={row.score} />
+                <ProgressBar value={row.score} tone={row.workloadStatus} />
                 <span>{row.score}</span>
               </div>
               <div className="bandwidth-stats">
@@ -2584,8 +2580,8 @@ function TeamBandwidthPage({ store }) {
                 <span>Overdue <strong>{row.overdueTasks}</strong></span>
                 <span>Deadlines <strong>{row.upcomingDeadlines}</strong></span>
                 <span>On hold <strong>{row.statusCounts.hold || 0}</strong></span>
-                <span>In progress <strong>{row.statusCounts["in-progress"] || 0}</strong></span>
-                <span>Upcoming <strong>{row.statusCounts.upcoming || 0}</strong></span>
+                <span>Active <strong>{row.statusCounts.active || 0}</strong></span>
+                <span>On hold <strong>{row.statusCounts.hold || 0}</strong></span>
               </div>
             </article>
           ))}
@@ -2958,7 +2954,7 @@ function BandwidthMini({ store }) {
       {computeBandwidth(store).slice(0, 6).map((row) => (
         <div key={row.user.id}>
           <span>{row.user.name}</span>
-          <ProgressBar value={row.score} />
+          <ProgressBar value={row.score} tone={row.workloadStatus} />
           <StatusBadge status={row.workloadStatus} />
         </div>
       ))}
@@ -3000,7 +2996,7 @@ function computeBandwidth(store, options = {}) {
         counts[project.status] = (counts[project.status] || 0) + 1;
         return counts;
       }, {});
-      const score = Math.min(100, activeProjects * 14 + activeSamples * 8 + activeTasks * 10 + overdueTasks * 18 + upcomingDeadlines * 7);
+      const score = Math.min(100, activeProjects * 6 + activeSamples * 4 + activeTasks * 8 + overdueTasks * 12 + upcomingDeadlines * 5);
       const workloadStatus = score < 30 ? "Available" : score < 55 ? "Moderate" : score < 80 ? "Busy" : "Overloaded";
       return { user, activeProjects, activeSamples, activeTasks, overdueTasks, upcomingDeadlines, statusCounts, score, workloadStatus };
     })
@@ -3020,9 +3016,10 @@ function StatusBadge({ status }) {
   return <span className={`status-badge ${String(status).toLowerCase().replaceAll(" ", "-")}`}>{titleCase(status)}</span>;
 }
 
-function ProgressBar({ value }) {
+function ProgressBar({ value, tone }) {
+  const cls = tone ? `progress tone-${String(tone).toLowerCase().replaceAll(" ", "-")}` : "progress";
   return (
-    <div className="progress" aria-label={`Progress ${value}%`}>
+    <div className={cls} aria-label={`Progress ${value}%`}>
       <span style={{ width: `${Math.max(0, Math.min(100, value))}%` }} />
     </div>
   );

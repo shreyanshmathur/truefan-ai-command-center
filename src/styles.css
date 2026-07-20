@@ -1149,6 +1149,23 @@ td select,
   height: 100%;
   background: linear-gradient(90deg, var(--pink), var(--blue));
   border-radius: inherit;
+  transition: width 0.4s ease;
+}
+
+.progress.tone-available span {
+  background: linear-gradient(90deg, #16a34a, #4ade80);
+}
+
+.progress.tone-moderate span {
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+}
+
+.progress.tone-busy span {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+
+.progress.tone-overloaded span {
+  background: linear-gradient(90deg, #dc2626, #f87171);
 }
 
 .simple-timeline {

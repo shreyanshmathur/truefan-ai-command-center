@@ -4807,1205 +4807,13106 @@ const workbookSeed = {
       "sourceSheet": "Delivery Tracker 2026 - Backend"
     }
   ],
-  "tasks": [],
+  "tasks": [
+    {
+      "id": "t-p-adani-adani-target-achieved-0",
+      "projectId": "p-adani-adani-target-achieved",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-adani-adani-target-achieved-1",
+      "projectId": "p-adani-adani-target-achieved",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-adani-adani-target-achieved-2",
+      "projectId": "p-adani-adani-target-achieved",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-adani-adani-target-achieved-3",
+      "projectId": "p-adani-adani-target-achieved",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-adani-adani-target-achieved-4",
+      "projectId": "p-adani-adani-target-achieved",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-adani-adani-target-achieved-5",
+      "projectId": "p-adani-adani-target-achieved",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Cinematic — Final delivery"
+    },
+    {
+      "id": "t-p-aditya-birla-group-aditya-birla-ultratech-cements-0",
+      "projectId": "p-aditya-birla-group-aditya-birla-ultratech-cements",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-aditya-birla-group-aditya-birla-ultratech-cements-1",
+      "projectId": "p-aditya-birla-group-aditya-birla-ultratech-cements",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-aditya-birla-group-aditya-birla-ultratech-cements-2",
+      "projectId": "p-aditya-birla-group-aditya-birla-ultratech-cements",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-aditya-birla-group-aditya-birla-ultratech-cements-3",
+      "projectId": "p-aditya-birla-group-aditya-birla-ultratech-cements",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-aditya-birla-group-aditya-birla-ultratech-cements-4",
+      "projectId": "p-aditya-birla-group-aditya-birla-ultratech-cements",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "- storyboard shared - feedback awaited"
+    },
+    {
+      "id": "t-p-aditya-birla-group-cables-wires-0",
+      "projectId": "p-aditya-birla-group-cables-wires",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Avatar (Simple) — Brief & script"
+    },
+    {
+      "id": "t-p-aditya-birla-group-cables-wires-1",
+      "projectId": "p-aditya-birla-group-cables-wires",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Simple) — AI model training"
+    },
+    {
+      "id": "t-p-aditya-birla-group-cables-wires-2",
+      "projectId": "p-aditya-birla-group-cables-wires",
+      "title": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Simple) — Avatar (Simple) edit"
+    },
+    {
+      "id": "t-p-aditya-birla-group-cables-wires-3",
+      "projectId": "p-aditya-birla-group-cables-wires",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "status": "delayed",
+      "notes": "Avatar (Simple) — QA review"
+    },
+    {
+      "id": "t-p-aditya-birla-group-cables-wires-4",
+      "projectId": "p-aditya-birla-group-cables-wires",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — Client review"
+    },
+    {
+      "id": "t-p-aditya-birla-group-cables-wires-5",
+      "projectId": "p-aditya-birla-group-cables-wires",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Awaiting brief on static work"
+    },
+    {
+      "id": "t-p-amberstone-vectra-ideation-0",
+      "projectId": "p-amberstone-vectra-ideation",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amberstone-vectra-ideation-1",
+      "projectId": "p-amberstone-vectra-ideation",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amberstone-vectra-ideation-2",
+      "projectId": "p-amberstone-vectra-ideation",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amberstone-vectra-ideation-3",
+      "projectId": "p-amberstone-vectra-ideation",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "status": "delayed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amberstone-vectra-ideation-4",
+      "projectId": "p-amberstone-vectra-ideation",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-amli-amli-ceo-message-to-gulf-policyholders-0",
+      "projectId": "p-amli-amli-ceo-message-to-gulf-policyholders",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-ceo-message-to-gulf-policyholders-1",
+      "projectId": "p-amli-amli-ceo-message-to-gulf-policyholders",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amli-amli-ceo-message-to-gulf-policyholders-2",
+      "projectId": "p-amli-amli-ceo-message-to-gulf-policyholders",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-ceo-message-to-gulf-policyholders-3",
+      "projectId": "p-amli-amli-ceo-message-to-gulf-policyholders",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-ceo-message-to-gulf-policyholders-4",
+      "projectId": "p-amli-amli-ceo-message-to-gulf-policyholders",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "- 1 video delivered"
+    },
+    {
+      "id": "t-p-amli-amli-cot-tot-event-0",
+      "projectId": "p-amli-amli-cot-tot-event",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-cot-tot-event-1",
+      "projectId": "p-amli-amli-cot-tot-event",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amli-amli-cot-tot-event-2",
+      "projectId": "p-amli-amli-cot-tot-event",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-cot-tot-event-3",
+      "projectId": "p-amli-amli-cot-tot-event",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-cot-tot-event-4",
+      "projectId": "p-amli-amli-cot-tot-event",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "- 1 video delivered"
+    },
+    {
+      "id": "t-p-amli-amli-digital-performance-marketing-0",
+      "projectId": "p-amli-amli-digital-performance-marketing",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-digital-performance-marketing-1",
+      "projectId": "p-amli-amli-digital-performance-marketing",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amli-amli-digital-performance-marketing-2",
+      "projectId": "p-amli-amli-digital-performance-marketing",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-digital-performance-marketing-3",
+      "projectId": "p-amli-amli-digital-performance-marketing",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-digital-performance-marketing-4",
+      "projectId": "p-amli-amli-digital-performance-marketing",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "- Total 10 videos shared"
+    },
+    {
+      "id": "t-p-amli-amli-leaders-0",
+      "projectId": "p-amli-amli-leaders",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-leaders-1",
+      "projectId": "p-amli-amli-leaders",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amli-amli-leaders-2",
+      "projectId": "p-amli-amli-leaders",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-leaders-3",
+      "projectId": "p-amli-amli-leaders",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-leaders-4",
+      "projectId": "p-amli-amli-leaders",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "- 3 videos delivered"
+    },
+    {
+      "id": "t-p-amli-amli-mdrt-winners-0",
+      "projectId": "p-amli-amli-mdrt-winners",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-mdrt-winners-1",
+      "projectId": "p-amli-amli-mdrt-winners",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amli-amli-mdrt-winners-2",
+      "projectId": "p-amli-amli-mdrt-winners",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-mdrt-winners-3",
+      "projectId": "p-amli-amli-mdrt-winners",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-mdrt-winners-4",
+      "projectId": "p-amli-amli-mdrt-winners",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "- 1 video delivered"
+    },
+    {
+      "id": "t-p-amli-amli-surrender-retention-0",
+      "projectId": "p-amli-amli-surrender-retention",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-surrender-retention-1",
+      "projectId": "p-amli-amli-surrender-retention",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amli-amli-surrender-retention-2",
+      "projectId": "p-amli-amli-surrender-retention",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-surrender-retention-3",
+      "projectId": "p-amli-amli-surrender-retention",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-surrender-retention-4",
+      "projectId": "p-amli-amli-surrender-retention",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "- 16 videos delivered"
+    },
+    {
+      "id": "t-p-amli-amli-par-bonus-communication-0",
+      "projectId": "p-amli-amli-par-bonus-communication",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-par-bonus-communication-1",
+      "projectId": "p-amli-amli-par-bonus-communication",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amli-amli-par-bonus-communication-2",
+      "projectId": "p-amli-amli-par-bonus-communication",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-par-bonus-communication-3",
+      "projectId": "p-amli-amli-par-bonus-communication",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-par-bonus-communication-4",
+      "projectId": "p-amli-amli-par-bonus-communication",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Send updated video"
+    },
+    {
+      "id": "t-p-amli-amli-aurous-club-aurum-club-0",
+      "projectId": "p-amli-amli-aurous-club-aurum-club",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-aurous-club-aurum-club-1",
+      "projectId": "p-amli-amli-aurous-club-aurum-club",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amli-amli-aurous-club-aurum-club-2",
+      "projectId": "p-amli-amli-aurous-club-aurum-club",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "status": "delayed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-aurous-club-aurum-club-3",
+      "projectId": "p-amli-amli-aurous-club-aurum-club",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-aurous-club-aurum-club-4",
+      "projectId": "p-amli-amli-aurous-club-aurum-club",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Send updated video"
+    },
+    {
+      "id": "t-p-amli-amli-smart-rise-0",
+      "projectId": "p-amli-amli-smart-rise",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-smart-rise-1",
+      "projectId": "p-amli-amli-smart-rise",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amli-amli-smart-rise-2",
+      "projectId": "p-amli-amli-smart-rise",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-smart-rise-3",
+      "projectId": "p-amli-amli-smart-rise",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-smart-rise-4",
+      "projectId": "p-amli-amli-smart-rise",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Feedback recieved from client need to share updated video"
+    },
+    {
+      "id": "t-p-amli-amli-cc-liability-joint-life-guranteed-l-0",
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Variable Personalisation — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-cc-liability-joint-life-guranteed-l-1",
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Variable Personalisation — AI model training"
+    },
+    {
+      "id": "t-p-amli-amli-cc-liability-joint-life-guranteed-l-2",
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "title": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Variable Personalisation — Variable Personalisation edit"
+    },
+    {
+      "id": "t-p-amli-amli-cc-liability-joint-life-guranteed-l-3",
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Variable Personalisation — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-cc-liability-joint-life-guranteed-l-4",
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Variable Personalisation — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-cc-liability-joint-life-guranteed-l-5",
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Awaiting approval from client then automation"
+    },
+    {
+      "id": "t-p-amli-amli-cc-liability-segment-0",
+      "projectId": "p-amli-amli-cc-liability-segment",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-cc-liability-segment-1",
+      "projectId": "p-amli-amli-cc-liability-segment",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amli-amli-cc-liability-segment-2",
+      "projectId": "p-amli-amli-cc-liability-segment",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-cc-liability-segment-3",
+      "projectId": "p-amli-amli-cc-liability-segment",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-cc-liability-segment-4",
+      "projectId": "p-amli-amli-cc-liability-segment",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-amli-amli-loan-against-a-policy-0",
+      "projectId": "p-amli-amli-loan-against-a-policy",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-loan-against-a-policy-1",
+      "projectId": "p-amli-amli-loan-against-a-policy",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amli-amli-loan-against-a-policy-2",
+      "projectId": "p-amli-amli-loan-against-a-policy",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-loan-against-a-policy-3",
+      "projectId": "p-amli-amli-loan-against-a-policy",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-loan-against-a-policy-4",
+      "projectId": "p-amli-amli-loan-against-a-policy",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "-Creative shared, feedback awaited"
+    },
+    {
+      "id": "t-p-amli-amli-ulip-0",
+      "projectId": "p-amli-amli-ulip",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-ulip-1",
+      "projectId": "p-amli-amli-ulip",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amli-amli-ulip-2",
+      "projectId": "p-amli-amli-ulip",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-ulip-3",
+      "projectId": "p-amli-amli-ulip",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-ulip-4",
+      "projectId": "p-amli-amli-ulip",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Need to update template today"
+    },
+    {
+      "id": "t-p-amli-amli-mpitch-pro-0",
+      "projectId": "p-amli-amli-mpitch-pro",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-amli-amli-mpitch-pro-1",
+      "projectId": "p-amli-amli-mpitch-pro",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-amli-amli-mpitch-pro-2",
+      "projectId": "p-amli-amli-mpitch-pro",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-amli-amli-mpitch-pro-3",
+      "projectId": "p-amli-amli-mpitch-pro",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-amli-amli-mpitch-pro-4",
+      "projectId": "p-amli-amli-mpitch-pro",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "- 1 video delivered"
+    },
+    {
+      "id": "t-p-asian-paints-asian-paints-dealer-bytes-0",
+      "projectId": "p-asian-paints-asian-paints-dealer-bytes",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Variable Personalisation — Brief & script"
+    },
+    {
+      "id": "t-p-asian-paints-asian-paints-dealer-bytes-1",
+      "projectId": "p-asian-paints-asian-paints-dealer-bytes",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Variable Personalisation — AI model training"
+    },
+    {
+      "id": "t-p-asian-paints-asian-paints-dealer-bytes-2",
+      "projectId": "p-asian-paints-asian-paints-dealer-bytes",
+      "title": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Variable Personalisation — Variable Personalisation edit"
+    },
+    {
+      "id": "t-p-asian-paints-asian-paints-dealer-bytes-3",
+      "projectId": "p-asian-paints-asian-paints-dealer-bytes",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Variable Personalisation — QA review"
+    },
+    {
+      "id": "t-p-asian-paints-asian-paints-dealer-bytes-4",
+      "projectId": "p-asian-paints-asian-paints-dealer-bytes",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Variable Personalisation — Client review"
+    },
+    {
+      "id": "t-p-asian-paints-asian-paints-dealer-bytes-5",
+      "projectId": "p-asian-paints-asian-paints-dealer-bytes",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Automation to be done , AI samples to be shared and Profanity to be checked on data"
+    },
+    {
+      "id": "t-p-astrazeneca-astrazeneca-mkt-0",
+      "projectId": "p-astrazeneca-astrazeneca-mkt",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Simple) — Brief & script"
+    },
+    {
+      "id": "t-p-astrazeneca-astrazeneca-mkt-1",
+      "projectId": "p-astrazeneca-astrazeneca-mkt",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Simple) — AI model training"
+    },
+    {
+      "id": "t-p-astrazeneca-astrazeneca-mkt-2",
+      "projectId": "p-astrazeneca-astrazeneca-mkt",
+      "title": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Avatar (Simple) — Avatar (Simple) edit"
+    },
+    {
+      "id": "t-p-astrazeneca-astrazeneca-mkt-3",
+      "projectId": "p-astrazeneca-astrazeneca-mkt",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — QA review"
+    },
+    {
+      "id": "t-p-astrazeneca-astrazeneca-mkt-4",
+      "projectId": "p-astrazeneca-astrazeneca-mkt",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — Client review"
+    },
+    {
+      "id": "t-p-astrazeneca-astrazeneca-mkt-5",
+      "projectId": "p-astrazeneca-astrazeneca-mkt",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — Final delivery"
+    },
+    {
+      "id": "t-p-bajaj-monsoon-video-0",
+      "projectId": "p-bajaj-monsoon-video",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-bajaj-monsoon-video-1",
+      "projectId": "p-bajaj-monsoon-video",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-bajaj-monsoon-video-2",
+      "projectId": "p-bajaj-monsoon-video",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-bajaj-monsoon-video-3",
+      "projectId": "p-bajaj-monsoon-video",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-bajaj-monsoon-video-4",
+      "projectId": "p-bajaj-monsoon-video",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-bajaj-monsoon-video-5",
+      "projectId": "p-bajaj-monsoon-video",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "3 videos revison ongoing (kerela and kolkata done)"
+    },
+    {
+      "id": "t-p-bajaj-orm-videos-customer-awareness-0",
+      "projectId": "p-bajaj-orm-videos-customer-awareness",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-bajaj-orm-videos-customer-awareness-1",
+      "projectId": "p-bajaj-orm-videos-customer-awareness",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-bajaj-orm-videos-customer-awareness-2",
+      "projectId": "p-bajaj-orm-videos-customer-awareness",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-bajaj-orm-videos-customer-awareness-3",
+      "projectId": "p-bajaj-orm-videos-customer-awareness",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-bajaj-orm-videos-customer-awareness-4",
+      "projectId": "p-bajaj-orm-videos-customer-awareness",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-bajaj-orm-videos-customer-awareness-5",
+      "projectId": "p-bajaj-orm-videos-customer-awareness",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-13",
+      "endDate": "2026-08-19",
+      "status": "not-started",
+      "notes": "Cinematic — Final delivery"
+    },
+    {
+      "id": "t-p-bajaj-creatr-tutorial-video-0",
+      "projectId": "p-bajaj-creatr-tutorial-video",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-bajaj-creatr-tutorial-video-1",
+      "projectId": "p-bajaj-creatr-tutorial-video",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-bajaj-creatr-tutorial-video-2",
+      "projectId": "p-bajaj-creatr-tutorial-video",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-bajaj-creatr-tutorial-video-3",
+      "projectId": "p-bajaj-creatr-tutorial-video",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-bajaj-creatr-tutorial-video-4",
+      "projectId": "p-bajaj-creatr-tutorial-video",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-bajaj-creatr-tutorial-video-5",
+      "projectId": "p-bajaj-creatr-tutorial-video",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — Final delivery"
+    },
+    {
+      "id": "t-p-bajaj-finance-social-media-0",
+      "projectId": "p-bajaj-finance-social-media",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-bajaj-finance-social-media-1",
+      "projectId": "p-bajaj-finance-social-media",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-bajaj-finance-social-media-2",
+      "projectId": "p-bajaj-finance-social-media",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-bajaj-finance-social-media-3",
+      "projectId": "p-bajaj-finance-social-media",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-bajaj-finance-social-media-4",
+      "projectId": "p-bajaj-finance-social-media",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Waiting for the approval on the first episode. 2 more videos will be rolled out today."
+    },
+    {
+      "id": "t-p-bharatpe-bharatpe-credit-buddy-0",
+      "projectId": "p-bharatpe-bharatpe-credit-buddy",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-bharatpe-bharatpe-credit-buddy-1",
+      "projectId": "p-bharatpe-bharatpe-credit-buddy",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-bharatpe-bharatpe-credit-buddy-2",
+      "projectId": "p-bharatpe-bharatpe-credit-buddy",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-bharatpe-bharatpe-credit-buddy-3",
+      "projectId": "p-bharatpe-bharatpe-credit-buddy",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-bharatpe-bharatpe-credit-buddy-4",
+      "projectId": "p-bharatpe-bharatpe-credit-buddy",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "2 Tamil Templates to be shared by 11/6"
+    },
+    {
+      "id": "t-p-bharatpe-bharatpe-msma-0",
+      "projectId": "p-bharatpe-bharatpe-msma",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Variable Personalisation — Brief & script"
+    },
+    {
+      "id": "t-p-bharatpe-bharatpe-msma-1",
+      "projectId": "p-bharatpe-bharatpe-msma",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Variable Personalisation — AI model training"
+    },
+    {
+      "id": "t-p-bharatpe-bharatpe-msma-2",
+      "projectId": "p-bharatpe-bharatpe-msma",
+      "title": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Variable Personalisation — Variable Personalisation edit"
+    },
+    {
+      "id": "t-p-bharatpe-bharatpe-msma-3",
+      "projectId": "p-bharatpe-bharatpe-msma",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Variable Personalisation — QA review"
+    },
+    {
+      "id": "t-p-bharatpe-bharatpe-msma-4",
+      "projectId": "p-bharatpe-bharatpe-msma",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Variable Personalisation — Client review"
+    },
+    {
+      "id": "t-p-bharatpe-bharatpe-msma-5",
+      "projectId": "p-bharatpe-bharatpe-msma",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Need to share updated MSMA templates:\nGeneral store - No change in screen time\nGrocery - screen time to be increased by 2 seconds\nCafe/Food & beverage - screen time to be increased by 3-4 seconds\nPharmacy - screen time to be increased by 3-4 seconds\nFashion - screen time to be increased by 3-4 seconds"
+    },
+    {
+      "id": "t-p-biologicale-dr-video-0",
+      "projectId": "p-biologicale-dr-video",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Variable Personalisation — Brief & script"
+    },
+    {
+      "id": "t-p-biologicale-dr-video-1",
+      "projectId": "p-biologicale-dr-video",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Variable Personalisation — AI model training"
+    },
+    {
+      "id": "t-p-biologicale-dr-video-2",
+      "projectId": "p-biologicale-dr-video",
+      "title": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Variable Personalisation — Variable Personalisation edit"
+    },
+    {
+      "id": "t-p-biologicale-dr-video-3",
+      "projectId": "p-biologicale-dr-video",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Variable Personalisation — QA review"
+    },
+    {
+      "id": "t-p-biologicale-dr-video-4",
+      "projectId": "p-biologicale-dr-video",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Variable Personalisation — Client review"
+    },
+    {
+      "id": "t-p-biologicale-dr-video-5",
+      "projectId": "p-biologicale-dr-video",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-13",
+      "endDate": "2026-08-19",
+      "status": "not-started",
+      "notes": "Awaiting input from client | Client not responding"
+    },
+    {
+      "id": "t-p-birla-opus-ideation-0",
+      "projectId": "p-birla-opus-ideation",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-birla-opus-ideation-1",
+      "projectId": "p-birla-opus-ideation",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-birla-opus-ideation-2",
+      "projectId": "p-birla-opus-ideation",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-birla-opus-ideation-3",
+      "projectId": "p-birla-opus-ideation",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-birla-opus-ideation-4",
+      "projectId": "p-birla-opus-ideation",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-birla-white-birla-white-0",
+      "projectId": "p-birla-white-birla-white",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-birla-white-birla-white-1",
+      "projectId": "p-birla-white-birla-white",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-birla-white-birla-white-2",
+      "projectId": "p-birla-white-birla-white",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-birla-white-birla-white-3",
+      "projectId": "p-birla-white-birla-white",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-birla-white-birla-white-4",
+      "projectId": "p-birla-white-birla-white",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-birla-white-birla-white-5",
+      "projectId": "p-birla-white-birla-white",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "-"
+    },
+    {
+      "id": "t-p-bkt-tyres-bkt-tyres-father-s-day-0",
+      "projectId": "p-bkt-tyres-bkt-tyres-father-s-day",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-bkt-tyres-bkt-tyres-father-s-day-1",
+      "projectId": "p-bkt-tyres-bkt-tyres-father-s-day",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-bkt-tyres-bkt-tyres-father-s-day-2",
+      "projectId": "p-bkt-tyres-bkt-tyres-father-s-day",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-bkt-tyres-bkt-tyres-father-s-day-3",
+      "projectId": "p-bkt-tyres-bkt-tyres-father-s-day",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-bkt-tyres-bkt-tyres-father-s-day-4",
+      "projectId": "p-bkt-tyres-bkt-tyres-father-s-day",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "-Cancelled"
+    },
+    {
+      "id": "t-p-buildahome-buildahome-0",
+      "projectId": "p-buildahome-buildahome",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-buildahome-buildahome-1",
+      "projectId": "p-buildahome-buildahome",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-buildahome-buildahome-2",
+      "projectId": "p-buildahome-buildahome",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-buildahome-buildahome-3",
+      "projectId": "p-buildahome-buildahome",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-buildahome-buildahome-4",
+      "projectId": "p-buildahome-buildahome",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "- No context, was just assigned from Shreyansh"
+    },
+    {
+      "id": "t-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s--0",
+      "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s--1",
+      "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s--2",
+      "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s--3",
+      "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s--4",
+      "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s--5",
+      "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "3  to be delivered  on Tuesday (16/06)"
+    },
+    {
+      "id": "t-p-canara-hsbc-customer-service-video-0",
+      "projectId": "p-canara-hsbc-customer-service-video",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-canara-hsbc-customer-service-video-1",
+      "projectId": "p-canara-hsbc-customer-service-video",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-canara-hsbc-customer-service-video-2",
+      "projectId": "p-canara-hsbc-customer-service-video",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-canara-hsbc-customer-service-video-3",
+      "projectId": "p-canara-hsbc-customer-service-video",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-canara-hsbc-customer-service-video-4",
+      "projectId": "p-canara-hsbc-customer-service-video",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-canara-hsbc-customer-service-video-5",
+      "projectId": "p-canara-hsbc-customer-service-video",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "1st cut to be shown on Wed"
+    },
+    {
+      "id": "t-p-canara-hsbc-app-explainer-videos-0",
+      "projectId": "p-canara-hsbc-app-explainer-videos",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Simple) — Brief & script"
+    },
+    {
+      "id": "t-p-canara-hsbc-app-explainer-videos-1",
+      "projectId": "p-canara-hsbc-app-explainer-videos",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Simple) — AI model training"
+    },
+    {
+      "id": "t-p-canara-hsbc-app-explainer-videos-2",
+      "projectId": "p-canara-hsbc-app-explainer-videos",
+      "title": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Avatar (Simple) — Avatar (Simple) edit"
+    },
+    {
+      "id": "t-p-canara-hsbc-app-explainer-videos-3",
+      "projectId": "p-canara-hsbc-app-explainer-videos",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — QA review"
+    },
+    {
+      "id": "t-p-canara-hsbc-app-explainer-videos-4",
+      "projectId": "p-canara-hsbc-app-explainer-videos",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — Client review"
+    },
+    {
+      "id": "t-p-canara-hsbc-app-explainer-videos-5",
+      "projectId": "p-canara-hsbc-app-explainer-videos",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "1 video by thursday"
+    },
+    {
+      "id": "t-p-canara-hsbc-cyber-jagrukta-0",
+      "projectId": "p-canara-hsbc-cyber-jagrukta",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-canara-hsbc-cyber-jagrukta-1",
+      "projectId": "p-canara-hsbc-cyber-jagrukta",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-canara-hsbc-cyber-jagrukta-2",
+      "projectId": "p-canara-hsbc-cyber-jagrukta",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-canara-hsbc-cyber-jagrukta-3",
+      "projectId": "p-canara-hsbc-cyber-jagrukta",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-canara-hsbc-cyber-jagrukta-4",
+      "projectId": "p-canara-hsbc-cyber-jagrukta",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-canara-hsbc-cyber-jagrukta-5",
+      "projectId": "p-canara-hsbc-cyber-jagrukta",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Cinematic — Final delivery"
+    },
+    {
+      "id": "t-p-canara-hsbc-bumrah-thank-you-video-0",
+      "projectId": "p-canara-hsbc-bumrah-thank-you-video",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Simple) — Brief & script"
+    },
+    {
+      "id": "t-p-canara-hsbc-bumrah-thank-you-video-1",
+      "projectId": "p-canara-hsbc-bumrah-thank-you-video",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Simple) — AI model training"
+    },
+    {
+      "id": "t-p-canara-hsbc-bumrah-thank-you-video-2",
+      "projectId": "p-canara-hsbc-bumrah-thank-you-video",
+      "title": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Avatar (Simple) — Avatar (Simple) edit"
+    },
+    {
+      "id": "t-p-canara-hsbc-bumrah-thank-you-video-3",
+      "projectId": "p-canara-hsbc-bumrah-thank-you-video",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — QA review"
+    },
+    {
+      "id": "t-p-canara-hsbc-bumrah-thank-you-video-4",
+      "projectId": "p-canara-hsbc-bumrah-thank-you-video",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — Client review"
+    },
+    {
+      "id": "t-p-canara-hsbc-bumrah-thank-you-video-5",
+      "projectId": "p-canara-hsbc-bumrah-thank-you-video",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — Final delivery"
+    },
+    {
+      "id": "t-p-canara-hsbc-garv-0",
+      "projectId": "p-canara-hsbc-garv",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-canara-hsbc-garv-1",
+      "projectId": "p-canara-hsbc-garv",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-canara-hsbc-garv-2",
+      "projectId": "p-canara-hsbc-garv",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-canara-hsbc-garv-3",
+      "projectId": "p-canara-hsbc-garv",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-canara-hsbc-garv-4",
+      "projectId": "p-canara-hsbc-garv",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-canara-hsbc-promise2secure-0",
+      "projectId": "p-canara-hsbc-promise2secure",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-canara-hsbc-promise2secure-1",
+      "projectId": "p-canara-hsbc-promise2secure",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-canara-hsbc-promise2secure-2",
+      "projectId": "p-canara-hsbc-promise2secure",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-canara-hsbc-promise2secure-3",
+      "projectId": "p-canara-hsbc-promise2secure",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-canara-hsbc-promise2secure-4",
+      "projectId": "p-canara-hsbc-promise2secure",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-canara-hsbc-promise2secure-5",
+      "projectId": "p-canara-hsbc-promise2secure",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — Final delivery"
+    },
+    {
+      "id": "t-p-carrier-carrier-product-videos-0",
+      "projectId": "p-carrier-carrier-product-videos",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-carrier-carrier-product-videos-1",
+      "projectId": "p-carrier-carrier-product-videos",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-carrier-carrier-product-videos-2",
+      "projectId": "p-carrier-carrier-product-videos",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-carrier-carrier-product-videos-3",
+      "projectId": "p-carrier-carrier-product-videos",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-carrier-carrier-product-videos-4",
+      "projectId": "p-carrier-carrier-product-videos",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-chandigarh-university-chandigarh-university-0",
+      "projectId": "p-chandigarh-university-chandigarh-university",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-chandigarh-university-chandigarh-university-1",
+      "projectId": "p-chandigarh-university-chandigarh-university",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-chandigarh-university-chandigarh-university-2",
+      "projectId": "p-chandigarh-university-chandigarh-university",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-chandigarh-university-chandigarh-university-3",
+      "projectId": "p-chandigarh-university-chandigarh-university",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-chandigarh-university-chandigarh-university-4",
+      "projectId": "p-chandigarh-university-chandigarh-university",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "status": "delayed",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-chandigarh-university-chandigarh-university-5",
+      "projectId": "p-chandigarh-university-chandigarh-university",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "All videos delivered"
+    },
+    {
+      "id": "t-p-cipla-motivational-video-0",
+      "projectId": "p-cipla-motivational-video",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-cipla-motivational-video-1",
+      "projectId": "p-cipla-motivational-video",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-cipla-motivational-video-2",
+      "projectId": "p-cipla-motivational-video",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "status": "delayed",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-cipla-motivational-video-3",
+      "projectId": "p-cipla-motivational-video",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-cipla-motivational-video-4",
+      "projectId": "p-cipla-motivational-video",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-cipla-motivational-video-5",
+      "projectId": "p-cipla-motivational-video",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — Final delivery"
+    },
+    {
+      "id": "t-p-country-delight-country-delight-0",
+      "projectId": "p-country-delight-country-delight",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-country-delight-country-delight-1",
+      "projectId": "p-country-delight-country-delight",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-country-delight-country-delight-2",
+      "projectId": "p-country-delight-country-delight",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "status": "delayed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-country-delight-country-delight-3",
+      "projectId": "p-country-delight-country-delight",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-country-delight-country-delight-4",
+      "projectId": "p-country-delight-country-delight",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "None"
+    },
+    {
+      "id": "t-p-cuemath-celebrity-avatar-video-0",
+      "projectId": "p-cuemath-celebrity-avatar-video",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-cuemath-celebrity-avatar-video-1",
+      "projectId": "p-cuemath-celebrity-avatar-video",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-cuemath-celebrity-avatar-video-2",
+      "projectId": "p-cuemath-celebrity-avatar-video",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-cuemath-celebrity-avatar-video-3",
+      "projectId": "p-cuemath-celebrity-avatar-video",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-cuemath-celebrity-avatar-video-4",
+      "projectId": "p-cuemath-celebrity-avatar-video",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-cuemath-celebrity-avatar-video-5",
+      "projectId": "p-cuemath-celebrity-avatar-video",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Final script 1 to be shared by client"
+    },
+    {
+      "id": "t-p-dabur-dabur-gluco-plus-0",
+      "projectId": "p-dabur-dabur-gluco-plus",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-dabur-dabur-gluco-plus-1",
+      "projectId": "p-dabur-dabur-gluco-plus",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-dabur-dabur-gluco-plus-2",
+      "projectId": "p-dabur-dabur-gluco-plus",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-dabur-dabur-gluco-plus-3",
+      "projectId": "p-dabur-dabur-gluco-plus",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-dabur-dabur-gluco-plus-4",
+      "projectId": "p-dabur-dabur-gluco-plus",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-dabur-odonil-0",
+      "projectId": "p-dabur-odonil",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-dabur-odonil-1",
+      "projectId": "p-dabur-odonil",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-dabur-odonil-2",
+      "projectId": "p-dabur-odonil",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-dabur-odonil-3",
+      "projectId": "p-dabur-odonil",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-dabur-odonil-4",
+      "projectId": "p-dabur-odonil",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-dabur-odonil-5",
+      "projectId": "p-dabur-odonil",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Incorporate changes and share updated video"
+    },
+    {
+      "id": "t-p-danube-danube-0",
+      "projectId": "p-danube-danube",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-danube-danube-1",
+      "projectId": "p-danube-danube",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-danube-danube-2",
+      "projectId": "p-danube-danube",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-danube-danube-3",
+      "projectId": "p-danube-danube",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-danube-danube-4",
+      "projectId": "p-danube-danube",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-danube-danube-5",
+      "projectId": "p-danube-danube",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Audio model trained, moving sample done, project on hold till august"
+    },
+    {
+      "id": "t-p-dmi-finance-dmi-finance-0",
+      "projectId": "p-dmi-finance-dmi-finance",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Variable Personalisation — Brief & script"
+    },
+    {
+      "id": "t-p-dmi-finance-dmi-finance-1",
+      "projectId": "p-dmi-finance-dmi-finance",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Variable Personalisation — AI model training"
+    },
+    {
+      "id": "t-p-dmi-finance-dmi-finance-2",
+      "projectId": "p-dmi-finance-dmi-finance",
+      "title": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Variable Personalisation — Variable Personalisation edit"
+    },
+    {
+      "id": "t-p-dmi-finance-dmi-finance-3",
+      "projectId": "p-dmi-finance-dmi-finance",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Variable Personalisation — QA review"
+    },
+    {
+      "id": "t-p-dmi-finance-dmi-finance-4",
+      "projectId": "p-dmi-finance-dmi-finance",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Variable Personalisation — Client review"
+    },
+    {
+      "id": "t-p-dmi-finance-dmi-finance-5",
+      "projectId": "p-dmi-finance-dmi-finance",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Need to share personalized statics 3L data\nAwaiting client input Vasu to speak to Anshuman || Train male avatar model - Personal Loan OMS - Automation, \n'Business Loan Pre Approved' - Creative18-Jun\n'Business Loan OMS' - Send creative 25-Jun\n\n\n\nDM Follow up - Timelines, campaign performance"
+    },
+    {
+      "id": "t-p-dreamstreet-dreamstreet-0",
+      "projectId": "p-dreamstreet-dreamstreet",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-dreamstreet-dreamstreet-1",
+      "projectId": "p-dreamstreet-dreamstreet",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-dreamstreet-dreamstreet-2",
+      "projectId": "p-dreamstreet-dreamstreet",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-dreamstreet-dreamstreet-3",
+      "projectId": "p-dreamstreet-dreamstreet",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-dreamstreet-dreamstreet-4",
+      "projectId": "p-dreamstreet-dreamstreet",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-dreamstreet-dreamstreet-5",
+      "projectId": "p-dreamstreet-dreamstreet",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Cinematic — Final delivery"
+    },
+    {
+      "id": "t-p-elivaas-elivaas-0",
+      "projectId": "p-elivaas-elivaas",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-elivaas-elivaas-1",
+      "projectId": "p-elivaas-elivaas",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-elivaas-elivaas-2",
+      "projectId": "p-elivaas-elivaas",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-elivaas-elivaas-3",
+      "projectId": "p-elivaas-elivaas",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-elivaas-elivaas-4",
+      "projectId": "p-elivaas-elivaas",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-fcb-hdfc-bank-vigil-aunty-0",
+      "projectId": "p-fcb-hdfc-bank-vigil-aunty",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-fcb-hdfc-bank-vigil-aunty-1",
+      "projectId": "p-fcb-hdfc-bank-vigil-aunty",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-fcb-hdfc-bank-vigil-aunty-2",
+      "projectId": "p-fcb-hdfc-bank-vigil-aunty",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-fcb-hdfc-bank-vigil-aunty-3",
+      "projectId": "p-fcb-hdfc-bank-vigil-aunty",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-fcb-hdfc-bank-vigil-aunty-4",
+      "projectId": "p-fcb-hdfc-bank-vigil-aunty",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-fortis-fortis-0",
+      "projectId": "p-fortis-fortis",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-fortis-fortis-1",
+      "projectId": "p-fortis-fortis",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-fortis-fortis-2",
+      "projectId": "p-fortis-fortis",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-fortis-fortis-3",
+      "projectId": "p-fortis-fortis",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-fortis-fortis-4",
+      "projectId": "p-fortis-fortis",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Call today at 3 for new brief"
+    },
+    {
+      "id": "t-p-future-generali-future-generali-0",
+      "projectId": "p-future-generali-future-generali",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-future-generali-future-generali-1",
+      "projectId": "p-future-generali-future-generali",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-future-generali-future-generali-2",
+      "projectId": "p-future-generali-future-generali",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-future-generali-future-generali-3",
+      "projectId": "p-future-generali-future-generali",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-future-generali-future-generali-4",
+      "projectId": "p-future-generali-future-generali",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "- Logo updated and shared"
+    },
+    {
+      "id": "t-p-goldiee-goldiee-sprinkoo-0",
+      "projectId": "p-goldiee-goldiee-sprinkoo",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-goldiee-goldiee-sprinkoo-1",
+      "projectId": "p-goldiee-goldiee-sprinkoo",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-goldiee-goldiee-sprinkoo-2",
+      "projectId": "p-goldiee-goldiee-sprinkoo",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-goldiee-goldiee-sprinkoo-3",
+      "projectId": "p-goldiee-goldiee-sprinkoo",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-goldiee-goldiee-sprinkoo-4",
+      "projectId": "p-goldiee-goldiee-sprinkoo",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "status": "delayed",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-goldiee-goldiee-sprinkoo-5",
+      "projectId": "p-goldiee-goldiee-sprinkoo",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "- final video to be delivered on 01/07 - Tarun on top of it"
+    },
+    {
+      "id": "t-p-gommt-goibibo-my-bizz-0",
+      "projectId": "p-gommt-goibibo-my-bizz",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-gommt-goibibo-my-bizz-1",
+      "projectId": "p-gommt-goibibo-my-bizz",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-gommt-goibibo-my-bizz-2",
+      "projectId": "p-gommt-goibibo-my-bizz",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-gommt-goibibo-my-bizz-3",
+      "projectId": "p-gommt-goibibo-my-bizz",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-gommt-goibibo-my-bizz-4",
+      "projectId": "p-gommt-goibibo-my-bizz",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video to be shared 15-Jun-2026"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-auto-loan-0",
+      "projectId": "p-hdfc-hdfc-auto-loan",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-auto-loan-1",
+      "projectId": "p-hdfc-hdfc-auto-loan",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-auto-loan-2",
+      "projectId": "p-hdfc-hdfc-auto-loan",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-auto-loan-3",
+      "projectId": "p-hdfc-hdfc-auto-loan",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-auto-loan-4",
+      "projectId": "p-hdfc-hdfc-auto-loan",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-dsa-0",
+      "projectId": "p-hdfc-hdfc-dsa",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-dsa-1",
+      "projectId": "p-hdfc-hdfc-dsa",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-dsa-2",
+      "projectId": "p-hdfc-hdfc-dsa",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-dsa-3",
+      "projectId": "p-hdfc-hdfc-dsa",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-dsa-4",
+      "projectId": "p-hdfc-hdfc-dsa",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-twl-0",
+      "projectId": "p-hdfc-hdfc-twl",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-twl-1",
+      "projectId": "p-hdfc-hdfc-twl",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-twl-2",
+      "projectId": "p-hdfc-hdfc-twl",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-twl-3",
+      "projectId": "p-hdfc-hdfc-twl",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-hdfc-hdfc-twl-4",
+      "projectId": "p-hdfc-hdfc-twl",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-hindware-hindware-0",
+      "projectId": "p-hindware-hindware",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-hindware-hindware-1",
+      "projectId": "p-hindware-hindware",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-hindware-hindware-2",
+      "projectId": "p-hindware-hindware",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-hindware-hindware-3",
+      "projectId": "p-hindware-hindware",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-hindware-hindware-4",
+      "projectId": "p-hindware-hindware",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-hindware-hindware-5",
+      "projectId": "p-hindware-hindware",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "-4th Iteration needed- delivery 01/07 - first half"
+    },
+    {
+      "id": "t-p-home-credit-home-credit-0",
+      "projectId": "p-home-credit-home-credit",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-home-credit-home-credit-1",
+      "projectId": "p-home-credit-home-credit",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-home-credit-home-credit-2",
+      "projectId": "p-home-credit-home-credit",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-home-credit-home-credit-3",
+      "projectId": "p-home-credit-home-credit",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-home-credit-home-credit-4",
+      "projectId": "p-home-credit-home-credit",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-impronics-impropay-0",
+      "projectId": "p-impronics-impropay",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-impronics-impropay-1",
+      "projectId": "p-impronics-impropay",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-impronics-impropay-2",
+      "projectId": "p-impronics-impropay",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-impronics-impropay-3",
+      "projectId": "p-impronics-impropay",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-impronics-impropay-4",
+      "projectId": "p-impronics-impropay",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-impronics-impropay-5",
+      "projectId": "p-impronics-impropay",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Awaiting brief call"
+    },
+    {
+      "id": "t-p-impronics-x-0",
+      "projectId": "p-impronics-x",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-impronics-x-1",
+      "projectId": "p-impronics-x",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-impronics-x-2",
+      "projectId": "p-impronics-x",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-impronics-x-3",
+      "projectId": "p-impronics-x",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-impronics-x-4",
+      "projectId": "p-impronics-x",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-indusland-bank-indusland-nippon-0",
+      "projectId": "p-indusland-bank-indusland-nippon",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-indusland-bank-indusland-nippon-1",
+      "projectId": "p-indusland-bank-indusland-nippon",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-indusland-bank-indusland-nippon-2",
+      "projectId": "p-indusland-bank-indusland-nippon",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-indusland-bank-indusland-nippon-3",
+      "projectId": "p-indusland-bank-indusland-nippon",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "status": "delayed",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-indusland-bank-indusland-nippon-4",
+      "projectId": "p-indusland-bank-indusland-nippon",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-indusland-bank-indusland-nippon-5",
+      "projectId": "p-indusland-bank-indusland-nippon",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Revised scripts awaited"
+    },
+    {
+      "id": "t-p-jk-maxx-jk-maxx-tvcs-0",
+      "projectId": "p-jk-maxx-jk-maxx-tvcs",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-sonali",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-jk-maxx-jk-maxx-tvcs-1",
+      "projectId": "p-jk-maxx-jk-maxx-tvcs",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-sonali",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-jk-maxx-jk-maxx-tvcs-2",
+      "projectId": "p-jk-maxx-jk-maxx-tvcs",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-sonali",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-jk-maxx-jk-maxx-tvcs-3",
+      "projectId": "p-jk-maxx-jk-maxx-tvcs",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-sonali",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-jk-maxx-jk-maxx-tvcs-4",
+      "projectId": "p-jk-maxx-jk-maxx-tvcs",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-sonali",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-jsw-jsw-wood-finish-0",
+      "projectId": "p-jsw-jsw-wood-finish",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-jsw-jsw-wood-finish-1",
+      "projectId": "p-jsw-jsw-wood-finish",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-jsw-jsw-wood-finish-2",
+      "projectId": "p-jsw-jsw-wood-finish",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-jsw-jsw-wood-finish-3",
+      "projectId": "p-jsw-jsw-wood-finish",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-jsw-jsw-wood-finish-4",
+      "projectId": "p-jsw-jsw-wood-finish",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "- 4 trial videos shared: Approval pending"
+    },
+    {
+      "id": "t-p-jsw-jsw-retailer-yogesh-0",
+      "projectId": "p-jsw-jsw-retailer-yogesh",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Image to Video — Brief & script"
+    },
+    {
+      "id": "t-p-jsw-jsw-retailer-yogesh-1",
+      "projectId": "p-jsw-jsw-retailer-yogesh",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Image to Video — AI model training"
+    },
+    {
+      "id": "t-p-jsw-jsw-retailer-yogesh-2",
+      "projectId": "p-jsw-jsw-retailer-yogesh",
+      "title": "Image to Video edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Image to Video — Image to Video edit"
+    },
+    {
+      "id": "t-p-jsw-jsw-retailer-yogesh-3",
+      "projectId": "p-jsw-jsw-retailer-yogesh",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Image to Video — QA review"
+    },
+    {
+      "id": "t-p-jsw-jsw-retailer-yogesh-4",
+      "projectId": "p-jsw-jsw-retailer-yogesh",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Image to Video — Client review"
+    },
+    {
+      "id": "t-p-jsw-jsw-retailer-yogesh-5",
+      "projectId": "p-jsw-jsw-retailer-yogesh",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Awaiting updated scripts from Binu"
+    },
+    {
+      "id": "t-p-just-in-time-just-in-time-0",
+      "projectId": "p-just-in-time-just-in-time",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-just-in-time-just-in-time-1",
+      "projectId": "p-just-in-time-just-in-time",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-just-in-time-just-in-time-2",
+      "projectId": "p-just-in-time-just-in-time",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-just-in-time-just-in-time-3",
+      "projectId": "p-just-in-time-just-in-time",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-just-in-time-just-in-time-4",
+      "projectId": "p-just-in-time-just-in-time",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-just-in-time-just-in-time-5",
+      "projectId": "p-just-in-time-just-in-time",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "- Feedback received, complete rework"
+    },
+    {
+      "id": "t-p-kaps-advertising-kaps-advertising-sleepwell-0",
+      "projectId": "p-kaps-advertising-kaps-advertising-sleepwell",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-kaps-advertising-kaps-advertising-sleepwell-1",
+      "projectId": "p-kaps-advertising-kaps-advertising-sleepwell",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-kaps-advertising-kaps-advertising-sleepwell-2",
+      "projectId": "p-kaps-advertising-kaps-advertising-sleepwell",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-kaps-advertising-kaps-advertising-sleepwell-3",
+      "projectId": "p-kaps-advertising-kaps-advertising-sleepwell",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-kaps-advertising-kaps-advertising-sleepwell-4",
+      "projectId": "p-kaps-advertising-kaps-advertising-sleepwell",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "delivery on 18/6"
+    },
+    {
+      "id": "t-p-kissht-x-0",
+      "projectId": "p-kissht-x",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-kissht-x-1",
+      "projectId": "p-kissht-x",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-kissht-x-2",
+      "projectId": "p-kissht-x",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-kissht-x-3",
+      "projectId": "p-kissht-x",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-kissht-x-4",
+      "projectId": "p-kissht-x",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Waiting go ahead from Rahul"
+    },
+    {
+      "id": "t-p-kkr-kkr-0",
+      "projectId": "p-kkr-kkr",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-kkr-kkr-1",
+      "projectId": "p-kkr-kkr",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-kkr-kkr-2",
+      "projectId": "p-kkr-kkr",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-kkr-kkr-3",
+      "projectId": "p-kkr-kkr",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-kkr-kkr-4",
+      "projectId": "p-kkr-kkr",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-kotak-mahindra-bank-kotak-life-0",
+      "projectId": "p-kotak-mahindra-bank-kotak-life",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-kotak-mahindra-bank-kotak-life-1",
+      "projectId": "p-kotak-mahindra-bank-kotak-life",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-kotak-mahindra-bank-kotak-life-2",
+      "projectId": "p-kotak-mahindra-bank-kotak-life",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-kotak-mahindra-bank-kotak-life-3",
+      "projectId": "p-kotak-mahindra-bank-kotak-life",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-kotak-mahindra-bank-kotak-life-4",
+      "projectId": "p-kotak-mahindra-bank-kotak-life",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-kotak-mahindra-bank-kotak-life-5",
+      "projectId": "p-kotak-mahindra-bank-kotak-life",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Rework on sample - call today at 4:30"
+    },
+    {
+      "id": "t-p-l-t-l-t-leadership-0",
+      "projectId": "p-l-t-l-t-leadership",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Simple) — Brief & script"
+    },
+    {
+      "id": "t-p-l-t-l-t-leadership-1",
+      "projectId": "p-l-t-l-t-leadership",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Simple) — AI model training"
+    },
+    {
+      "id": "t-p-l-t-l-t-leadership-2",
+      "projectId": "p-l-t-l-t-leadership",
+      "title": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Avatar (Simple) — Avatar (Simple) edit"
+    },
+    {
+      "id": "t-p-l-t-l-t-leadership-3",
+      "projectId": "p-l-t-l-t-leadership",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — QA review"
+    },
+    {
+      "id": "t-p-l-t-l-t-leadership-4",
+      "projectId": "p-l-t-l-t-leadership",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — Client review"
+    },
+    {
+      "id": "t-p-l-t-l-t-leadership-5",
+      "projectId": "p-l-t-l-t-leadership",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "- No movement since Shoot\n- Client delay"
+    },
+    {
+      "id": "t-p-l-t-l-t-bumrah-shorties-0",
+      "projectId": "p-l-t-l-t-bumrah-shorties",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-l-t-l-t-bumrah-shorties-1",
+      "projectId": "p-l-t-l-t-bumrah-shorties",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-l-t-l-t-bumrah-shorties-2",
+      "projectId": "p-l-t-l-t-bumrah-shorties",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-l-t-l-t-bumrah-shorties-3",
+      "projectId": "p-l-t-l-t-bumrah-shorties",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-l-t-l-t-bumrah-shorties-4",
+      "projectId": "p-l-t-l-t-bumrah-shorties",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "- No movement since Shoot\n- Client delay\n-Group with client not made yet, Mohit said this week"
+    },
+    {
+      "id": "t-p-lawyered-lawyered-0",
+      "projectId": "p-lawyered-lawyered",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-lawyered-lawyered-1",
+      "projectId": "p-lawyered-lawyered",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-lawyered-lawyered-2",
+      "projectId": "p-lawyered-lawyered",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-lawyered-lawyered-3",
+      "projectId": "p-lawyered-lawyered",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-lawyered-lawyered-4",
+      "projectId": "p-lawyered-lawyered",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "- Project brief will come in 1st week of June"
+    },
+    {
+      "id": "t-p-m3m-meme-videos-0",
+      "projectId": "p-m3m-meme-videos",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-m3m-meme-videos-1",
+      "projectId": "p-m3m-meme-videos",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-m3m-meme-videos-2",
+      "projectId": "p-m3m-meme-videos",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-m3m-meme-videos-3",
+      "projectId": "p-m3m-meme-videos",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-m3m-meme-videos-4",
+      "projectId": "p-m3m-meme-videos",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Send 1 video by 4:00 PM."
+    },
+    {
+      "id": "t-p-mars-pedigree-mars-pedigree-0",
+      "projectId": "p-mars-pedigree-mars-pedigree",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Variable Personalisation — Brief & script"
+    },
+    {
+      "id": "t-p-mars-pedigree-mars-pedigree-1",
+      "projectId": "p-mars-pedigree-mars-pedigree",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Variable Personalisation — AI model training"
+    },
+    {
+      "id": "t-p-mars-pedigree-mars-pedigree-2",
+      "projectId": "p-mars-pedigree-mars-pedigree",
+      "title": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Variable Personalisation — Variable Personalisation edit"
+    },
+    {
+      "id": "t-p-mars-pedigree-mars-pedigree-3",
+      "projectId": "p-mars-pedigree-mars-pedigree",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Variable Personalisation — QA review"
+    },
+    {
+      "id": "t-p-mars-pedigree-mars-pedigree-4",
+      "projectId": "p-mars-pedigree-mars-pedigree",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Variable Personalisation — Client review"
+    },
+    {
+      "id": "t-p-mars-pedigree-mars-pedigree-5",
+      "projectId": "p-mars-pedigree-mars-pedigree",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Sitting video of KL needs to be shared by tomorrow, first half.\nUpdate: Iterations are required."
+    },
+    {
+      "id": "t-p-mmt-mybiz-founder-led-ai-campaign-0",
+      "projectId": "p-mmt-mybiz-founder-led-ai-campaign",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-mmt-mybiz-founder-led-ai-campaign-1",
+      "projectId": "p-mmt-mybiz-founder-led-ai-campaign",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-mmt-mybiz-founder-led-ai-campaign-2",
+      "projectId": "p-mmt-mybiz-founder-led-ai-campaign",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-mmt-mybiz-founder-led-ai-campaign-3",
+      "projectId": "p-mmt-mybiz-founder-led-ai-campaign",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-mmt-mybiz-founder-led-ai-campaign-4",
+      "projectId": "p-mmt-mybiz-founder-led-ai-campaign",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-muthoot-muthoot-finance-0",
+      "projectId": "p-muthoot-muthoot-finance",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-muthoot-muthoot-finance-1",
+      "projectId": "p-muthoot-muthoot-finance",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-muthoot-muthoot-finance-2",
+      "projectId": "p-muthoot-muthoot-finance",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-muthoot-muthoot-finance-3",
+      "projectId": "p-muthoot-muthoot-finance",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "status": "delayed",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-muthoot-muthoot-finance-4",
+      "projectId": "p-muthoot-muthoot-finance",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-muthoot-muthoot-finance-5",
+      "projectId": "p-muthoot-muthoot-finance",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Awaiting feedback on vyapaar plus"
+    },
+    {
+      "id": "t-p-novo-nordisk-awiqli-0",
+      "projectId": "p-novo-nordisk-awiqli",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-novo-nordisk-awiqli-1",
+      "projectId": "p-novo-nordisk-awiqli",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-novo-nordisk-awiqli-2",
+      "projectId": "p-novo-nordisk-awiqli",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-novo-nordisk-awiqli-3",
+      "projectId": "p-novo-nordisk-awiqli",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-novo-nordisk-awiqli-4",
+      "projectId": "p-novo-nordisk-awiqli",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Need to expedite the dummy video."
+    },
+    {
+      "id": "t-p-nuvoco-nuvoco-retirement-0",
+      "projectId": "p-nuvoco-nuvoco-retirement",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "status": "completed",
+      "notes": "Image to Video — Brief & script"
+    },
+    {
+      "id": "t-p-nuvoco-nuvoco-retirement-1",
+      "projectId": "p-nuvoco-nuvoco-retirement",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Image to Video — AI model training"
+    },
+    {
+      "id": "t-p-nuvoco-nuvoco-retirement-2",
+      "projectId": "p-nuvoco-nuvoco-retirement",
+      "title": "Image to Video edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Image to Video — Image to Video edit"
+    },
+    {
+      "id": "t-p-nuvoco-nuvoco-retirement-3",
+      "projectId": "p-nuvoco-nuvoco-retirement",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Image to Video — QA review"
+    },
+    {
+      "id": "t-p-nuvoco-nuvoco-retirement-4",
+      "projectId": "p-nuvoco-nuvoco-retirement",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Image to Video — Client review"
+    },
+    {
+      "id": "t-p-nuvoco-nuvoco-retirement-5",
+      "projectId": "p-nuvoco-nuvoco-retirement",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Group picture to be reworked"
+    },
+    {
+      "id": "t-p-nuvoco-nuvoco-image-to-video-avatar-0",
+      "projectId": "p-nuvoco-nuvoco-image-to-video-avatar",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-nuvoco-nuvoco-image-to-video-avatar-1",
+      "projectId": "p-nuvoco-nuvoco-image-to-video-avatar",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-nuvoco-nuvoco-image-to-video-avatar-2",
+      "projectId": "p-nuvoco-nuvoco-image-to-video-avatar",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-nuvoco-nuvoco-image-to-video-avatar-3",
+      "projectId": "p-nuvoco-nuvoco-image-to-video-avatar",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-nuvoco-nuvoco-image-to-video-avatar-4",
+      "projectId": "p-nuvoco-nuvoco-image-to-video-avatar",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "All videos delivered"
+    },
+    {
+      "id": "t-p-olyv-olyv-0",
+      "projectId": "p-olyv-olyv",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Simple) — Brief & script"
+    },
+    {
+      "id": "t-p-olyv-olyv-1",
+      "projectId": "p-olyv-olyv",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Simple) — AI model training"
+    },
+    {
+      "id": "t-p-olyv-olyv-2",
+      "projectId": "p-olyv-olyv",
+      "title": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Avatar (Simple) — Avatar (Simple) edit"
+    },
+    {
+      "id": "t-p-olyv-olyv-3",
+      "projectId": "p-olyv-olyv",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — QA review"
+    },
+    {
+      "id": "t-p-olyv-olyv-4",
+      "projectId": "p-olyv-olyv",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — Client review"
+    },
+    {
+      "id": "t-p-olyv-olyv-5",
+      "projectId": "p-olyv-olyv",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "2 videos + 1 audio file extra to be shared by 3rd July"
+    },
+    {
+      "id": "t-p-orkla-mtr-orkla-mtr-ai-tvc-0",
+      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-orkla-mtr-orkla-mtr-ai-tvc-1",
+      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-orkla-mtr-orkla-mtr-ai-tvc-2",
+      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-orkla-mtr-orkla-mtr-ai-tvc-3",
+      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-orkla-mtr-orkla-mtr-ai-tvc-4",
+      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-orkla-mtr-orkla-mtr-ai-tvc-5",
+      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Need to send updated SOW and commercials"
+    },
+    {
+      "id": "t-p-ozone-overseas-ozone-tvc-part-1-0",
+      "projectId": "p-ozone-overseas-ozone-tvc-part-1",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-ozone-overseas-ozone-tvc-part-1-1",
+      "projectId": "p-ozone-overseas-ozone-tvc-part-1",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-ozone-overseas-ozone-tvc-part-1-2",
+      "projectId": "p-ozone-overseas-ozone-tvc-part-1",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-ozone-overseas-ozone-tvc-part-1-3",
+      "projectId": "p-ozone-overseas-ozone-tvc-part-1",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-ozone-overseas-ozone-tvc-part-1-4",
+      "projectId": "p-ozone-overseas-ozone-tvc-part-1",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-ozone-overseas-ozone-tvc-part-1-5",
+      "projectId": "p-ozone-overseas-ozone-tvc-part-1",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Dealer byte to be shared by tomorrow 01/07"
+    },
+    {
+      "id": "t-p-ozone-overseas-ozone-f2c-alok-0",
+      "projectId": "p-ozone-overseas-ozone-f2c-alok",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Variable Personalisation — Brief & script"
+    },
+    {
+      "id": "t-p-ozone-overseas-ozone-f2c-alok-1",
+      "projectId": "p-ozone-overseas-ozone-f2c-alok",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Variable Personalisation — AI model training"
+    },
+    {
+      "id": "t-p-ozone-overseas-ozone-f2c-alok-2",
+      "projectId": "p-ozone-overseas-ozone-f2c-alok",
+      "title": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Variable Personalisation — Variable Personalisation edit"
+    },
+    {
+      "id": "t-p-ozone-overseas-ozone-f2c-alok-3",
+      "projectId": "p-ozone-overseas-ozone-f2c-alok",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Variable Personalisation — QA review"
+    },
+    {
+      "id": "t-p-ozone-overseas-ozone-f2c-alok-4",
+      "projectId": "p-ozone-overseas-ozone-f2c-alok",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Variable Personalisation — Client review"
+    },
+    {
+      "id": "t-p-ozone-overseas-ozone-f2c-alok-5",
+      "projectId": "p-ozone-overseas-ozone-f2c-alok",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Variable Personalisation — Final delivery"
+    },
+    {
+      "id": "t-p-paytm-paytm-0",
+      "projectId": "p-paytm-paytm",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-paytm-paytm-1",
+      "projectId": "p-paytm-paytm",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-paytm-paytm-2",
+      "projectId": "p-paytm-paytm",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-paytm-paytm-3",
+      "projectId": "p-paytm-paytm",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-paytm-paytm-4",
+      "projectId": "p-paytm-paytm",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-phonepe-phonepe-0",
+      "projectId": "p-phonepe-phonepe",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Image to Video — Brief & script"
+    },
+    {
+      "id": "t-p-phonepe-phonepe-1",
+      "projectId": "p-phonepe-phonepe",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Image to Video — AI model training"
+    },
+    {
+      "id": "t-p-phonepe-phonepe-2",
+      "projectId": "p-phonepe-phonepe",
+      "title": "Image to Video edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Image to Video — Image to Video edit"
+    },
+    {
+      "id": "t-p-phonepe-phonepe-3",
+      "projectId": "p-phonepe-phonepe",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Image to Video — QA review"
+    },
+    {
+      "id": "t-p-phonepe-phonepe-4",
+      "projectId": "p-phonepe-phonepe",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Image to Video — Client review"
+    },
+    {
+      "id": "t-p-phonepe-phonepe-5",
+      "projectId": "p-phonepe-phonepe",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Update on Priya Nech Issue"
+    },
+    {
+      "id": "t-p-piramal-finance-piramal-finance-e2e-0",
+      "projectId": "p-piramal-finance-piramal-finance-e2e",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-piramal-finance-piramal-finance-e2e-1",
+      "projectId": "p-piramal-finance-piramal-finance-e2e",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-piramal-finance-piramal-finance-e2e-2",
+      "projectId": "p-piramal-finance-piramal-finance-e2e",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-piramal-finance-piramal-finance-e2e-3",
+      "projectId": "p-piramal-finance-piramal-finance-e2e",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-piramal-finance-piramal-finance-e2e-4",
+      "projectId": "p-piramal-finance-piramal-finance-e2e",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Audio sent and approved. Lip sync to be done"
+    },
+    {
+      "id": "t-p-portico-portico-0",
+      "projectId": "p-portico-portico",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-portico-portico-1",
+      "projectId": "p-portico-portico",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-portico-portico-2",
+      "projectId": "p-portico-portico",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-portico-portico-3",
+      "projectId": "p-portico-portico",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-portico-portico-4",
+      "projectId": "p-portico-portico",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-portico-portico-5",
+      "projectId": "p-portico-portico",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Delivered all videos except 2 folders - renaming to be done by Amit tomorrow 1st half - 01/07/2026"
+    },
+    {
+      "id": "t-p-rapido-rakhi-video-0",
+      "projectId": "p-rapido-rakhi-video",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-rapido-rakhi-video-1",
+      "projectId": "p-rapido-rakhi-video",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-rapido-rakhi-video-2",
+      "projectId": "p-rapido-rakhi-video",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-rapido-rakhi-video-3",
+      "projectId": "p-rapido-rakhi-video",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "status": "delayed",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-rapido-rakhi-video-4",
+      "projectId": "p-rapido-rakhi-video",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-rapido-rakhi-video-5",
+      "projectId": "p-rapido-rakhi-video",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Storyboard will be finalised on 06/07/26."
+    },
+    {
+      "id": "t-p-rapido-translation-video-0",
+      "projectId": "p-rapido-translation-video",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Simple) — Brief & script"
+    },
+    {
+      "id": "t-p-rapido-translation-video-1",
+      "projectId": "p-rapido-translation-video",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Simple) — AI model training"
+    },
+    {
+      "id": "t-p-rapido-translation-video-2",
+      "projectId": "p-rapido-translation-video",
+      "title": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Avatar (Simple) — Avatar (Simple) edit"
+    },
+    {
+      "id": "t-p-rapido-translation-video-3",
+      "projectId": "p-rapido-translation-video",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — QA review"
+    },
+    {
+      "id": "t-p-rapido-translation-video-4",
+      "projectId": "p-rapido-translation-video",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Avatar (Simple) — Client review"
+    },
+    {
+      "id": "t-p-rapido-translation-video-5",
+      "projectId": "p-rapido-translation-video",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "-"
+    },
+    {
+      "id": "t-p-ripplehire-ripplehire-0",
+      "projectId": "p-ripplehire-ripplehire",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Variable Personalisation — Brief & script"
+    },
+    {
+      "id": "t-p-ripplehire-ripplehire-1",
+      "projectId": "p-ripplehire-ripplehire",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Variable Personalisation — AI model training"
+    },
+    {
+      "id": "t-p-ripplehire-ripplehire-2",
+      "projectId": "p-ripplehire-ripplehire",
+      "title": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Variable Personalisation — Variable Personalisation edit"
+    },
+    {
+      "id": "t-p-ripplehire-ripplehire-3",
+      "projectId": "p-ripplehire-ripplehire",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "status": "delayed",
+      "notes": "Variable Personalisation — QA review"
+    },
+    {
+      "id": "t-p-ripplehire-ripplehire-4",
+      "projectId": "p-ripplehire-ripplehire",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Variable Personalisation — Client review"
+    },
+    {
+      "id": "t-p-ripplehire-ripplehire-5",
+      "projectId": "p-ripplehire-ripplehire",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "5 samples + live campaign"
+    },
+    {
+      "id": "t-p-sanofi-sanofi-0",
+      "projectId": "p-sanofi-sanofi",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-sanofi-sanofi-1",
+      "projectId": "p-sanofi-sanofi",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-sanofi-sanofi-2",
+      "projectId": "p-sanofi-sanofi",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-sanofi-sanofi-3",
+      "projectId": "p-sanofi-sanofi",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-sanofi-sanofi-4",
+      "projectId": "p-sanofi-sanofi",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Hindi Sent. Marathi, Bengali audios are locked - to be picked up next."
+    },
+    {
+      "id": "t-p-savvy-savvy-0",
+      "projectId": "p-savvy-savvy",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-savvy-savvy-1",
+      "projectId": "p-savvy-savvy",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-savvy-savvy-2",
+      "projectId": "p-savvy-savvy",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-savvy-savvy-3",
+      "projectId": "p-savvy-savvy",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-savvy-savvy-4",
+      "projectId": "p-savvy-savvy",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "- 4 videos shared. Costing too high for client."
+    },
+    {
+      "id": "t-p-sbi-sbi-life-digital-0",
+      "projectId": "p-sbi-sbi-life-digital",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-digital-1",
+      "projectId": "p-sbi-sbi-life-digital",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-digital-2",
+      "projectId": "p-sbi-sbi-life-digital",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-digital-3",
+      "projectId": "p-sbi-sbi-life-digital",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-digital-4",
+      "projectId": "p-sbi-sbi-life-digital",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Feedback received on sports - to be shared revised - 01/07"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-brand-0",
+      "projectId": "p-sbi-sbi-life-brand",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-brand-1",
+      "projectId": "p-sbi-sbi-life-brand",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-brand-2",
+      "projectId": "p-sbi-sbi-life-brand",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-brand-3",
+      "projectId": "p-sbi-sbi-life-brand",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-brand-4",
+      "projectId": "p-sbi-sbi-life-brand",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-sbi-sbi-general-insurance-0",
+      "projectId": "p-sbi-sbi-general-insurance",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Image to Video — Brief & script"
+    },
+    {
+      "id": "t-p-sbi-sbi-general-insurance-1",
+      "projectId": "p-sbi-sbi-general-insurance",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Image to Video — AI model training"
+    },
+    {
+      "id": "t-p-sbi-sbi-general-insurance-2",
+      "projectId": "p-sbi-sbi-general-insurance",
+      "title": "Image to Video edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Image to Video — Image to Video edit"
+    },
+    {
+      "id": "t-p-sbi-sbi-general-insurance-3",
+      "projectId": "p-sbi-sbi-general-insurance",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Image to Video — QA review"
+    },
+    {
+      "id": "t-p-sbi-sbi-general-insurance-4",
+      "projectId": "p-sbi-sbi-general-insurance",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Image to Video — Client review"
+    },
+    {
+      "id": "t-p-sbi-sbi-general-insurance-5",
+      "projectId": "p-sbi-sbi-general-insurance",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Image to Video — Final delivery"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-product-0",
+      "projectId": "p-sbi-sbi-life-product",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-product-1",
+      "projectId": "p-sbi-sbi-life-product",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-product-2",
+      "projectId": "p-sbi-sbi-life-product",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-product-3",
+      "projectId": "p-sbi-sbi-life-product",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-sbi-sbi-life-product-4",
+      "projectId": "p-sbi-sbi-life-product",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-scapia-scapia-0",
+      "projectId": "p-scapia-scapia",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-scapia-scapia-1",
+      "projectId": "p-scapia-scapia",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-scapia-scapia-2",
+      "projectId": "p-scapia-scapia",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-scapia-scapia-3",
+      "projectId": "p-scapia-scapia",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-scapia-scapia-4",
+      "projectId": "p-scapia-scapia",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "-All 5 videos delivered with feedback incorporated"
+    },
+    {
+      "id": "t-p-shiprocket-shiprocket-0",
+      "projectId": "p-shiprocket-shiprocket",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Variable Personalisation — Brief & script"
+    },
+    {
+      "id": "t-p-shiprocket-shiprocket-1",
+      "projectId": "p-shiprocket-shiprocket",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Variable Personalisation — AI model training"
+    },
+    {
+      "id": "t-p-shiprocket-shiprocket-2",
+      "projectId": "p-shiprocket-shiprocket",
+      "title": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Variable Personalisation — Variable Personalisation edit"
+    },
+    {
+      "id": "t-p-shiprocket-shiprocket-3",
+      "projectId": "p-shiprocket-shiprocket",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Variable Personalisation — QA review"
+    },
+    {
+      "id": "t-p-shiprocket-shiprocket-4",
+      "projectId": "p-shiprocket-shiprocket",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Variable Personalisation — Client review"
+    },
+    {
+      "id": "t-p-shiprocket-shiprocket-5",
+      "projectId": "p-shiprocket-shiprocket",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "- CC to be done and video to be shared again\n- Can be pushed to Wednesday"
+    },
+    {
+      "id": "t-p-shriram-finance-ltd-shriram-finance-limited-0",
+      "projectId": "p-shriram-finance-ltd-shriram-finance-limited",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-shriram-finance-ltd-shriram-finance-limited-1",
+      "projectId": "p-shriram-finance-ltd-shriram-finance-limited",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-shriram-finance-ltd-shriram-finance-limited-2",
+      "projectId": "p-shriram-finance-ltd-shriram-finance-limited",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-shriram-finance-ltd-shriram-finance-limited-3",
+      "projectId": "p-shriram-finance-ltd-shriram-finance-limited",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-shriram-finance-ltd-shriram-finance-limited-4",
+      "projectId": "p-shriram-finance-ltd-shriram-finance-limited",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "1 video to be shared 15/6"
+    },
+    {
+      "id": "t-p-shriram-life-insurance-shriram-life-insurance-0",
+      "projectId": "p-shriram-life-insurance-shriram-life-insurance",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-shriram-life-insurance-shriram-life-insurance-1",
+      "projectId": "p-shriram-life-insurance-shriram-life-insurance",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-shriram-life-insurance-shriram-life-insurance-2",
+      "projectId": "p-shriram-life-insurance-shriram-life-insurance",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-shriram-life-insurance-shriram-life-insurance-3",
+      "projectId": "p-shriram-life-insurance-shriram-life-insurance",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-shriram-life-insurance-shriram-life-insurance-4",
+      "projectId": "p-shriram-life-insurance-shriram-life-insurance",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-shriram-life-insurance-shriram-life-insurance-5",
+      "projectId": "p-shriram-life-insurance-shriram-life-insurance",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — Final delivery"
+    },
+    {
+      "id": "t-p-shyam-metalics-tvc-0",
+      "projectId": "p-shyam-metalics-tvc",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Cinematic — Brief & script"
+    },
+    {
+      "id": "t-p-shyam-metalics-tvc-1",
+      "projectId": "p-shyam-metalics-tvc",
+      "title": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Cinematic — Shoot"
+    },
+    {
+      "id": "t-p-shyam-metalics-tvc-2",
+      "projectId": "p-shyam-metalics-tvc",
+      "title": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Cinematic — Cinematic edit"
+    },
+    {
+      "id": "t-p-shyam-metalics-tvc-3",
+      "projectId": "p-shyam-metalics-tvc",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Cinematic — QA review"
+    },
+    {
+      "id": "t-p-shyam-metalics-tvc-4",
+      "projectId": "p-shyam-metalics-tvc",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Cinematic — Client review"
+    },
+    {
+      "id": "t-p-shyam-metalics-tvc-5",
+      "projectId": "p-shyam-metalics-tvc",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Timelines to be shared.characters to be locked, assets to recieve"
+    },
+    {
+      "id": "t-p-spice-money-spice-money-0",
+      "projectId": "p-spice-money-spice-money",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-spice-money-spice-money-1",
+      "projectId": "p-spice-money-spice-money",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-spice-money-spice-money-2",
+      "projectId": "p-spice-money-spice-money",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-spice-money-spice-money-3",
+      "projectId": "p-spice-money-spice-money",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-spice-money-spice-money-4",
+      "projectId": "p-spice-money-spice-money",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-nasal-0",
+      "projectId": "p-sun-pharma-sun-pharma-nasal",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "status": "completed",
+      "notes": "Image to Video — Brief & script"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-nasal-1",
+      "projectId": "p-sun-pharma-sun-pharma-nasal",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Image to Video — AI model training"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-nasal-2",
+      "projectId": "p-sun-pharma-sun-pharma-nasal",
+      "title": "Image to Video edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Image to Video — Image to Video edit"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-nasal-3",
+      "projectId": "p-sun-pharma-sun-pharma-nasal",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Image to Video — QA review"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-nasal-4",
+      "projectId": "p-sun-pharma-sun-pharma-nasal",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Image to Video — Client review"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-nasal-5",
+      "projectId": "p-sun-pharma-sun-pharma-nasal",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Nasal Spray Video Approved; awaiting approval on translations and Go Live for English language"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-dermatology-0",
+      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Image to Video — Brief & script"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-dermatology-1",
+      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Image to Video — AI model training"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-dermatology-2",
+      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "title": "Image to Video edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Image to Video — Image to Video edit"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-dermatology-3",
+      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Image to Video — QA review"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-dermatology-4",
+      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Image to Video — Client review"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-dermatology-5",
+      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-13",
+      "endDate": "2026-08-19",
+      "status": "not-started",
+      "notes": "Have shared latest creative video awaiting feedback on same & approval on timelines"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-tufpro-0",
+      "projectId": "p-sun-pharma-sun-pharma-tufpro",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "status": "completed",
+      "notes": "Image to Video — Brief & script"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-tufpro-1",
+      "projectId": "p-sun-pharma-sun-pharma-tufpro",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Image to Video — AI model training"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-tufpro-2",
+      "projectId": "p-sun-pharma-sun-pharma-tufpro",
+      "title": "Image to Video edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Image to Video — Image to Video edit"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-tufpro-3",
+      "projectId": "p-sun-pharma-sun-pharma-tufpro",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Image to Video — QA review"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-tufpro-4",
+      "projectId": "p-sun-pharma-sun-pharma-tufpro",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Image to Video — Client review"
+    },
+    {
+      "id": "t-p-sun-pharma-sun-pharma-tufpro-5",
+      "projectId": "p-sun-pharma-sun-pharma-tufpro",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Share all multilingiual videos by 7-Jul-2026"
+    },
+    {
+      "id": "t-p-sun-pharma-neuropathy-0",
+      "projectId": "p-sun-pharma-neuropathy",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Image to Video — Brief & script"
+    },
+    {
+      "id": "t-p-sun-pharma-neuropathy-1",
+      "projectId": "p-sun-pharma-neuropathy",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Image to Video — AI model training"
+    },
+    {
+      "id": "t-p-sun-pharma-neuropathy-2",
+      "projectId": "p-sun-pharma-neuropathy",
+      "title": "Image to Video edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Image to Video — Image to Video edit"
+    },
+    {
+      "id": "t-p-sun-pharma-neuropathy-3",
+      "projectId": "p-sun-pharma-neuropathy",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Image to Video — QA review"
+    },
+    {
+      "id": "t-p-sun-pharma-neuropathy-4",
+      "projectId": "p-sun-pharma-neuropathy",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Image to Video — Client review"
+    },
+    {
+      "id": "t-p-sun-pharma-neuropathy-5",
+      "projectId": "p-sun-pharma-neuropathy",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "-Script sent, awaiting approval"
+    },
+    {
+      "id": "t-p-sunpharma-video-sop-0",
+      "projectId": "p-sunpharma-video-sop",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-sunpharma-video-sop-1",
+      "projectId": "p-sunpharma-video-sop",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-sunpharma-video-sop-2",
+      "projectId": "p-sunpharma-video-sop",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-sunpharma-video-sop-3",
+      "projectId": "p-sunpharma-video-sop",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-sunpharma-video-sop-4",
+      "projectId": "p-sunpharma-video-sop",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-tide-tide-0",
+      "projectId": "p-tide-tide",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-tide-tide-1",
+      "projectId": "p-tide-tide",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-tide-tide-2",
+      "projectId": "p-tide-tide",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-tide-tide-3",
+      "projectId": "p-tide-tide",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-tide-tide-4",
+      "projectId": "p-tide-tide",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "New video received"
+    },
+    {
+      "id": "t-p-titan-titan-father-s-day-multilingual-tamil-0",
+      "projectId": "p-titan-titan-father-s-day-multilingual-tamil",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-titan-titan-father-s-day-multilingual-tamil-1",
+      "projectId": "p-titan-titan-father-s-day-multilingual-tamil",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-titan-titan-father-s-day-multilingual-tamil-2",
+      "projectId": "p-titan-titan-father-s-day-multilingual-tamil",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-titan-titan-father-s-day-multilingual-tamil-3",
+      "projectId": "p-titan-titan-father-s-day-multilingual-tamil",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-titan-titan-father-s-day-multilingual-tamil-4",
+      "projectId": "p-titan-titan-father-s-day-multilingual-tamil",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "-Delivered"
+    },
+    {
+      "id": "t-p-upgrad-upgrad-0",
+      "projectId": "p-upgrad-upgrad",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-upgrad-upgrad-1",
+      "projectId": "p-upgrad-upgrad",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-upgrad-upgrad-2",
+      "projectId": "p-upgrad-upgrad",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-upgrad-upgrad-3",
+      "projectId": "p-upgrad-upgrad",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-upgrad-upgrad-4",
+      "projectId": "p-upgrad-upgrad",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-uti-model-training-14-bytes-1-consolidated-v-0",
+      "projectId": "p-uti-model-training-14-bytes-1-consolidated-v",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-uti-model-training-14-bytes-1-consolidated-v-1",
+      "projectId": "p-uti-model-training-14-bytes-1-consolidated-v",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-uti-model-training-14-bytes-1-consolidated-v-2",
+      "projectId": "p-uti-model-training-14-bytes-1-consolidated-v",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-uti-model-training-14-bytes-1-consolidated-v-3",
+      "projectId": "p-uti-model-training-14-bytes-1-consolidated-v",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-uti-model-training-14-bytes-1-consolidated-v-4",
+      "projectId": "p-uti-model-training-14-bytes-1-consolidated-v",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "-"
+    },
+    {
+      "id": "t-p-vi-vodafone-idea-0",
+      "projectId": "p-vi-vodafone-idea",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-vi-vodafone-idea-1",
+      "projectId": "p-vi-vodafone-idea",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-vi-vodafone-idea-2",
+      "projectId": "p-vi-vodafone-idea",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-vi-vodafone-idea-3",
+      "projectId": "p-vi-vodafone-idea",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-vi-vodafone-idea-4",
+      "projectId": "p-vi-vodafone-idea",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-vicco-audio-change-multilingual-0",
+      "projectId": "p-vicco-audio-change-multilingual",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Avatar (Creative) — Brief & script"
+    },
+    {
+      "id": "t-p-vicco-audio-change-multilingual-1",
+      "projectId": "p-vicco-audio-change-multilingual",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "in-progress",
+      "notes": "Avatar (Creative) — AI model training"
+    },
+    {
+      "id": "t-p-vicco-audio-change-multilingual-2",
+      "projectId": "p-vicco-audio-change-multilingual",
+      "title": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — Avatar (Creative) edit"
+    },
+    {
+      "id": "t-p-vicco-audio-change-multilingual-3",
+      "projectId": "p-vicco-audio-change-multilingual",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — QA review"
+    },
+    {
+      "id": "t-p-vicco-audio-change-multilingual-4",
+      "projectId": "p-vicco-audio-change-multilingual",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Avatar (Creative) — Client review"
+    },
+    {
+      "id": "t-p-vicco-audio-change-multilingual-5",
+      "projectId": "p-vicco-audio-change-multilingual",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-13",
+      "endDate": "2026-08-19",
+      "status": "not-started",
+      "notes": "Change the dimensions. Will discuss the requirements."
+    },
+    {
+      "id": "t-p-vistaar-finance-vistaar-finance-0",
+      "projectId": "p-vistaar-finance-vistaar-finance",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "notes": "Variable Personalisation — Brief & script"
+    },
+    {
+      "id": "t-p-vistaar-finance-vistaar-finance-1",
+      "projectId": "p-vistaar-finance-vistaar-finance",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "status": "completed",
+      "notes": "Variable Personalisation — AI model training"
+    },
+    {
+      "id": "t-p-vistaar-finance-vistaar-finance-2",
+      "projectId": "p-vistaar-finance-vistaar-finance",
+      "title": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "status": "blocked",
+      "notes": "Variable Personalisation — Variable Personalisation edit"
+    },
+    {
+      "id": "t-p-vistaar-finance-vistaar-finance-3",
+      "projectId": "p-vistaar-finance-vistaar-finance",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "status": "not-started",
+      "notes": "Variable Personalisation — QA review"
+    },
+    {
+      "id": "t-p-vistaar-finance-vistaar-finance-4",
+      "projectId": "p-vistaar-finance-vistaar-finance",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "status": "not-started",
+      "notes": "Variable Personalisation — Client review"
+    },
+    {
+      "id": "t-p-vistaar-finance-vistaar-finance-5",
+      "projectId": "p-vistaar-finance-vistaar-finance",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "status": "not-started",
+      "notes": "Resend videos"
+    },
+    {
+      "id": "t-p-voltas-voltas-dealer-bytes-0",
+      "projectId": "p-voltas-voltas-dealer-bytes",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-voltas-voltas-dealer-bytes-1",
+      "projectId": "p-voltas-voltas-dealer-bytes",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-voltas-voltas-dealer-bytes-2",
+      "projectId": "p-voltas-voltas-dealer-bytes",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-voltas-voltas-dealer-bytes-3",
+      "projectId": "p-voltas-voltas-dealer-bytes",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-voltas-voltas-dealer-bytes-4",
+      "projectId": "p-voltas-voltas-dealer-bytes",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-voltas-voltas-multilingual-0",
+      "projectId": "p-voltas-voltas-multilingual",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-voltas-voltas-multilingual-1",
+      "projectId": "p-voltas-voltas-multilingual",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-voltas-voltas-multilingual-2",
+      "projectId": "p-voltas-voltas-multilingual",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-voltas-voltas-multilingual-3",
+      "projectId": "p-voltas-voltas-multilingual",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-voltas-voltas-multilingual-4",
+      "projectId": "p-voltas-voltas-multilingual",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-voltas-voltas-personalisation-0",
+      "projectId": "p-voltas-voltas-personalisation",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-voltas-voltas-personalisation-1",
+      "projectId": "p-voltas-voltas-personalisation",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-voltas-voltas-personalisation-2",
+      "projectId": "p-voltas-voltas-personalisation",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-voltas-voltas-personalisation-3",
+      "projectId": "p-voltas-voltas-personalisation",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-voltas-voltas-personalisation-4",
+      "projectId": "p-voltas-voltas-personalisation",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Data clean up + sanitization pending."
+    },
+    {
+      "id": "t-p-voltas-voltas-jingles-4-0",
+      "projectId": "p-voltas-voltas-jingles-4",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Video Production — Brief & script"
+    },
+    {
+      "id": "t-p-voltas-voltas-jingles-4-1",
+      "projectId": "p-voltas-voltas-jingles-4",
+      "title": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Video Production — Video Production edit"
+    },
+    {
+      "id": "t-p-voltas-voltas-jingles-4-2",
+      "projectId": "p-voltas-voltas-jingles-4",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Video Production — QA review"
+    },
+    {
+      "id": "t-p-voltas-voltas-jingles-4-3",
+      "projectId": "p-voltas-voltas-jingles-4",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Video Production — Client review"
+    },
+    {
+      "id": "t-p-voltas-voltas-jingles-4-4",
+      "projectId": "p-voltas-voltas-jingles-4",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Video Production — Final delivery"
+    },
+    {
+      "id": "t-p-voltas-voltas-0",
+      "projectId": "p-voltas-voltas",
+      "title": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "status": "completed",
+      "notes": "Variable Personalisation — Brief & script"
+    },
+    {
+      "id": "t-p-voltas-voltas-1",
+      "projectId": "p-voltas-voltas",
+      "title": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "status": "completed",
+      "notes": "Variable Personalisation — AI model training"
+    },
+    {
+      "id": "t-p-voltas-voltas-2",
+      "projectId": "p-voltas-voltas",
+      "title": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "status": "completed",
+      "notes": "Variable Personalisation — Variable Personalisation edit"
+    },
+    {
+      "id": "t-p-voltas-voltas-3",
+      "projectId": "p-voltas-voltas",
+      "title": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "status": "completed",
+      "notes": "Variable Personalisation — QA review"
+    },
+    {
+      "id": "t-p-voltas-voltas-4",
+      "projectId": "p-voltas-voltas",
+      "title": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "status": "completed",
+      "notes": "Variable Personalisation — Client review"
+    },
+    {
+      "id": "t-p-voltas-voltas-5",
+      "projectId": "p-voltas-voltas",
+      "title": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "notes": "Share multilingual videos for approval"
+    }
+  ],
   "timelines": [
     {
-      "id": "tl-p-adani-adani-target-achieved",
+      "id": "tl-p-adani-adani-target-achieved-0",
       "projectId": "p-adani-adani-target-achieved",
-      "item": "Final delivery",
+      "item": "Brief & script",
       "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-aditya-birla-group-aditya-birla-ultratech-cements",
-      "projectId": "p-aditya-birla-group-aditya-birla-ultratech-cements",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-aditya-birla-group-cables-wires",
-      "projectId": "p-aditya-birla-group-cables-wires",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-amberstone-vectra-ideation",
-      "projectId": "p-amberstone-vectra-ideation",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-ananya",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-amli-amli-ceo-message-to-gulf-policyholders",
-      "projectId": "p-amli-amli-ceo-message-to-gulf-policyholders",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-aman",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-amli-amli-cot-tot-event",
-      "projectId": "p-amli-amli-cot-tot-event",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-aman",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-amli-amli-digital-performance-marketing",
-      "projectId": "p-amli-amli-digital-performance-marketing",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-aman",
-      "startDate": "2026-06-01",
-      "endDate": "2026-05-09",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-amli-amli-leaders",
-      "projectId": "p-amli-amli-leaders",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-aman",
-      "startDate": "2026-06-01",
-      "endDate": "2026-05-06",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-amli-amli-mdrt-winners",
-      "projectId": "p-amli-amli-mdrt-winners",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-aman",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-amli-amli-surrender-retention",
-      "projectId": "p-amli-amli-surrender-retention",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-aman",
-      "startDate": "2026-06-01",
-      "endDate": "2026-04-17",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-amli-amli-par-bonus-communication",
-      "projectId": "p-amli-amli-par-bonus-communication",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-10",
-      "notes": "Priority P2",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-amli-amli-aurous-club-aurum-club",
-      "projectId": "p-amli-amli-aurous-club-aurum-club",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-10",
-      "notes": "Priority P2",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-amli-amli-smart-rise",
-      "projectId": "p-amli-amli-smart-rise",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-08",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-amli-amli-cc-liability-joint-life-guranteed-l",
-      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P2",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-amli-amli-cc-liability-segment",
-      "projectId": "p-amli-amli-cc-liability-segment",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-10",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-amli-amli-loan-against-a-policy",
-      "projectId": "p-amli-amli-loan-against-a-policy",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-amli-amli-ulip",
-      "projectId": "p-amli-amli-ulip",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-09",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-amli-amli-mpitch-pro",
-      "projectId": "p-amli-amli-mpitch-pro",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-asian-paints-asian-paints-dealer-bytes",
-      "projectId": "p-asian-paints-asian-paints-dealer-bytes",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-01",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-astrazeneca-astrazeneca-mkt",
-      "projectId": "p-astrazeneca-astrazeneca-mkt",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-bajaj-monsoon-video",
-      "projectId": "p-bajaj-monsoon-video",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-01",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-bajaj-orm-videos-customer-awareness",
-      "projectId": "p-bajaj-orm-videos-customer-awareness",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-mayank",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-bajaj-creatr-tutorial-video",
-      "projectId": "p-bajaj-creatr-tutorial-video",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-prabhav",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-bajaj-finance-social-media",
-      "projectId": "p-bajaj-finance-social-media",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-ananya",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-bharatpe-bharatpe-credit-buddy",
-      "projectId": "p-bharatpe-bharatpe-credit-buddy",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-mayank",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-11",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-bharatpe-bharatpe-msma",
-      "projectId": "p-bharatpe-bharatpe-msma",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-14",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-biologicale-dr-video",
-      "projectId": "p-biologicale-dr-video",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-shreyansh",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-birla-opus-ideation",
-      "projectId": "p-birla-opus-ideation",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-ananya",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-birla-white-birla-white",
-      "projectId": "p-birla-white-birla-white",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-10",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-bkt-tyres-bkt-tyres-father-s-day",
-      "projectId": "p-bkt-tyres-bkt-tyres-father-s-day",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-aman",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-buildahome-buildahome",
-      "projectId": "p-buildahome-buildahome",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-aman",
-      "startDate": "2026-06-01",
+      "startDate": "2026-06-07",
       "endDate": "2026-06-13",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
-      "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-shreyansh",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-16",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-canara-hsbc-customer-service-video",
-      "projectId": "p-canara-hsbc-customer-service-video",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-shreyansh",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-10",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-canara-hsbc-app-explainer-videos",
-      "projectId": "p-canara-hsbc-app-explainer-videos",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-shreyansh",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-18",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-canara-hsbc-cyber-jagrukta",
-      "projectId": "p-canara-hsbc-cyber-jagrukta",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-shreyansh",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-22",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-canara-hsbc-bumrah-thank-you-video",
-      "projectId": "p-canara-hsbc-bumrah-thank-you-video",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-shreyansh",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-canara-hsbc-garv",
-      "projectId": "p-canara-hsbc-garv",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-shreyansh",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-canara-hsbc-promise2secure",
-      "projectId": "p-canara-hsbc-promise2secure",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-shreyansh",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-carrier-carrier-product-videos",
-      "projectId": "p-carrier-carrier-product-videos",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-mayank",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-chandigarh-university-chandigarh-university",
-      "projectId": "p-chandigarh-university-chandigarh-university",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-04",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-cipla-motivational-video",
-      "projectId": "p-cipla-motivational-video",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-mayank",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-country-delight-country-delight",
-      "projectId": "p-country-delight-country-delight",
-      "item": "Final delivery",
+      "id": "tl-p-adani-adani-target-achieved-1",
+      "projectId": "p-adani-adani-target-achieved",
+      "item": "Shoot",
       "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-cuemath-celebrity-avatar-video",
-      "projectId": "p-cuemath-celebrity-avatar-video",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-prabhav",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-dabur-dabur-gluco-plus",
-      "projectId": "p-dabur-dabur-gluco-plus",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-dabur-odonil",
-      "projectId": "p-dabur-odonil",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-danube-danube",
-      "projectId": "p-danube-danube",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-dmi-finance-dmi-finance",
-      "projectId": "p-dmi-finance-dmi-finance",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-dreamstreet-dreamstreet",
-      "projectId": "p-dreamstreet-dreamstreet",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-elivaas-elivaas",
-      "projectId": "p-elivaas-elivaas",
-      "item": "Final delivery",
+      "id": "tl-p-adani-adani-target-achieved-2",
+      "projectId": "p-adani-adani-target-achieved",
+      "item": "Cinematic edit",
       "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-fcb-hdfc-bank-vigil-aunty",
-      "projectId": "p-fcb-hdfc-bank-vigil-aunty",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-mayank",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-fortis-fortis",
-      "projectId": "p-fortis-fortis",
-      "item": "Final delivery",
+      "id": "tl-p-adani-adani-target-achieved-3",
+      "projectId": "p-adani-adani-target-achieved",
+      "item": "QA review",
       "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-future-generali-future-generali",
-      "projectId": "p-future-generali-future-generali",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-shreyansh",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-goldiee-goldiee-sprinkoo",
-      "projectId": "p-goldiee-goldiee-sprinkoo",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-01",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-gommt-goibibo-my-bizz",
-      "projectId": "p-gommt-goibibo-my-bizz",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-17",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-hdfc-hdfc-auto-loan",
-      "projectId": "p-hdfc-hdfc-auto-loan",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-hdfc-hdfc-dsa",
-      "projectId": "p-hdfc-hdfc-dsa",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-hdfc-hdfc-twl",
-      "projectId": "p-hdfc-hdfc-twl",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-hindware-hindware",
-      "projectId": "p-hindware-hindware",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
+      "startDate": "2026-06-25",
       "endDate": "2026-07-01",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-home-credit-home-credit",
-      "projectId": "p-home-credit-home-credit",
+      "id": "tl-p-adani-adani-target-achieved-4",
+      "projectId": "p-adani-adani-target-achieved",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-adani-adani-target-achieved-5",
+      "projectId": "p-adani-adani-target-achieved",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-05-07",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-impronics-impropay",
-      "projectId": "p-impronics-impropay",
-      "item": "Final delivery",
+      "id": "tl-p-aditya-birla-group-aditya-birla-ultratech-cements-0",
+      "projectId": "p-aditya-birla-group-aditya-birla-ultratech-cements",
+      "item": "Brief & script",
       "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-impronics-x",
-      "projectId": "p-impronics-x",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-indusland-bank-indusland-nippon",
-      "projectId": "p-indusland-bank-indusland-nippon",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-prakriti",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-jk-maxx-jk-maxx-tvcs",
-      "projectId": "p-jk-maxx-jk-maxx-tvcs",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-sonali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-jsw-jsw-wood-finish",
-      "projectId": "p-jsw-jsw-wood-finish",
+      "id": "tl-p-aditya-birla-group-aditya-birla-ultratech-cements-1",
+      "projectId": "p-aditya-birla-group-aditya-birla-ultratech-cements",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-aditya-birla-group-aditya-birla-ultratech-cements-2",
+      "projectId": "p-aditya-birla-group-aditya-birla-ultratech-cements",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-aditya-birla-group-aditya-birla-ultratech-cements-3",
+      "projectId": "p-aditya-birla-group-aditya-birla-ultratech-cements",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-aditya-birla-group-aditya-birla-ultratech-cements-4",
+      "projectId": "p-aditya-birla-group-aditya-birla-ultratech-cements",
       "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-aditya-birla-group-cables-wires-0",
+      "projectId": "p-aditya-birla-group-cables-wires",
+      "item": "Brief & script",
       "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-jsw-jsw-retailer-yogesh",
-      "projectId": "p-jsw-jsw-retailer-yogesh",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-just-in-time-just-in-time",
-      "projectId": "p-just-in-time-just-in-time",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-mayank",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-03",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-kaps-advertising-kaps-advertising-sleepwell",
-      "projectId": "p-kaps-advertising-kaps-advertising-sleepwell",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-mayank",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-18",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-kissht-x",
-      "projectId": "p-kissht-x",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-prabhav",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-kkr-kkr",
-      "projectId": "p-kkr-kkr",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-mayank",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-kotak-mahindra-bank-kotak-life",
-      "projectId": "p-kotak-mahindra-bank-kotak-life",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-l-t-l-t-leadership",
-      "projectId": "p-l-t-l-t-leadership",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-mayank",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-l-t-l-t-bumrah-shorties",
-      "projectId": "p-l-t-l-t-bumrah-shorties",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-lawyered-lawyered",
-      "projectId": "p-lawyered-lawyered",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-m3m-meme-videos",
-      "projectId": "p-m3m-meme-videos",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-ananya",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-mars-pedigree-mars-pedigree",
-      "projectId": "p-mars-pedigree-mars-pedigree",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-ananya",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-mmt-mybiz-founder-led-ai-campaign",
-      "projectId": "p-mmt-mybiz-founder-led-ai-campaign",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-muthoot-muthoot-finance",
-      "projectId": "p-muthoot-muthoot-finance",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-novo-nordisk-awiqli",
-      "projectId": "p-novo-nordisk-awiqli",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-ananya",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-nuvoco-nuvoco-retirement",
-      "projectId": "p-nuvoco-nuvoco-retirement",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-01",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-nuvoco-nuvoco-image-to-video-avatar",
-      "projectId": "p-nuvoco-nuvoco-image-to-video-avatar",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-05-14",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-olyv-olyv",
-      "projectId": "p-olyv-olyv",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-03",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-orkla-mtr-orkla-mtr-ai-tvc",
-      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-prakriti",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-ozone-overseas-ozone-tvc-part-1",
-      "projectId": "p-ozone-overseas-ozone-tvc-part-1",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-01",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-ozone-overseas-ozone-f2c-alok",
-      "projectId": "p-ozone-overseas-ozone-f2c-alok",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-paytm-paytm",
-      "projectId": "p-paytm-paytm",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-shreyansh",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-phonepe-phonepe",
-      "projectId": "p-phonepe-phonepe",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-mayank",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-11",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-piramal-finance-piramal-finance-e2e",
-      "projectId": "p-piramal-finance-piramal-finance-e2e",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-05-08",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-portico-portico",
-      "projectId": "p-portico-portico",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-01",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-rapido-rakhi-video",
-      "projectId": "p-rapido-rakhi-video",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-ananya",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-rapido-translation-video",
-      "projectId": "p-rapido-translation-video",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-ananya",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-ripplehire-ripplehire",
-      "projectId": "p-ripplehire-ripplehire",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
+      "startDate": "2026-07-02",
       "endDate": "2026-07-08",
       "notes": "Priority P3",
-      "status": "in-progress"
+      "status": "completed"
     },
     {
-      "id": "tl-p-sanofi-sanofi",
-      "projectId": "p-sanofi-sanofi",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "id": "tl-p-aditya-birla-group-cables-wires-1",
+      "projectId": "p-aditya-birla-group-cables-wires",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-savvy-savvy",
-      "projectId": "p-savvy-savvy",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-aman",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "id": "tl-p-aditya-birla-group-cables-wires-2",
+      "projectId": "p-aditya-birla-group-cables-wires",
+      "item": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-sbi-sbi-life-digital",
-      "projectId": "p-sbi-sbi-life-digital",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-01",
+      "id": "tl-p-aditya-birla-group-cables-wires-3",
+      "projectId": "p-aditya-birla-group-cables-wires",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
       "notes": "Priority P3",
-      "status": "in-progress"
+      "status": "delayed"
     },
     {
-      "id": "tl-p-sbi-sbi-life-brand",
-      "projectId": "p-sbi-sbi-life-brand",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "id": "tl-p-aditya-birla-group-cables-wires-4",
+      "projectId": "p-aditya-birla-group-cables-wires",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
       "notes": "Priority P3",
-      "status": "completed"
+      "status": "not-started"
     },
     {
-      "id": "tl-p-sbi-sbi-general-insurance",
-      "projectId": "p-sbi-sbi-general-insurance",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-sbi-sbi-life-product",
-      "projectId": "p-sbi-sbi-life-product",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-scapia-scapia",
-      "projectId": "p-scapia-scapia",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-aman",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-08",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-shiprocket-shiprocket",
-      "projectId": "p-shiprocket-shiprocket",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-shreyansh",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-10",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-shriram-finance-ltd-shriram-finance-limited",
-      "projectId": "p-shriram-finance-ltd-shriram-finance-limited",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-shriram-life-insurance-shriram-life-insurance",
-      "projectId": "p-shriram-life-insurance-shriram-life-insurance",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-shyam-metalics-tvc",
-      "projectId": "p-shyam-metalics-tvc",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-01",
-      "notes": "Priority P3",
-      "status": "in-progress"
-    },
-    {
-      "id": "tl-p-spice-money-spice-money",
-      "projectId": "p-spice-money-spice-money",
-      "item": "Final delivery",
-      "ownerId": "u-delivery-management-mayank",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
-      "notes": "Priority P3",
-      "status": "completed"
-    },
-    {
-      "id": "tl-p-sun-pharma-sun-pharma-nasal",
-      "projectId": "p-sun-pharma-sun-pharma-nasal",
+      "id": "tl-p-aditya-birla-group-cables-wires-5",
+      "projectId": "p-aditya-birla-group-cables-wires",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amberstone-vectra-ideation-0",
+      "projectId": "p-amberstone-vectra-ideation",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-sun-pharma-sun-pharma-dermatology",
-      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "id": "tl-p-amberstone-vectra-ideation-1",
+      "projectId": "p-amberstone-vectra-ideation",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amberstone-vectra-ideation-2",
+      "projectId": "p-amberstone-vectra-ideation",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amberstone-vectra-ideation-3",
+      "projectId": "p-amberstone-vectra-ideation",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "notes": "Priority P3",
+      "status": "delayed"
+    },
+    {
+      "id": "tl-p-amberstone-vectra-ideation-4",
+      "projectId": "p-amberstone-vectra-ideation",
       "item": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amli-amli-ceo-message-to-gulf-policyholders-0",
+      "projectId": "p-amli-amli-ceo-message-to-gulf-policyholders",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-ceo-message-to-gulf-policyholders-1",
+      "projectId": "p-amli-amli-ceo-message-to-gulf-policyholders",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-ceo-message-to-gulf-policyholders-2",
+      "projectId": "p-amli-amli-ceo-message-to-gulf-policyholders",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-ceo-message-to-gulf-policyholders-3",
+      "projectId": "p-amli-amli-ceo-message-to-gulf-policyholders",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-ceo-message-to-gulf-policyholders-4",
+      "projectId": "p-amli-amli-ceo-message-to-gulf-policyholders",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-cot-tot-event-0",
+      "projectId": "p-amli-amli-cot-tot-event",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-cot-tot-event-1",
+      "projectId": "p-amli-amli-cot-tot-event",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-cot-tot-event-2",
+      "projectId": "p-amli-amli-cot-tot-event",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-cot-tot-event-3",
+      "projectId": "p-amli-amli-cot-tot-event",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-cot-tot-event-4",
+      "projectId": "p-amli-amli-cot-tot-event",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-digital-performance-marketing-0",
+      "projectId": "p-amli-amli-digital-performance-marketing",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-digital-performance-marketing-1",
+      "projectId": "p-amli-amli-digital-performance-marketing",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-digital-performance-marketing-2",
+      "projectId": "p-amli-amli-digital-performance-marketing",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-digital-performance-marketing-3",
+      "projectId": "p-amli-amli-digital-performance-marketing",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-digital-performance-marketing-4",
+      "projectId": "p-amli-amli-digital-performance-marketing",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-leaders-0",
+      "projectId": "p-amli-amli-leaders",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-leaders-1",
+      "projectId": "p-amli-amli-leaders",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-leaders-2",
+      "projectId": "p-amli-amli-leaders",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-leaders-3",
+      "projectId": "p-amli-amli-leaders",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-leaders-4",
+      "projectId": "p-amli-amli-leaders",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-mdrt-winners-0",
+      "projectId": "p-amli-amli-mdrt-winners",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-mdrt-winners-1",
+      "projectId": "p-amli-amli-mdrt-winners",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-mdrt-winners-2",
+      "projectId": "p-amli-amli-mdrt-winners",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-mdrt-winners-3",
+      "projectId": "p-amli-amli-mdrt-winners",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-mdrt-winners-4",
+      "projectId": "p-amli-amli-mdrt-winners",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-surrender-retention-0",
+      "projectId": "p-amli-amli-surrender-retention",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-surrender-retention-1",
+      "projectId": "p-amli-amli-surrender-retention",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-surrender-retention-2",
+      "projectId": "p-amli-amli-surrender-retention",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-surrender-retention-3",
+      "projectId": "p-amli-amli-surrender-retention",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-surrender-retention-4",
+      "projectId": "p-amli-amli-surrender-retention",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-par-bonus-communication-0",
+      "projectId": "p-amli-amli-par-bonus-communication",
+      "item": "Brief & script",
       "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P2",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-par-bonus-communication-1",
+      "projectId": "p-amli-amli-par-bonus-communication",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P2",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-par-bonus-communication-2",
+      "projectId": "p-amli-amli-par-bonus-communication",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
       "notes": "Priority P2",
       "status": "in-progress"
     },
     {
-      "id": "tl-p-sun-pharma-sun-pharma-tufpro",
-      "projectId": "p-sun-pharma-sun-pharma-tufpro",
+      "id": "tl-p-amli-amli-par-bonus-communication-3",
+      "projectId": "p-amli-amli-par-bonus-communication",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P2",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amli-amli-par-bonus-communication-4",
+      "projectId": "p-amli-amli-par-bonus-communication",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P2",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amli-amli-aurous-club-aurum-club-0",
+      "projectId": "p-amli-amli-aurous-club-aurum-club",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P2",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-aurous-club-aurum-club-1",
+      "projectId": "p-amli-amli-aurous-club-aurum-club",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P2",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-aurous-club-aurum-club-2",
+      "projectId": "p-amli-amli-aurous-club-aurum-club",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "notes": "Priority P2",
+      "status": "delayed"
+    },
+    {
+      "id": "tl-p-amli-amli-aurous-club-aurum-club-3",
+      "projectId": "p-amli-amli-aurous-club-aurum-club",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P2",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amli-amli-aurous-club-aurum-club-4",
+      "projectId": "p-amli-amli-aurous-club-aurum-club",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P2",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amli-amli-smart-rise-0",
+      "projectId": "p-amli-amli-smart-rise",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-smart-rise-1",
+      "projectId": "p-amli-amli-smart-rise",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-smart-rise-2",
+      "projectId": "p-amli-amli-smart-rise",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-smart-rise-3",
+      "projectId": "p-amli-amli-smart-rise",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
       "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-smart-rise-4",
+      "projectId": "p-amli-amli-smart-rise",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-cc-liability-joint-life-guranteed-l-0",
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P2",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-cc-liability-joint-life-guranteed-l-1",
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P2",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-cc-liability-joint-life-guranteed-l-2",
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "item": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P2",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-cc-liability-joint-life-guranteed-l-3",
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P2",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-amli-amli-cc-liability-joint-life-guranteed-l-4",
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P2",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amli-amli-cc-liability-joint-life-guranteed-l-5",
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P2",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amli-amli-cc-liability-segment-0",
+      "projectId": "p-amli-amli-cc-liability-segment",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-cc-liability-segment-1",
+      "projectId": "p-amli-amli-cc-liability-segment",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-cc-liability-segment-2",
+      "projectId": "p-amli-amli-cc-liability-segment",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-amli-amli-cc-liability-segment-3",
+      "projectId": "p-amli-amli-cc-liability-segment",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amli-amli-cc-liability-segment-4",
+      "projectId": "p-amli-amli-cc-liability-segment",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amli-amli-loan-against-a-policy-0",
+      "projectId": "p-amli-amli-loan-against-a-policy",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-loan-against-a-policy-1",
+      "projectId": "p-amli-amli-loan-against-a-policy",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-loan-against-a-policy-2",
+      "projectId": "p-amli-amli-loan-against-a-policy",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-amli-amli-loan-against-a-policy-3",
+      "projectId": "p-amli-amli-loan-against-a-policy",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amli-amli-loan-against-a-policy-4",
+      "projectId": "p-amli-amli-loan-against-a-policy",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amli-amli-ulip-0",
+      "projectId": "p-amli-amli-ulip",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-ulip-1",
+      "projectId": "p-amli-amli-ulip",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-ulip-2",
+      "projectId": "p-amli-amli-ulip",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-ulip-3",
+      "projectId": "p-amli-amli-ulip",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-amli-amli-ulip-4",
+      "projectId": "p-amli-amli-ulip",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amli-amli-mpitch-pro-0",
+      "projectId": "p-amli-amli-mpitch-pro",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-mpitch-pro-1",
+      "projectId": "p-amli-amli-mpitch-pro",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-amli-amli-mpitch-pro-2",
+      "projectId": "p-amli-amli-mpitch-pro",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-amli-amli-mpitch-pro-3",
+      "projectId": "p-amli-amli-mpitch-pro",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-amli-amli-mpitch-pro-4",
+      "projectId": "p-amli-amli-mpitch-pro",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-asian-paints-asian-paints-dealer-bytes-0",
+      "projectId": "p-asian-paints-asian-paints-dealer-bytes",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-asian-paints-asian-paints-dealer-bytes-1",
+      "projectId": "p-asian-paints-asian-paints-dealer-bytes",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-asian-paints-asian-paints-dealer-bytes-2",
+      "projectId": "p-asian-paints-asian-paints-dealer-bytes",
+      "item": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-asian-paints-asian-paints-dealer-bytes-3",
+      "projectId": "p-asian-paints-asian-paints-dealer-bytes",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-asian-paints-asian-paints-dealer-bytes-4",
+      "projectId": "p-asian-paints-asian-paints-dealer-bytes",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-asian-paints-asian-paints-dealer-bytes-5",
+      "projectId": "p-asian-paints-asian-paints-dealer-bytes",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-astrazeneca-astrazeneca-mkt-0",
+      "projectId": "p-astrazeneca-astrazeneca-mkt",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-astrazeneca-astrazeneca-mkt-1",
+      "projectId": "p-astrazeneca-astrazeneca-mkt",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-astrazeneca-astrazeneca-mkt-2",
+      "projectId": "p-astrazeneca-astrazeneca-mkt",
+      "item": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-astrazeneca-astrazeneca-mkt-3",
+      "projectId": "p-astrazeneca-astrazeneca-mkt",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-astrazeneca-astrazeneca-mkt-4",
+      "projectId": "p-astrazeneca-astrazeneca-mkt",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-astrazeneca-astrazeneca-mkt-5",
+      "projectId": "p-astrazeneca-astrazeneca-mkt",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-bajaj-monsoon-video-0",
+      "projectId": "p-bajaj-monsoon-video",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bajaj-monsoon-video-1",
+      "projectId": "p-bajaj-monsoon-video",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bajaj-monsoon-video-2",
+      "projectId": "p-bajaj-monsoon-video",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-bajaj-monsoon-video-3",
+      "projectId": "p-bajaj-monsoon-video",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-bajaj-monsoon-video-4",
+      "projectId": "p-bajaj-monsoon-video",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-bajaj-monsoon-video-5",
+      "projectId": "p-bajaj-monsoon-video",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-bajaj-orm-videos-customer-awareness-0",
+      "projectId": "p-bajaj-orm-videos-customer-awareness",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bajaj-orm-videos-customer-awareness-1",
+      "projectId": "p-bajaj-orm-videos-customer-awareness",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-bajaj-orm-videos-customer-awareness-2",
+      "projectId": "p-bajaj-orm-videos-customer-awareness",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-bajaj-orm-videos-customer-awareness-3",
+      "projectId": "p-bajaj-orm-videos-customer-awareness",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-bajaj-orm-videos-customer-awareness-4",
+      "projectId": "p-bajaj-orm-videos-customer-awareness",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-bajaj-orm-videos-customer-awareness-5",
+      "projectId": "p-bajaj-orm-videos-customer-awareness",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-13",
+      "endDate": "2026-08-19",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-bajaj-creatr-tutorial-video-0",
+      "projectId": "p-bajaj-creatr-tutorial-video",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bajaj-creatr-tutorial-video-1",
+      "projectId": "p-bajaj-creatr-tutorial-video",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bajaj-creatr-tutorial-video-2",
+      "projectId": "p-bajaj-creatr-tutorial-video",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bajaj-creatr-tutorial-video-3",
+      "projectId": "p-bajaj-creatr-tutorial-video",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bajaj-creatr-tutorial-video-4",
+      "projectId": "p-bajaj-creatr-tutorial-video",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-bajaj-creatr-tutorial-video-5",
+      "projectId": "p-bajaj-creatr-tutorial-video",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-bajaj-finance-social-media-0",
+      "projectId": "p-bajaj-finance-social-media",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bajaj-finance-social-media-1",
+      "projectId": "p-bajaj-finance-social-media",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bajaj-finance-social-media-2",
+      "projectId": "p-bajaj-finance-social-media",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-bajaj-finance-social-media-3",
+      "projectId": "p-bajaj-finance-social-media",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-bajaj-finance-social-media-4",
+      "projectId": "p-bajaj-finance-social-media",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-bharatpe-bharatpe-credit-buddy-0",
+      "projectId": "p-bharatpe-bharatpe-credit-buddy",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bharatpe-bharatpe-credit-buddy-1",
+      "projectId": "p-bharatpe-bharatpe-credit-buddy",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bharatpe-bharatpe-credit-buddy-2",
+      "projectId": "p-bharatpe-bharatpe-credit-buddy",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bharatpe-bharatpe-credit-buddy-3",
+      "projectId": "p-bharatpe-bharatpe-credit-buddy",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-bharatpe-bharatpe-credit-buddy-4",
+      "projectId": "p-bharatpe-bharatpe-credit-buddy",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-bharatpe-bharatpe-msma-0",
+      "projectId": "p-bharatpe-bharatpe-msma",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bharatpe-bharatpe-msma-1",
+      "projectId": "p-bharatpe-bharatpe-msma",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bharatpe-bharatpe-msma-2",
+      "projectId": "p-bharatpe-bharatpe-msma",
+      "item": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bharatpe-bharatpe-msma-3",
+      "projectId": "p-bharatpe-bharatpe-msma",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-bharatpe-bharatpe-msma-4",
+      "projectId": "p-bharatpe-bharatpe-msma",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-bharatpe-bharatpe-msma-5",
+      "projectId": "p-bharatpe-bharatpe-msma",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-biologicale-dr-video-0",
+      "projectId": "p-biologicale-dr-video",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-biologicale-dr-video-1",
+      "projectId": "p-biologicale-dr-video",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-biologicale-dr-video-2",
+      "projectId": "p-biologicale-dr-video",
+      "item": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-biologicale-dr-video-3",
+      "projectId": "p-biologicale-dr-video",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-biologicale-dr-video-4",
+      "projectId": "p-biologicale-dr-video",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-biologicale-dr-video-5",
+      "projectId": "p-biologicale-dr-video",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-13",
+      "endDate": "2026-08-19",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-birla-opus-ideation-0",
+      "projectId": "p-birla-opus-ideation",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-birla-opus-ideation-1",
+      "projectId": "p-birla-opus-ideation",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-birla-opus-ideation-2",
+      "projectId": "p-birla-opus-ideation",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-birla-opus-ideation-3",
+      "projectId": "p-birla-opus-ideation",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-birla-opus-ideation-4",
+      "projectId": "p-birla-opus-ideation",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-birla-white-birla-white-0",
+      "projectId": "p-birla-white-birla-white",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-birla-white-birla-white-1",
+      "projectId": "p-birla-white-birla-white",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-birla-white-birla-white-2",
+      "projectId": "p-birla-white-birla-white",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-birla-white-birla-white-3",
+      "projectId": "p-birla-white-birla-white",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-birla-white-birla-white-4",
+      "projectId": "p-birla-white-birla-white",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-birla-white-birla-white-5",
+      "projectId": "p-birla-white-birla-white",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bkt-tyres-bkt-tyres-father-s-day-0",
+      "projectId": "p-bkt-tyres-bkt-tyres-father-s-day",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bkt-tyres-bkt-tyres-father-s-day-1",
+      "projectId": "p-bkt-tyres-bkt-tyres-father-s-day",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bkt-tyres-bkt-tyres-father-s-day-2",
+      "projectId": "p-bkt-tyres-bkt-tyres-father-s-day",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bkt-tyres-bkt-tyres-father-s-day-3",
+      "projectId": "p-bkt-tyres-bkt-tyres-father-s-day",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-bkt-tyres-bkt-tyres-father-s-day-4",
+      "projectId": "p-bkt-tyres-bkt-tyres-father-s-day",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-buildahome-buildahome-0",
+      "projectId": "p-buildahome-buildahome",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-buildahome-buildahome-1",
+      "projectId": "p-buildahome-buildahome",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-buildahome-buildahome-2",
+      "projectId": "p-buildahome-buildahome",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-buildahome-buildahome-3",
+      "projectId": "p-buildahome-buildahome",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-buildahome-buildahome-4",
+      "projectId": "p-buildahome-buildahome",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s--0",
+      "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s--1",
+      "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s--2",
+      "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s--3",
+      "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s--4",
+      "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s--5",
+      "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-canara-hsbc-customer-service-video-0",
+      "projectId": "p-canara-hsbc-customer-service-video",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-customer-service-video-1",
+      "projectId": "p-canara-hsbc-customer-service-video",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-customer-service-video-2",
+      "projectId": "p-canara-hsbc-customer-service-video",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-customer-service-video-3",
+      "projectId": "p-canara-hsbc-customer-service-video",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-customer-service-video-4",
+      "projectId": "p-canara-hsbc-customer-service-video",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-customer-service-video-5",
+      "projectId": "p-canara-hsbc-customer-service-video",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-app-explainer-videos-0",
+      "projectId": "p-canara-hsbc-app-explainer-videos",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-app-explainer-videos-1",
+      "projectId": "p-canara-hsbc-app-explainer-videos",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-app-explainer-videos-2",
+      "projectId": "p-canara-hsbc-app-explainer-videos",
+      "item": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-canara-hsbc-app-explainer-videos-3",
+      "projectId": "p-canara-hsbc-app-explainer-videos",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-canara-hsbc-app-explainer-videos-4",
+      "projectId": "p-canara-hsbc-app-explainer-videos",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-canara-hsbc-app-explainer-videos-5",
+      "projectId": "p-canara-hsbc-app-explainer-videos",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-canara-hsbc-cyber-jagrukta-0",
+      "projectId": "p-canara-hsbc-cyber-jagrukta",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-cyber-jagrukta-1",
+      "projectId": "p-canara-hsbc-cyber-jagrukta",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-cyber-jagrukta-2",
+      "projectId": "p-canara-hsbc-cyber-jagrukta",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-cyber-jagrukta-3",
+      "projectId": "p-canara-hsbc-cyber-jagrukta",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-cyber-jagrukta-4",
+      "projectId": "p-canara-hsbc-cyber-jagrukta",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-cyber-jagrukta-5",
+      "projectId": "p-canara-hsbc-cyber-jagrukta",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-bumrah-thank-you-video-0",
+      "projectId": "p-canara-hsbc-bumrah-thank-you-video",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-bumrah-thank-you-video-1",
+      "projectId": "p-canara-hsbc-bumrah-thank-you-video",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-bumrah-thank-you-video-2",
+      "projectId": "p-canara-hsbc-bumrah-thank-you-video",
+      "item": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-canara-hsbc-bumrah-thank-you-video-3",
+      "projectId": "p-canara-hsbc-bumrah-thank-you-video",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-canara-hsbc-bumrah-thank-you-video-4",
+      "projectId": "p-canara-hsbc-bumrah-thank-you-video",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-canara-hsbc-bumrah-thank-you-video-5",
+      "projectId": "p-canara-hsbc-bumrah-thank-you-video",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-canara-hsbc-garv-0",
+      "projectId": "p-canara-hsbc-garv",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-garv-1",
+      "projectId": "p-canara-hsbc-garv",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-garv-2",
+      "projectId": "p-canara-hsbc-garv",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-garv-3",
+      "projectId": "p-canara-hsbc-garv",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-garv-4",
+      "projectId": "p-canara-hsbc-garv",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-promise2secure-0",
+      "projectId": "p-canara-hsbc-promise2secure",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-promise2secure-1",
+      "projectId": "p-canara-hsbc-promise2secure",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-promise2secure-2",
+      "projectId": "p-canara-hsbc-promise2secure",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-promise2secure-3",
+      "projectId": "p-canara-hsbc-promise2secure",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-canara-hsbc-promise2secure-4",
+      "projectId": "p-canara-hsbc-promise2secure",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-canara-hsbc-promise2secure-5",
+      "projectId": "p-canara-hsbc-promise2secure",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-carrier-carrier-product-videos-0",
+      "projectId": "p-carrier-carrier-product-videos",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-carrier-carrier-product-videos-1",
+      "projectId": "p-carrier-carrier-product-videos",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-carrier-carrier-product-videos-2",
+      "projectId": "p-carrier-carrier-product-videos",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-carrier-carrier-product-videos-3",
+      "projectId": "p-carrier-carrier-product-videos",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-carrier-carrier-product-videos-4",
+      "projectId": "p-carrier-carrier-product-videos",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-chandigarh-university-chandigarh-university-0",
+      "projectId": "p-chandigarh-university-chandigarh-university",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-chandigarh-university-chandigarh-university-1",
+      "projectId": "p-chandigarh-university-chandigarh-university",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-chandigarh-university-chandigarh-university-2",
+      "projectId": "p-chandigarh-university-chandigarh-university",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-chandigarh-university-chandigarh-university-3",
+      "projectId": "p-chandigarh-university-chandigarh-university",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-chandigarh-university-chandigarh-university-4",
+      "projectId": "p-chandigarh-university-chandigarh-university",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "notes": "Priority P3",
+      "status": "delayed"
+    },
+    {
+      "id": "tl-p-chandigarh-university-chandigarh-university-5",
+      "projectId": "p-chandigarh-university-chandigarh-university",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-cipla-motivational-video-0",
+      "projectId": "p-cipla-motivational-video",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-cipla-motivational-video-1",
+      "projectId": "p-cipla-motivational-video",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-cipla-motivational-video-2",
+      "projectId": "p-cipla-motivational-video",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "notes": "Priority P3",
+      "status": "delayed"
+    },
+    {
+      "id": "tl-p-cipla-motivational-video-3",
+      "projectId": "p-cipla-motivational-video",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-cipla-motivational-video-4",
+      "projectId": "p-cipla-motivational-video",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-cipla-motivational-video-5",
+      "projectId": "p-cipla-motivational-video",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-country-delight-country-delight-0",
+      "projectId": "p-country-delight-country-delight",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-country-delight-country-delight-1",
+      "projectId": "p-country-delight-country-delight",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-country-delight-country-delight-2",
+      "projectId": "p-country-delight-country-delight",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "notes": "Priority P3",
+      "status": "delayed"
+    },
+    {
+      "id": "tl-p-country-delight-country-delight-3",
+      "projectId": "p-country-delight-country-delight",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-country-delight-country-delight-4",
+      "projectId": "p-country-delight-country-delight",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-cuemath-celebrity-avatar-video-0",
+      "projectId": "p-cuemath-celebrity-avatar-video",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-cuemath-celebrity-avatar-video-1",
+      "projectId": "p-cuemath-celebrity-avatar-video",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-cuemath-celebrity-avatar-video-2",
+      "projectId": "p-cuemath-celebrity-avatar-video",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-cuemath-celebrity-avatar-video-3",
+      "projectId": "p-cuemath-celebrity-avatar-video",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-cuemath-celebrity-avatar-video-4",
+      "projectId": "p-cuemath-celebrity-avatar-video",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-cuemath-celebrity-avatar-video-5",
+      "projectId": "p-cuemath-celebrity-avatar-video",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-dabur-dabur-gluco-plus-0",
+      "projectId": "p-dabur-dabur-gluco-plus",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-dabur-dabur-gluco-plus-1",
+      "projectId": "p-dabur-dabur-gluco-plus",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-dabur-dabur-gluco-plus-2",
+      "projectId": "p-dabur-dabur-gluco-plus",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-dabur-dabur-gluco-plus-3",
+      "projectId": "p-dabur-dabur-gluco-plus",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-dabur-dabur-gluco-plus-4",
+      "projectId": "p-dabur-dabur-gluco-plus",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-dabur-odonil-0",
+      "projectId": "p-dabur-odonil",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-dabur-odonil-1",
+      "projectId": "p-dabur-odonil",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-dabur-odonil-2",
+      "projectId": "p-dabur-odonil",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-dabur-odonil-3",
+      "projectId": "p-dabur-odonil",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-dabur-odonil-4",
+      "projectId": "p-dabur-odonil",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-dabur-odonil-5",
+      "projectId": "p-dabur-odonil",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-danube-danube-0",
+      "projectId": "p-danube-danube",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-danube-danube-1",
+      "projectId": "p-danube-danube",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-danube-danube-2",
+      "projectId": "p-danube-danube",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-danube-danube-3",
+      "projectId": "p-danube-danube",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-danube-danube-4",
+      "projectId": "p-danube-danube",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-danube-danube-5",
+      "projectId": "p-danube-danube",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-dmi-finance-dmi-finance-0",
+      "projectId": "p-dmi-finance-dmi-finance",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-dmi-finance-dmi-finance-1",
+      "projectId": "p-dmi-finance-dmi-finance",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-dmi-finance-dmi-finance-2",
+      "projectId": "p-dmi-finance-dmi-finance",
+      "item": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-dmi-finance-dmi-finance-3",
+      "projectId": "p-dmi-finance-dmi-finance",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-dmi-finance-dmi-finance-4",
+      "projectId": "p-dmi-finance-dmi-finance",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-dmi-finance-dmi-finance-5",
+      "projectId": "p-dmi-finance-dmi-finance",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-dreamstreet-dreamstreet-0",
+      "projectId": "p-dreamstreet-dreamstreet",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-dreamstreet-dreamstreet-1",
+      "projectId": "p-dreamstreet-dreamstreet",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-dreamstreet-dreamstreet-2",
+      "projectId": "p-dreamstreet-dreamstreet",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-dreamstreet-dreamstreet-3",
+      "projectId": "p-dreamstreet-dreamstreet",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-dreamstreet-dreamstreet-4",
+      "projectId": "p-dreamstreet-dreamstreet",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-dreamstreet-dreamstreet-5",
+      "projectId": "p-dreamstreet-dreamstreet",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-elivaas-elivaas-0",
+      "projectId": "p-elivaas-elivaas",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-elivaas-elivaas-1",
+      "projectId": "p-elivaas-elivaas",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-elivaas-elivaas-2",
+      "projectId": "p-elivaas-elivaas",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-elivaas-elivaas-3",
+      "projectId": "p-elivaas-elivaas",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-elivaas-elivaas-4",
+      "projectId": "p-elivaas-elivaas",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-fcb-hdfc-bank-vigil-aunty-0",
+      "projectId": "p-fcb-hdfc-bank-vigil-aunty",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-fcb-hdfc-bank-vigil-aunty-1",
+      "projectId": "p-fcb-hdfc-bank-vigil-aunty",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-fcb-hdfc-bank-vigil-aunty-2",
+      "projectId": "p-fcb-hdfc-bank-vigil-aunty",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-fcb-hdfc-bank-vigil-aunty-3",
+      "projectId": "p-fcb-hdfc-bank-vigil-aunty",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-fcb-hdfc-bank-vigil-aunty-4",
+      "projectId": "p-fcb-hdfc-bank-vigil-aunty",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-fortis-fortis-0",
+      "projectId": "p-fortis-fortis",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-fortis-fortis-1",
+      "projectId": "p-fortis-fortis",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-fortis-fortis-2",
+      "projectId": "p-fortis-fortis",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-fortis-fortis-3",
+      "projectId": "p-fortis-fortis",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-fortis-fortis-4",
+      "projectId": "p-fortis-fortis",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-future-generali-future-generali-0",
+      "projectId": "p-future-generali-future-generali",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-future-generali-future-generali-1",
+      "projectId": "p-future-generali-future-generali",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-future-generali-future-generali-2",
+      "projectId": "p-future-generali-future-generali",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-future-generali-future-generali-3",
+      "projectId": "p-future-generali-future-generali",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-future-generali-future-generali-4",
+      "projectId": "p-future-generali-future-generali",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-goldiee-goldiee-sprinkoo-0",
+      "projectId": "p-goldiee-goldiee-sprinkoo",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-goldiee-goldiee-sprinkoo-1",
+      "projectId": "p-goldiee-goldiee-sprinkoo",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-goldiee-goldiee-sprinkoo-2",
+      "projectId": "p-goldiee-goldiee-sprinkoo",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-goldiee-goldiee-sprinkoo-3",
+      "projectId": "p-goldiee-goldiee-sprinkoo",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-goldiee-goldiee-sprinkoo-4",
+      "projectId": "p-goldiee-goldiee-sprinkoo",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "notes": "Priority P3",
+      "status": "delayed"
+    },
+    {
+      "id": "tl-p-goldiee-goldiee-sprinkoo-5",
+      "projectId": "p-goldiee-goldiee-sprinkoo",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-gommt-goibibo-my-bizz-0",
+      "projectId": "p-gommt-goibibo-my-bizz",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-gommt-goibibo-my-bizz-1",
+      "projectId": "p-gommt-goibibo-my-bizz",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-gommt-goibibo-my-bizz-2",
+      "projectId": "p-gommt-goibibo-my-bizz",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-gommt-goibibo-my-bizz-3",
+      "projectId": "p-gommt-goibibo-my-bizz",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-gommt-goibibo-my-bizz-4",
+      "projectId": "p-gommt-goibibo-my-bizz",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-auto-loan-0",
+      "projectId": "p-hdfc-hdfc-auto-loan",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-auto-loan-1",
+      "projectId": "p-hdfc-hdfc-auto-loan",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-auto-loan-2",
+      "projectId": "p-hdfc-hdfc-auto-loan",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-auto-loan-3",
+      "projectId": "p-hdfc-hdfc-auto-loan",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-auto-loan-4",
+      "projectId": "p-hdfc-hdfc-auto-loan",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-dsa-0",
+      "projectId": "p-hdfc-hdfc-dsa",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-dsa-1",
+      "projectId": "p-hdfc-hdfc-dsa",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-dsa-2",
+      "projectId": "p-hdfc-hdfc-dsa",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-dsa-3",
+      "projectId": "p-hdfc-hdfc-dsa",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-dsa-4",
+      "projectId": "p-hdfc-hdfc-dsa",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-twl-0",
+      "projectId": "p-hdfc-hdfc-twl",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-twl-1",
+      "projectId": "p-hdfc-hdfc-twl",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-twl-2",
+      "projectId": "p-hdfc-hdfc-twl",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-twl-3",
+      "projectId": "p-hdfc-hdfc-twl",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hdfc-hdfc-twl-4",
+      "projectId": "p-hdfc-hdfc-twl",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hindware-hindware-0",
+      "projectId": "p-hindware-hindware",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hindware-hindware-1",
+      "projectId": "p-hindware-hindware",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hindware-hindware-2",
+      "projectId": "p-hindware-hindware",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hindware-hindware-3",
+      "projectId": "p-hindware-hindware",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hindware-hindware-4",
+      "projectId": "p-hindware-hindware",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-hindware-hindware-5",
+      "projectId": "p-hindware-hindware",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-home-credit-home-credit-0",
+      "projectId": "p-home-credit-home-credit",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-home-credit-home-credit-1",
+      "projectId": "p-home-credit-home-credit",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-home-credit-home-credit-2",
+      "projectId": "p-home-credit-home-credit",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-home-credit-home-credit-3",
+      "projectId": "p-home-credit-home-credit",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-home-credit-home-credit-4",
+      "projectId": "p-home-credit-home-credit",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-impronics-impropay-0",
+      "projectId": "p-impronics-impropay",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-impronics-impropay-1",
+      "projectId": "p-impronics-impropay",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-impronics-impropay-2",
+      "projectId": "p-impronics-impropay",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-impronics-impropay-3",
+      "projectId": "p-impronics-impropay",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-impronics-impropay-4",
+      "projectId": "p-impronics-impropay",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-impronics-impropay-5",
+      "projectId": "p-impronics-impropay",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-impronics-x-0",
+      "projectId": "p-impronics-x",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-impronics-x-1",
+      "projectId": "p-impronics-x",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-impronics-x-2",
+      "projectId": "p-impronics-x",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-impronics-x-3",
+      "projectId": "p-impronics-x",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-impronics-x-4",
+      "projectId": "p-impronics-x",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-indusland-bank-indusland-nippon-0",
+      "projectId": "p-indusland-bank-indusland-nippon",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-indusland-bank-indusland-nippon-1",
+      "projectId": "p-indusland-bank-indusland-nippon",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-indusland-bank-indusland-nippon-2",
+      "projectId": "p-indusland-bank-indusland-nippon",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-indusland-bank-indusland-nippon-3",
+      "projectId": "p-indusland-bank-indusland-nippon",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "notes": "Priority P3",
+      "status": "delayed"
+    },
+    {
+      "id": "tl-p-indusland-bank-indusland-nippon-4",
+      "projectId": "p-indusland-bank-indusland-nippon",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-indusland-bank-indusland-nippon-5",
+      "projectId": "p-indusland-bank-indusland-nippon",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-jk-maxx-jk-maxx-tvcs-0",
+      "projectId": "p-jk-maxx-jk-maxx-tvcs",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-sonali",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-jk-maxx-jk-maxx-tvcs-1",
+      "projectId": "p-jk-maxx-jk-maxx-tvcs",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-sonali",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-jk-maxx-jk-maxx-tvcs-2",
+      "projectId": "p-jk-maxx-jk-maxx-tvcs",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-sonali",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-jk-maxx-jk-maxx-tvcs-3",
+      "projectId": "p-jk-maxx-jk-maxx-tvcs",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-sonali",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-jk-maxx-jk-maxx-tvcs-4",
+      "projectId": "p-jk-maxx-jk-maxx-tvcs",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-sonali",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-jsw-jsw-wood-finish-0",
+      "projectId": "p-jsw-jsw-wood-finish",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-jsw-jsw-wood-finish-1",
+      "projectId": "p-jsw-jsw-wood-finish",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-jsw-jsw-wood-finish-2",
+      "projectId": "p-jsw-jsw-wood-finish",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-jsw-jsw-wood-finish-3",
+      "projectId": "p-jsw-jsw-wood-finish",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-jsw-jsw-wood-finish-4",
+      "projectId": "p-jsw-jsw-wood-finish",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-jsw-jsw-retailer-yogesh-0",
+      "projectId": "p-jsw-jsw-retailer-yogesh",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-jsw-jsw-retailer-yogesh-1",
+      "projectId": "p-jsw-jsw-retailer-yogesh",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-jsw-jsw-retailer-yogesh-2",
+      "projectId": "p-jsw-jsw-retailer-yogesh",
+      "item": "Image to Video edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-jsw-jsw-retailer-yogesh-3",
+      "projectId": "p-jsw-jsw-retailer-yogesh",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-jsw-jsw-retailer-yogesh-4",
+      "projectId": "p-jsw-jsw-retailer-yogesh",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-jsw-jsw-retailer-yogesh-5",
+      "projectId": "p-jsw-jsw-retailer-yogesh",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-just-in-time-just-in-time-0",
+      "projectId": "p-just-in-time-just-in-time",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-just-in-time-just-in-time-1",
+      "projectId": "p-just-in-time-just-in-time",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-just-in-time-just-in-time-2",
+      "projectId": "p-just-in-time-just-in-time",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-just-in-time-just-in-time-3",
+      "projectId": "p-just-in-time-just-in-time",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-just-in-time-just-in-time-4",
+      "projectId": "p-just-in-time-just-in-time",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-just-in-time-just-in-time-5",
+      "projectId": "p-just-in-time-just-in-time",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-kaps-advertising-kaps-advertising-sleepwell-0",
+      "projectId": "p-kaps-advertising-kaps-advertising-sleepwell",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kaps-advertising-kaps-advertising-sleepwell-1",
+      "projectId": "p-kaps-advertising-kaps-advertising-sleepwell",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kaps-advertising-kaps-advertising-sleepwell-2",
+      "projectId": "p-kaps-advertising-kaps-advertising-sleepwell",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kaps-advertising-kaps-advertising-sleepwell-3",
+      "projectId": "p-kaps-advertising-kaps-advertising-sleepwell",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kaps-advertising-kaps-advertising-sleepwell-4",
+      "projectId": "p-kaps-advertising-kaps-advertising-sleepwell",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kissht-x-0",
+      "projectId": "p-kissht-x",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kissht-x-1",
+      "projectId": "p-kissht-x",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kissht-x-2",
+      "projectId": "p-kissht-x",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-kissht-x-3",
+      "projectId": "p-kissht-x",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-kissht-x-4",
+      "projectId": "p-kissht-x",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-prabhav",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-kkr-kkr-0",
+      "projectId": "p-kkr-kkr",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kkr-kkr-1",
+      "projectId": "p-kkr-kkr",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kkr-kkr-2",
+      "projectId": "p-kkr-kkr",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kkr-kkr-3",
+      "projectId": "p-kkr-kkr",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kkr-kkr-4",
+      "projectId": "p-kkr-kkr",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kotak-mahindra-bank-kotak-life-0",
+      "projectId": "p-kotak-mahindra-bank-kotak-life",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kotak-mahindra-bank-kotak-life-1",
+      "projectId": "p-kotak-mahindra-bank-kotak-life",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kotak-mahindra-bank-kotak-life-2",
+      "projectId": "p-kotak-mahindra-bank-kotak-life",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kotak-mahindra-bank-kotak-life-3",
+      "projectId": "p-kotak-mahindra-bank-kotak-life",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-kotak-mahindra-bank-kotak-life-4",
+      "projectId": "p-kotak-mahindra-bank-kotak-life",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-kotak-mahindra-bank-kotak-life-5",
+      "projectId": "p-kotak-mahindra-bank-kotak-life",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-l-t-l-t-leadership-0",
+      "projectId": "p-l-t-l-t-leadership",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-l-t-l-t-leadership-1",
+      "projectId": "p-l-t-l-t-leadership",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-l-t-l-t-leadership-2",
+      "projectId": "p-l-t-l-t-leadership",
+      "item": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-l-t-l-t-leadership-3",
+      "projectId": "p-l-t-l-t-leadership",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-l-t-l-t-leadership-4",
+      "projectId": "p-l-t-l-t-leadership",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-l-t-l-t-leadership-5",
+      "projectId": "p-l-t-l-t-leadership",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-l-t-l-t-bumrah-shorties-0",
+      "projectId": "p-l-t-l-t-bumrah-shorties",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-l-t-l-t-bumrah-shorties-1",
+      "projectId": "p-l-t-l-t-bumrah-shorties",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-l-t-l-t-bumrah-shorties-2",
+      "projectId": "p-l-t-l-t-bumrah-shorties",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-l-t-l-t-bumrah-shorties-3",
+      "projectId": "p-l-t-l-t-bumrah-shorties",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-l-t-l-t-bumrah-shorties-4",
+      "projectId": "p-l-t-l-t-bumrah-shorties",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-lawyered-lawyered-0",
+      "projectId": "p-lawyered-lawyered",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-lawyered-lawyered-1",
+      "projectId": "p-lawyered-lawyered",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-lawyered-lawyered-2",
+      "projectId": "p-lawyered-lawyered",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-lawyered-lawyered-3",
+      "projectId": "p-lawyered-lawyered",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-lawyered-lawyered-4",
+      "projectId": "p-lawyered-lawyered",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-m3m-meme-videos-0",
+      "projectId": "p-m3m-meme-videos",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-m3m-meme-videos-1",
+      "projectId": "p-m3m-meme-videos",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-m3m-meme-videos-2",
+      "projectId": "p-m3m-meme-videos",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-m3m-meme-videos-3",
+      "projectId": "p-m3m-meme-videos",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-m3m-meme-videos-4",
+      "projectId": "p-m3m-meme-videos",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-mars-pedigree-mars-pedigree-0",
+      "projectId": "p-mars-pedigree-mars-pedigree",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-mars-pedigree-mars-pedigree-1",
+      "projectId": "p-mars-pedigree-mars-pedigree",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-mars-pedigree-mars-pedigree-2",
+      "projectId": "p-mars-pedigree-mars-pedigree",
+      "item": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-mars-pedigree-mars-pedigree-3",
+      "projectId": "p-mars-pedigree-mars-pedigree",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-mars-pedigree-mars-pedigree-4",
+      "projectId": "p-mars-pedigree-mars-pedigree",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-mars-pedigree-mars-pedigree-5",
+      "projectId": "p-mars-pedigree-mars-pedigree",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-mmt-mybiz-founder-led-ai-campaign-0",
+      "projectId": "p-mmt-mybiz-founder-led-ai-campaign",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-mmt-mybiz-founder-led-ai-campaign-1",
+      "projectId": "p-mmt-mybiz-founder-led-ai-campaign",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-mmt-mybiz-founder-led-ai-campaign-2",
+      "projectId": "p-mmt-mybiz-founder-led-ai-campaign",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-mmt-mybiz-founder-led-ai-campaign-3",
+      "projectId": "p-mmt-mybiz-founder-led-ai-campaign",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-mmt-mybiz-founder-led-ai-campaign-4",
+      "projectId": "p-mmt-mybiz-founder-led-ai-campaign",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-muthoot-muthoot-finance-0",
+      "projectId": "p-muthoot-muthoot-finance",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-muthoot-muthoot-finance-1",
+      "projectId": "p-muthoot-muthoot-finance",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-muthoot-muthoot-finance-2",
+      "projectId": "p-muthoot-muthoot-finance",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-muthoot-muthoot-finance-3",
+      "projectId": "p-muthoot-muthoot-finance",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "notes": "Priority P3",
+      "status": "delayed"
+    },
+    {
+      "id": "tl-p-muthoot-muthoot-finance-4",
+      "projectId": "p-muthoot-muthoot-finance",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-muthoot-muthoot-finance-5",
+      "projectId": "p-muthoot-muthoot-finance",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-novo-nordisk-awiqli-0",
+      "projectId": "p-novo-nordisk-awiqli",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-novo-nordisk-awiqli-1",
+      "projectId": "p-novo-nordisk-awiqli",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-novo-nordisk-awiqli-2",
+      "projectId": "p-novo-nordisk-awiqli",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-novo-nordisk-awiqli-3",
+      "projectId": "p-novo-nordisk-awiqli",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-novo-nordisk-awiqli-4",
+      "projectId": "p-novo-nordisk-awiqli",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-nuvoco-nuvoco-retirement-0",
+      "projectId": "p-nuvoco-nuvoco-retirement",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-nuvoco-nuvoco-retirement-1",
+      "projectId": "p-nuvoco-nuvoco-retirement",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-nuvoco-nuvoco-retirement-2",
+      "projectId": "p-nuvoco-nuvoco-retirement",
+      "item": "Image to Video edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-nuvoco-nuvoco-retirement-3",
+      "projectId": "p-nuvoco-nuvoco-retirement",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-nuvoco-nuvoco-retirement-4",
+      "projectId": "p-nuvoco-nuvoco-retirement",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-nuvoco-nuvoco-retirement-5",
+      "projectId": "p-nuvoco-nuvoco-retirement",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-nuvoco-nuvoco-image-to-video-avatar-0",
+      "projectId": "p-nuvoco-nuvoco-image-to-video-avatar",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-nuvoco-nuvoco-image-to-video-avatar-1",
+      "projectId": "p-nuvoco-nuvoco-image-to-video-avatar",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-nuvoco-nuvoco-image-to-video-avatar-2",
+      "projectId": "p-nuvoco-nuvoco-image-to-video-avatar",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-nuvoco-nuvoco-image-to-video-avatar-3",
+      "projectId": "p-nuvoco-nuvoco-image-to-video-avatar",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-nuvoco-nuvoco-image-to-video-avatar-4",
+      "projectId": "p-nuvoco-nuvoco-image-to-video-avatar",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-olyv-olyv-0",
+      "projectId": "p-olyv-olyv",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-olyv-olyv-1",
+      "projectId": "p-olyv-olyv",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-olyv-olyv-2",
+      "projectId": "p-olyv-olyv",
+      "item": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-olyv-olyv-3",
+      "projectId": "p-olyv-olyv",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-olyv-olyv-4",
+      "projectId": "p-olyv-olyv",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-olyv-olyv-5",
+      "projectId": "p-olyv-olyv",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-orkla-mtr-orkla-mtr-ai-tvc-0",
+      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-orkla-mtr-orkla-mtr-ai-tvc-1",
+      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-orkla-mtr-orkla-mtr-ai-tvc-2",
+      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-orkla-mtr-orkla-mtr-ai-tvc-3",
+      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-orkla-mtr-orkla-mtr-ai-tvc-4",
+      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-orkla-mtr-orkla-mtr-ai-tvc-5",
+      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-prakriti",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-ozone-overseas-ozone-tvc-part-1-0",
+      "projectId": "p-ozone-overseas-ozone-tvc-part-1",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-26",
+      "endDate": "2026-07-02",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-ozone-overseas-ozone-tvc-part-1-1",
+      "projectId": "p-ozone-overseas-ozone-tvc-part-1",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-ozone-overseas-ozone-tvc-part-1-2",
+      "projectId": "p-ozone-overseas-ozone-tvc-part-1",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-ozone-overseas-ozone-tvc-part-1-3",
+      "projectId": "p-ozone-overseas-ozone-tvc-part-1",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-ozone-overseas-ozone-tvc-part-1-4",
+      "projectId": "p-ozone-overseas-ozone-tvc-part-1",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-ozone-overseas-ozone-tvc-part-1-5",
+      "projectId": "p-ozone-overseas-ozone-tvc-part-1",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-ozone-overseas-ozone-f2c-alok-0",
+      "projectId": "p-ozone-overseas-ozone-f2c-alok",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-ozone-overseas-ozone-f2c-alok-1",
+      "projectId": "p-ozone-overseas-ozone-f2c-alok",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-ozone-overseas-ozone-f2c-alok-2",
+      "projectId": "p-ozone-overseas-ozone-f2c-alok",
+      "item": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-ozone-overseas-ozone-f2c-alok-3",
+      "projectId": "p-ozone-overseas-ozone-f2c-alok",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-ozone-overseas-ozone-f2c-alok-4",
+      "projectId": "p-ozone-overseas-ozone-f2c-alok",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-ozone-overseas-ozone-f2c-alok-5",
+      "projectId": "p-ozone-overseas-ozone-f2c-alok",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-paytm-paytm-0",
+      "projectId": "p-paytm-paytm",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-paytm-paytm-1",
+      "projectId": "p-paytm-paytm",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-paytm-paytm-2",
+      "projectId": "p-paytm-paytm",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-paytm-paytm-3",
+      "projectId": "p-paytm-paytm",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-paytm-paytm-4",
+      "projectId": "p-paytm-paytm",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-phonepe-phonepe-0",
+      "projectId": "p-phonepe-phonepe",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-phonepe-phonepe-1",
+      "projectId": "p-phonepe-phonepe",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-phonepe-phonepe-2",
+      "projectId": "p-phonepe-phonepe",
+      "item": "Image to Video edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-phonepe-phonepe-3",
+      "projectId": "p-phonepe-phonepe",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-phonepe-phonepe-4",
+      "projectId": "p-phonepe-phonepe",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-phonepe-phonepe-5",
+      "projectId": "p-phonepe-phonepe",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-piramal-finance-piramal-finance-e2e-0",
+      "projectId": "p-piramal-finance-piramal-finance-e2e",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-piramal-finance-piramal-finance-e2e-1",
+      "projectId": "p-piramal-finance-piramal-finance-e2e",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-piramal-finance-piramal-finance-e2e-2",
+      "projectId": "p-piramal-finance-piramal-finance-e2e",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-piramal-finance-piramal-finance-e2e-3",
+      "projectId": "p-piramal-finance-piramal-finance-e2e",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-piramal-finance-piramal-finance-e2e-4",
+      "projectId": "p-piramal-finance-piramal-finance-e2e",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-portico-portico-0",
+      "projectId": "p-portico-portico",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-portico-portico-1",
+      "projectId": "p-portico-portico",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-portico-portico-2",
+      "projectId": "p-portico-portico",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-portico-portico-3",
+      "projectId": "p-portico-portico",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-portico-portico-4",
+      "projectId": "p-portico-portico",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-portico-portico-5",
+      "projectId": "p-portico-portico",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-rapido-rakhi-video-0",
+      "projectId": "p-rapido-rakhi-video",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-rapido-rakhi-video-1",
+      "projectId": "p-rapido-rakhi-video",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-rapido-rakhi-video-2",
+      "projectId": "p-rapido-rakhi-video",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-rapido-rakhi-video-3",
+      "projectId": "p-rapido-rakhi-video",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "notes": "Priority P3",
+      "status": "delayed"
+    },
+    {
+      "id": "tl-p-rapido-rakhi-video-4",
+      "projectId": "p-rapido-rakhi-video",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-rapido-rakhi-video-5",
+      "projectId": "p-rapido-rakhi-video",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-rapido-translation-video-0",
+      "projectId": "p-rapido-translation-video",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-rapido-translation-video-1",
+      "projectId": "p-rapido-translation-video",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-rapido-translation-video-2",
+      "projectId": "p-rapido-translation-video",
+      "item": "Avatar (Simple) edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-rapido-translation-video-3",
+      "projectId": "p-rapido-translation-video",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-rapido-translation-video-4",
+      "projectId": "p-rapido-translation-video",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-rapido-translation-video-5",
+      "projectId": "p-rapido-translation-video",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-ripplehire-ripplehire-0",
+      "projectId": "p-ripplehire-ripplehire",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-ripplehire-ripplehire-1",
+      "projectId": "p-ripplehire-ripplehire",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-ripplehire-ripplehire-2",
+      "projectId": "p-ripplehire-ripplehire",
+      "item": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-ripplehire-ripplehire-3",
+      "projectId": "p-ripplehire-ripplehire",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-17",
+      "notes": "Priority P3",
+      "status": "delayed"
+    },
+    {
+      "id": "tl-p-ripplehire-ripplehire-4",
+      "projectId": "p-ripplehire-ripplehire",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-ripplehire-ripplehire-5",
+      "projectId": "p-ripplehire-ripplehire",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sanofi-sanofi-0",
+      "projectId": "p-sanofi-sanofi",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sanofi-sanofi-1",
+      "projectId": "p-sanofi-sanofi",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sanofi-sanofi-2",
+      "projectId": "p-sanofi-sanofi",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sanofi-sanofi-3",
+      "projectId": "p-sanofi-sanofi",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sanofi-sanofi-4",
+      "projectId": "p-sanofi-sanofi",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-savvy-savvy-0",
+      "projectId": "p-savvy-savvy",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-savvy-savvy-1",
+      "projectId": "p-savvy-savvy",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-savvy-savvy-2",
+      "projectId": "p-savvy-savvy",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-savvy-savvy-3",
+      "projectId": "p-savvy-savvy",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-savvy-savvy-4",
+      "projectId": "p-savvy-savvy",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-digital-0",
+      "projectId": "p-sbi-sbi-life-digital",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-digital-1",
+      "projectId": "p-sbi-sbi-life-digital",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-digital-2",
+      "projectId": "p-sbi-sbi-life-digital",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-digital-3",
+      "projectId": "p-sbi-sbi-life-digital",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-digital-4",
+      "projectId": "p-sbi-sbi-life-digital",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-brand-0",
+      "projectId": "p-sbi-sbi-life-brand",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-brand-1",
+      "projectId": "p-sbi-sbi-life-brand",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-brand-2",
+      "projectId": "p-sbi-sbi-life-brand",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-brand-3",
+      "projectId": "p-sbi-sbi-life-brand",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-brand-4",
+      "projectId": "p-sbi-sbi-life-brand",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sbi-sbi-general-insurance-0",
+      "projectId": "p-sbi-sbi-general-insurance",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sbi-sbi-general-insurance-1",
+      "projectId": "p-sbi-sbi-general-insurance",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sbi-sbi-general-insurance-2",
+      "projectId": "p-sbi-sbi-general-insurance",
+      "item": "Image to Video edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sbi-sbi-general-insurance-3",
+      "projectId": "p-sbi-sbi-general-insurance",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-sbi-sbi-general-insurance-4",
+      "projectId": "p-sbi-sbi-general-insurance",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sbi-sbi-general-insurance-5",
+      "projectId": "p-sbi-sbi-general-insurance",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-product-0",
+      "projectId": "p-sbi-sbi-life-product",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-product-1",
+      "projectId": "p-sbi-sbi-life-product",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-product-2",
+      "projectId": "p-sbi-sbi-life-product",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-product-3",
+      "projectId": "p-sbi-sbi-life-product",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sbi-sbi-life-product-4",
+      "projectId": "p-sbi-sbi-life-product",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-scapia-scapia-0",
+      "projectId": "p-scapia-scapia",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-scapia-scapia-1",
+      "projectId": "p-scapia-scapia",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-scapia-scapia-2",
+      "projectId": "p-scapia-scapia",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-scapia-scapia-3",
+      "projectId": "p-scapia-scapia",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-scapia-scapia-4",
+      "projectId": "p-scapia-scapia",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-shiprocket-shiprocket-0",
+      "projectId": "p-shiprocket-shiprocket",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-shiprocket-shiprocket-1",
+      "projectId": "p-shiprocket-shiprocket",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-shiprocket-shiprocket-2",
+      "projectId": "p-shiprocket-shiprocket",
+      "item": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-shiprocket-shiprocket-3",
+      "projectId": "p-shiprocket-shiprocket",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-shiprocket-shiprocket-4",
+      "projectId": "p-shiprocket-shiprocket",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-shiprocket-shiprocket-5",
+      "projectId": "p-shiprocket-shiprocket",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-shreyansh",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-shriram-finance-ltd-shriram-finance-limited-0",
+      "projectId": "p-shriram-finance-ltd-shriram-finance-limited",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-shriram-finance-ltd-shriram-finance-limited-1",
+      "projectId": "p-shriram-finance-ltd-shriram-finance-limited",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-shriram-finance-ltd-shriram-finance-limited-2",
+      "projectId": "p-shriram-finance-ltd-shriram-finance-limited",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-shriram-finance-ltd-shriram-finance-limited-3",
+      "projectId": "p-shriram-finance-ltd-shriram-finance-limited",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-shriram-finance-ltd-shriram-finance-limited-4",
+      "projectId": "p-shriram-finance-ltd-shriram-finance-limited",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-shriram-life-insurance-shriram-life-insurance-0",
+      "projectId": "p-shriram-life-insurance-shriram-life-insurance",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-shriram-life-insurance-shriram-life-insurance-1",
+      "projectId": "p-shriram-life-insurance-shriram-life-insurance",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-shriram-life-insurance-shriram-life-insurance-2",
+      "projectId": "p-shriram-life-insurance-shriram-life-insurance",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-shriram-life-insurance-shriram-life-insurance-3",
+      "projectId": "p-shriram-life-insurance-shriram-life-insurance",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-shriram-life-insurance-shriram-life-insurance-4",
+      "projectId": "p-shriram-life-insurance-shriram-life-insurance",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-shriram-life-insurance-shriram-life-insurance-5",
+      "projectId": "p-shriram-life-insurance-shriram-life-insurance",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-shyam-metalics-tvc-0",
+      "projectId": "p-shyam-metalics-tvc",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-shyam-metalics-tvc-1",
+      "projectId": "p-shyam-metalics-tvc",
+      "item": "Shoot",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-shyam-metalics-tvc-2",
+      "projectId": "p-shyam-metalics-tvc",
+      "item": "Cinematic edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-shyam-metalics-tvc-3",
+      "projectId": "p-shyam-metalics-tvc",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-shyam-metalics-tvc-4",
+      "projectId": "p-shyam-metalics-tvc",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-shyam-metalics-tvc-5",
+      "projectId": "p-shyam-metalics-tvc",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-spice-money-spice-money-0",
+      "projectId": "p-spice-money-spice-money",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-spice-money-spice-money-1",
+      "projectId": "p-spice-money-spice-money",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-spice-money-spice-money-2",
+      "projectId": "p-spice-money-spice-money",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-spice-money-spice-money-3",
+      "projectId": "p-spice-money-spice-money",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-spice-money-spice-money-4",
+      "projectId": "p-spice-money-spice-money",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-nasal-0",
+      "projectId": "p-sun-pharma-sun-pharma-nasal",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-nasal-1",
+      "projectId": "p-sun-pharma-sun-pharma-nasal",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-nasal-2",
+      "projectId": "p-sun-pharma-sun-pharma-nasal",
+      "item": "Image to Video edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-nasal-3",
+      "projectId": "p-sun-pharma-sun-pharma-nasal",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-nasal-4",
+      "projectId": "p-sun-pharma-sun-pharma-nasal",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-nasal-5",
+      "projectId": "p-sun-pharma-sun-pharma-nasal",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-dermatology-0",
+      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P2",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-dermatology-1",
+      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P2",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-dermatology-2",
+      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "item": "Image to Video edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P2",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-dermatology-3",
+      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P2",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-dermatology-4",
+      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P2",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-dermatology-5",
+      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-13",
+      "endDate": "2026-08-19",
+      "notes": "Priority P2",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-tufpro-0",
+      "projectId": "p-sun-pharma-sun-pharma-tufpro",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-02",
+      "endDate": "2026-07-08",
+      "notes": "Priority P1",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-tufpro-1",
+      "projectId": "p-sun-pharma-sun-pharma-tufpro",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P1",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-tufpro-2",
+      "projectId": "p-sun-pharma-sun-pharma-tufpro",
+      "item": "Image to Video edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P1",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-tufpro-3",
+      "projectId": "p-sun-pharma-sun-pharma-tufpro",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
       "notes": "Priority P1",
       "status": "in-progress"
     },
     {
-      "id": "tl-p-sun-pharma-neuropathy",
-      "projectId": "p-sun-pharma-neuropathy",
+      "id": "tl-p-sun-pharma-sun-pharma-tufpro-4",
+      "projectId": "p-sun-pharma-sun-pharma-tufpro",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P1",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sun-pharma-sun-pharma-tufpro-5",
+      "projectId": "p-sun-pharma-sun-pharma-tufpro",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P1",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sun-pharma-neuropathy-0",
+      "projectId": "p-sun-pharma-neuropathy",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P2",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sun-pharma-neuropathy-1",
+      "projectId": "p-sun-pharma-neuropathy",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P2",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sun-pharma-neuropathy-2",
+      "projectId": "p-sun-pharma-neuropathy",
+      "item": "Image to Video edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
       "notes": "Priority P2",
       "status": "in-progress"
     },
     {
-      "id": "tl-p-sunpharma-video-sop",
+      "id": "tl-p-sun-pharma-neuropathy-3",
+      "projectId": "p-sun-pharma-neuropathy",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P2",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sun-pharma-neuropathy-4",
+      "projectId": "p-sun-pharma-neuropathy",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P2",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sun-pharma-neuropathy-5",
+      "projectId": "p-sun-pharma-neuropathy",
+      "item": "Final delivery",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P2",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-sunpharma-video-sop-0",
+      "projectId": "p-sunpharma-video-sop",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sunpharma-video-sop-1",
+      "projectId": "p-sunpharma-video-sop",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sunpharma-video-sop-2",
+      "projectId": "p-sunpharma-video-sop",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sunpharma-video-sop-3",
+      "projectId": "p-sunpharma-video-sop",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-sunpharma-video-sop-4",
       "projectId": "p-sunpharma-video-sop",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-tide-tide",
+      "id": "tl-p-tide-tide-0",
+      "projectId": "p-tide-tide",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-tide-tide-1",
+      "projectId": "p-tide-tide",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-tide-tide-2",
+      "projectId": "p-tide-tide",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-tide-tide-3",
+      "projectId": "p-tide-tide",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-tide-tide-4",
       "projectId": "p-tide-tide",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-titan-titan-father-s-day-multilingual-tamil",
+      "id": "tl-p-titan-titan-father-s-day-multilingual-tamil-0",
+      "projectId": "p-titan-titan-father-s-day-multilingual-tamil",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-titan-titan-father-s-day-multilingual-tamil-1",
+      "projectId": "p-titan-titan-father-s-day-multilingual-tamil",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-titan-titan-father-s-day-multilingual-tamil-2",
+      "projectId": "p-titan-titan-father-s-day-multilingual-tamil",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-titan-titan-father-s-day-multilingual-tamil-3",
+      "projectId": "p-titan-titan-father-s-day-multilingual-tamil",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-aman",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-titan-titan-father-s-day-multilingual-tamil-4",
       "projectId": "p-titan-titan-father-s-day-multilingual-tamil",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-aman",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-upgrad-upgrad",
+      "id": "tl-p-upgrad-upgrad-0",
+      "projectId": "p-upgrad-upgrad",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-upgrad-upgrad-1",
+      "projectId": "p-upgrad-upgrad",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-upgrad-upgrad-2",
+      "projectId": "p-upgrad-upgrad",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-upgrad-upgrad-3",
+      "projectId": "p-upgrad-upgrad",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-mayank",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-upgrad-upgrad-4",
       "projectId": "p-upgrad-upgrad",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-mayank",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-uti-model-training-14-bytes-1-consolidated-v",
+      "id": "tl-p-uti-model-training-14-bytes-1-consolidated-v-0",
+      "projectId": "p-uti-model-training-14-bytes-1-consolidated-v",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-uti-model-training-14-bytes-1-consolidated-v-1",
+      "projectId": "p-uti-model-training-14-bytes-1-consolidated-v",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-uti-model-training-14-bytes-1-consolidated-v-2",
+      "projectId": "p-uti-model-training-14-bytes-1-consolidated-v",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-uti-model-training-14-bytes-1-consolidated-v-3",
+      "projectId": "p-uti-model-training-14-bytes-1-consolidated-v",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-uti-model-training-14-bytes-1-consolidated-v-4",
       "projectId": "p-uti-model-training-14-bytes-1-consolidated-v",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-ananya",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
       "notes": "Priority P3",
-      "status": "in-progress"
+      "status": "not-started"
     },
     {
-      "id": "tl-p-vi-vodafone-idea",
+      "id": "tl-p-vi-vodafone-idea-0",
+      "projectId": "p-vi-vodafone-idea",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-vi-vodafone-idea-1",
+      "projectId": "p-vi-vodafone-idea",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-vi-vodafone-idea-2",
+      "projectId": "p-vi-vodafone-idea",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-vi-vodafone-idea-3",
+      "projectId": "p-vi-vodafone-idea",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-vi-vodafone-idea-4",
       "projectId": "p-vi-vodafone-idea",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-vicco-audio-change-multilingual",
+      "id": "tl-p-vicco-audio-change-multilingual-0",
+      "projectId": "p-vicco-audio-change-multilingual",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-vicco-audio-change-multilingual-1",
+      "projectId": "p-vicco-audio-change-multilingual",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "in-progress"
+    },
+    {
+      "id": "tl-p-vicco-audio-change-multilingual-2",
+      "projectId": "p-vicco-audio-change-multilingual",
+      "item": "Avatar (Creative) edit",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-vicco-audio-change-multilingual-3",
+      "projectId": "p-vicco-audio-change-multilingual",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-vicco-audio-change-multilingual-4",
+      "projectId": "p-vicco-audio-change-multilingual",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-ananya",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-vicco-audio-change-multilingual-5",
       "projectId": "p-vicco-audio-change-multilingual",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-ananya",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-08-13",
+      "endDate": "2026-08-19",
       "notes": "Priority P3",
-      "status": "in-progress"
+      "status": "not-started"
     },
     {
-      "id": "tl-p-vistaar-finance-vistaar-finance",
+      "id": "tl-p-vistaar-finance-vistaar-finance-0",
+      "projectId": "p-vistaar-finance-vistaar-finance",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-08",
+      "endDate": "2026-07-14",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-vistaar-finance-vistaar-finance-1",
+      "projectId": "p-vistaar-finance-vistaar-finance",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-20",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-vistaar-finance-vistaar-finance-2",
+      "projectId": "p-vistaar-finance-vistaar-finance",
+      "item": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "notes": "Priority P3",
+      "status": "blocked"
+    },
+    {
+      "id": "tl-p-vistaar-finance-vistaar-finance-3",
+      "projectId": "p-vistaar-finance-vistaar-finance",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-01",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-vistaar-finance-vistaar-finance-4",
+      "projectId": "p-vistaar-finance-vistaar-finance",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-himali",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "notes": "Priority P3",
+      "status": "not-started"
+    },
+    {
+      "id": "tl-p-vistaar-finance-vistaar-finance-5",
       "projectId": "p-vistaar-finance-vistaar-finance",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-himali",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-15",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-13",
       "notes": "Priority P3",
-      "status": "in-progress"
+      "status": "not-started"
     },
     {
-      "id": "tl-p-voltas-voltas-dealer-bytes",
+      "id": "tl-p-voltas-voltas-dealer-bytes-0",
+      "projectId": "p-voltas-voltas-dealer-bytes",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-dealer-bytes-1",
+      "projectId": "p-voltas-voltas-dealer-bytes",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-dealer-bytes-2",
+      "projectId": "p-voltas-voltas-dealer-bytes",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-dealer-bytes-3",
+      "projectId": "p-voltas-voltas-dealer-bytes",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-dealer-bytes-4",
       "projectId": "p-voltas-voltas-dealer-bytes",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-voltas-voltas-multilingual",
+      "id": "tl-p-voltas-voltas-multilingual-0",
+      "projectId": "p-voltas-voltas-multilingual",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-multilingual-1",
+      "projectId": "p-voltas-voltas-multilingual",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-multilingual-2",
+      "projectId": "p-voltas-voltas-multilingual",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-multilingual-3",
+      "projectId": "p-voltas-voltas-multilingual",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-multilingual-4",
       "projectId": "p-voltas-voltas-multilingual",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-voltas-voltas-personalisation",
+      "id": "tl-p-voltas-voltas-personalisation-0",
+      "projectId": "p-voltas-voltas-personalisation",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-personalisation-1",
+      "projectId": "p-voltas-voltas-personalisation",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-personalisation-2",
+      "projectId": "p-voltas-voltas-personalisation",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-personalisation-3",
+      "projectId": "p-voltas-voltas-personalisation",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-personalisation-4",
       "projectId": "p-voltas-voltas-personalisation",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-voltas-voltas-jingles-4",
+      "id": "tl-p-voltas-voltas-jingles-4-0",
+      "projectId": "p-voltas-voltas-jingles-4",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-jingles-4-1",
+      "projectId": "p-voltas-voltas-jingles-4",
+      "item": "Video Production edit",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-jingles-4-2",
+      "projectId": "p-voltas-voltas-jingles-4",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-jingles-4-3",
+      "projectId": "p-voltas-voltas-jingles-4",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-gayatri",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-jingles-4-4",
       "projectId": "p-voltas-voltas-jingles-4",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-gayatri",
-      "startDate": "2026-06-01",
-      "endDate": "2026-07-15",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
       "notes": "Priority P3",
       "status": "completed"
     },
     {
-      "id": "tl-p-voltas-voltas",
+      "id": "tl-p-voltas-voltas-0",
+      "projectId": "p-voltas-voltas",
+      "item": "Brief & script",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-13",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-1",
+      "projectId": "p-voltas-voltas",
+      "item": "AI model training",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-19",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-2",
+      "projectId": "p-voltas-voltas",
+      "item": "Variable Personalisation edit",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-25",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-3",
+      "projectId": "p-voltas-voltas",
+      "item": "QA review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-01",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-4",
+      "projectId": "p-voltas-voltas",
+      "item": "Client review",
+      "ownerId": "u-delivery-management-rajat",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-07",
+      "notes": "Priority P3",
+      "status": "completed"
+    },
+    {
+      "id": "tl-p-voltas-voltas-5",
       "projectId": "p-voltas-voltas",
       "item": "Final delivery",
       "ownerId": "u-delivery-management-rajat",
-      "startDate": "2026-06-01",
-      "endDate": "2026-06-02",
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-13",
       "notes": "Priority P3",
       "status": "completed"
     }
@@ -6014,7 +17915,7 @@ const workbookSeed = {
     {
       "id": "sl-p-aditya-birla-group-aditya-birla-ultratech-cements",
       "projectId": "p-aditya-birla-group-aditya-birla-ultratech-cements",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "- storyboard shared - feedback awaited",
       "addedBy": "u-delivery-management-himali",
@@ -6025,7 +17926,7 @@ const workbookSeed = {
     {
       "id": "sl-p-aditya-birla-group-cables-wires",
       "projectId": "p-aditya-birla-group-cables-wires",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Awaiting brief on static work",
       "addedBy": "u-delivery-management-rajat",
@@ -6036,7 +17937,7 @@ const workbookSeed = {
     {
       "id": "sl-p-amli-amli-ceo-message-to-gulf-policyholders",
       "projectId": "p-amli-amli-ceo-message-to-gulf-policyholders",
-      "date": "2026-07-01",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "- 1 video delivered",
       "addedBy": "u-delivery-management-aman",
@@ -6047,7 +17948,7 @@ const workbookSeed = {
     {
       "id": "sl-p-amli-amli-cot-tot-event",
       "projectId": "p-amli-amli-cot-tot-event",
-      "date": "2026-07-01",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "- 1 video delivered",
       "addedBy": "u-delivery-management-aman",
@@ -6058,7 +17959,7 @@ const workbookSeed = {
     {
       "id": "sl-p-amli-amli-digital-performance-marketing",
       "projectId": "p-amli-amli-digital-performance-marketing",
-      "date": "2026-05-09",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "- Total 10 videos shared",
       "addedBy": "u-delivery-management-aman",
@@ -6069,7 +17970,7 @@ const workbookSeed = {
     {
       "id": "sl-p-amli-amli-leaders",
       "projectId": "p-amli-amli-leaders",
-      "date": "2026-05-06",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "- 3 videos delivered",
       "addedBy": "u-delivery-management-aman",
@@ -6080,7 +17981,7 @@ const workbookSeed = {
     {
       "id": "sl-p-amli-amli-mdrt-winners",
       "projectId": "p-amli-amli-mdrt-winners",
-      "date": "2026-07-01",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "- 1 video delivered",
       "addedBy": "u-delivery-management-aman",
@@ -6091,7 +17992,7 @@ const workbookSeed = {
     {
       "id": "sl-p-amli-amli-surrender-retention",
       "projectId": "p-amli-amli-surrender-retention",
-      "date": "2026-04-17",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "- 16 videos delivered",
       "addedBy": "u-delivery-management-aman",
@@ -6102,7 +18003,7 @@ const workbookSeed = {
     {
       "id": "sl-p-amli-amli-par-bonus-communication",
       "projectId": "p-amli-amli-par-bonus-communication",
-      "date": "2026-07-10",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Send updated video",
       "addedBy": "u-delivery-management-rajat",
@@ -6113,7 +18014,7 @@ const workbookSeed = {
     {
       "id": "sl-p-amli-amli-aurous-club-aurum-club",
       "projectId": "p-amli-amli-aurous-club-aurum-club",
-      "date": "2026-07-10",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Send updated video",
       "addedBy": "u-delivery-management-rajat",
@@ -6135,7 +18036,7 @@ const workbookSeed = {
     {
       "id": "sl-p-amli-amli-cc-liability-joint-life-guranteed-l",
       "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Awaiting approval from client then automation",
       "addedBy": "u-delivery-management-rajat",
@@ -6146,7 +18047,7 @@ const workbookSeed = {
     {
       "id": "sl-p-amli-amli-loan-against-a-policy",
       "projectId": "p-amli-amli-loan-against-a-policy",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "-Creative shared, feedback awaited",
       "addedBy": "u-delivery-management-rajat",
@@ -6157,7 +18058,7 @@ const workbookSeed = {
     {
       "id": "sl-p-amli-amli-ulip",
       "projectId": "p-amli-amli-ulip",
-      "date": "2026-07-09",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Need to update template today",
       "addedBy": "u-delivery-management-rajat",
@@ -6168,7 +18069,7 @@ const workbookSeed = {
     {
       "id": "sl-p-amli-amli-mpitch-pro",
       "projectId": "p-amli-amli-mpitch-pro",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "- 1 video delivered",
       "addedBy": "u-delivery-management-rajat",
@@ -6179,7 +18080,7 @@ const workbookSeed = {
     {
       "id": "sl-p-asian-paints-asian-paints-dealer-bytes",
       "projectId": "p-asian-paints-asian-paints-dealer-bytes",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Automation to be done , AI samples to be shared and Profanity to be checked on data",
       "addedBy": "u-delivery-management-himali",
@@ -6190,7 +18091,7 @@ const workbookSeed = {
     {
       "id": "sl-p-bajaj-monsoon-video",
       "projectId": "p-bajaj-monsoon-video",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "3 videos revison ongoing (kerela and kolkata done)",
       "addedBy": "u-delivery-management-himali",
@@ -6201,7 +18102,7 @@ const workbookSeed = {
     {
       "id": "sl-p-bajaj-finance-social-media",
       "projectId": "p-bajaj-finance-social-media",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Waiting for the approval on the first episode. 2 more videos will be rolled out today.",
       "addedBy": "u-delivery-management-ananya",
@@ -6212,7 +18113,7 @@ const workbookSeed = {
     {
       "id": "sl-p-bharatpe-bharatpe-credit-buddy",
       "projectId": "p-bharatpe-bharatpe-credit-buddy",
-      "date": "2026-06-11",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "2 Tamil Templates to be shared by 11/6",
       "addedBy": "u-delivery-management-mayank",
@@ -6223,7 +18124,7 @@ const workbookSeed = {
     {
       "id": "sl-p-bharatpe-bharatpe-msma",
       "projectId": "p-bharatpe-bharatpe-msma",
-      "date": "2026-07-14",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Need to share updated MSMA templates:\nGeneral store - No change in screen time\nGrocery - screen time to be increased by 2 seconds\nCafe/Food & beverage - screen time to be increased by 3-4 seconds\nPharmacy - screen time to be increased by 3-4 seconds\nFashion - screen time to be increased by 3-4 seconds",
       "addedBy": "u-delivery-management-rajat",
@@ -6234,7 +18135,7 @@ const workbookSeed = {
     {
       "id": "sl-p-biologicale-dr-video",
       "projectId": "p-biologicale-dr-video",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Awaiting input from client | Client not responding",
       "addedBy": "u-delivery-management-shreyansh",
@@ -6245,7 +18146,7 @@ const workbookSeed = {
     {
       "id": "sl-p-birla-white-birla-white",
       "projectId": "p-birla-white-birla-white",
-      "date": "2026-06-10",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "-",
       "addedBy": "u-delivery-management-himali",
@@ -6256,7 +18157,7 @@ const workbookSeed = {
     {
       "id": "sl-p-bkt-tyres-bkt-tyres-father-s-day",
       "projectId": "p-bkt-tyres-bkt-tyres-father-s-day",
-      "date": "2026-07-01",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "-Cancelled",
       "addedBy": "u-delivery-management-aman",
@@ -6267,7 +18168,7 @@ const workbookSeed = {
     {
       "id": "sl-p-buildahome-buildahome",
       "projectId": "p-buildahome-buildahome",
-      "date": "2026-06-13",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "- No context, was just assigned from Shreyansh",
       "addedBy": "u-delivery-management-aman",
@@ -6278,7 +18179,7 @@ const workbookSeed = {
     {
       "id": "sl-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
       "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
-      "date": "2026-06-16",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "3  to be delivered  on Tuesday (16/06)",
       "addedBy": "u-delivery-management-shreyansh",
@@ -6289,7 +18190,7 @@ const workbookSeed = {
     {
       "id": "sl-p-canara-hsbc-customer-service-video",
       "projectId": "p-canara-hsbc-customer-service-video",
-      "date": "2026-06-10",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "1st cut to be shown on Wed",
       "addedBy": "u-delivery-management-shreyansh",
@@ -6300,7 +18201,7 @@ const workbookSeed = {
     {
       "id": "sl-p-canara-hsbc-app-explainer-videos",
       "projectId": "p-canara-hsbc-app-explainer-videos",
-      "date": "2026-06-18",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "1 video by thursday",
       "addedBy": "u-delivery-management-shreyansh",
@@ -6311,7 +18212,7 @@ const workbookSeed = {
     {
       "id": "sl-p-chandigarh-university-chandigarh-university",
       "projectId": "p-chandigarh-university-chandigarh-university",
-      "date": "2026-06-04",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "All videos delivered",
       "addedBy": "u-delivery-management-himali",
@@ -6322,7 +18223,7 @@ const workbookSeed = {
     {
       "id": "sl-p-country-delight-country-delight",
       "projectId": "p-country-delight-country-delight",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "None",
       "addedBy": "u-delivery-management-gayatri",
@@ -6333,7 +18234,7 @@ const workbookSeed = {
     {
       "id": "sl-p-cuemath-celebrity-avatar-video",
       "projectId": "p-cuemath-celebrity-avatar-video",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Final script 1 to be shared by client",
       "addedBy": "u-delivery-management-prabhav",
@@ -6344,7 +18245,7 @@ const workbookSeed = {
     {
       "id": "sl-p-dabur-odonil",
       "projectId": "p-dabur-odonil",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Incorporate changes and share updated video",
       "addedBy": "u-delivery-management-rajat",
@@ -6355,7 +18256,7 @@ const workbookSeed = {
     {
       "id": "sl-p-danube-danube",
       "projectId": "p-danube-danube",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "Audio model trained, moving sample done, project on hold till august",
       "addedBy": "u-delivery-management-himali",
@@ -6366,7 +18267,7 @@ const workbookSeed = {
     {
       "id": "sl-p-dmi-finance-dmi-finance",
       "projectId": "p-dmi-finance-dmi-finance",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Need to share personalized statics 3L data\nAwaiting client input Vasu to speak to Anshuman || Train male avatar model - Personal Loan OMS - Automation, \n'Business Loan Pre Approved' - Creative18-Jun\n'Business Loan OMS' - Send creative 25-Jun\n\n\n\nDM Follow up - Timelines, campaign performance",
       "addedBy": "u-delivery-management-rajat",
@@ -6377,7 +18278,7 @@ const workbookSeed = {
     {
       "id": "sl-p-fortis-fortis",
       "projectId": "p-fortis-fortis",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "Call today at 3 for new brief",
       "addedBy": "u-delivery-management-gayatri",
@@ -6388,7 +18289,7 @@ const workbookSeed = {
     {
       "id": "sl-p-future-generali-future-generali",
       "projectId": "p-future-generali-future-generali",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "- Logo updated and shared",
       "addedBy": "u-delivery-management-shreyansh",
@@ -6399,7 +18300,7 @@ const workbookSeed = {
     {
       "id": "sl-p-goldiee-goldiee-sprinkoo",
       "projectId": "p-goldiee-goldiee-sprinkoo",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "- final video to be delivered on 01/07 - Tarun on top of it",
       "addedBy": "u-delivery-management-himali",
@@ -6410,7 +18311,7 @@ const workbookSeed = {
     {
       "id": "sl-p-gommt-goibibo-my-bizz",
       "projectId": "p-gommt-goibibo-my-bizz",
-      "date": "2026-06-17",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "Video to be shared 15-Jun-2026",
       "addedBy": "u-delivery-management-rajat",
@@ -6421,7 +18322,7 @@ const workbookSeed = {
     {
       "id": "sl-p-hindware-hindware",
       "projectId": "p-hindware-hindware",
-      "date": "2026-07-01",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "-4th Iteration needed- delivery 01/07 - first half",
       "addedBy": "u-delivery-management-himali",
@@ -6432,7 +18333,7 @@ const workbookSeed = {
     {
       "id": "sl-p-impronics-impropay",
       "projectId": "p-impronics-impropay",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Awaiting brief call",
       "addedBy": "u-delivery-management-himali",
@@ -6443,7 +18344,7 @@ const workbookSeed = {
     {
       "id": "sl-p-indusland-bank-indusland-nippon",
       "projectId": "p-indusland-bank-indusland-nippon",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Revised scripts awaited",
       "addedBy": "u-delivery-management-prakriti",
@@ -6454,7 +18355,7 @@ const workbookSeed = {
     {
       "id": "sl-p-jsw-jsw-wood-finish",
       "projectId": "p-jsw-jsw-wood-finish",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "- 4 trial videos shared: Approval pending",
       "addedBy": "u-delivery-management-rajat",
@@ -6465,7 +18366,7 @@ const workbookSeed = {
     {
       "id": "sl-p-jsw-jsw-retailer-yogesh",
       "projectId": "p-jsw-jsw-retailer-yogesh",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "Awaiting updated scripts from Binu",
       "addedBy": "u-delivery-management-rajat",
@@ -6476,7 +18377,7 @@ const workbookSeed = {
     {
       "id": "sl-p-just-in-time-just-in-time",
       "projectId": "p-just-in-time-just-in-time",
-      "date": "2026-06-03",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "- Feedback received, complete rework",
       "addedBy": "u-delivery-management-mayank",
@@ -6487,7 +18388,7 @@ const workbookSeed = {
     {
       "id": "sl-p-kaps-advertising-kaps-advertising-sleepwell",
       "projectId": "p-kaps-advertising-kaps-advertising-sleepwell",
-      "date": "2026-06-18",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "delivery on 18/6",
       "addedBy": "u-delivery-management-mayank",
@@ -6498,7 +18399,7 @@ const workbookSeed = {
     {
       "id": "sl-p-kissht-x",
       "projectId": "p-kissht-x",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "Waiting go ahead from Rahul",
       "addedBy": "u-delivery-management-prabhav",
@@ -6509,7 +18410,7 @@ const workbookSeed = {
     {
       "id": "sl-p-kotak-mahindra-bank-kotak-life",
       "projectId": "p-kotak-mahindra-bank-kotak-life",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Rework on sample - call today at 4:30",
       "addedBy": "u-delivery-management-himali",
@@ -6520,7 +18421,7 @@ const workbookSeed = {
     {
       "id": "sl-p-l-t-l-t-leadership",
       "projectId": "p-l-t-l-t-leadership",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "- No movement since Shoot\n- Client delay",
       "addedBy": "u-delivery-management-mayank",
@@ -6531,7 +18432,7 @@ const workbookSeed = {
     {
       "id": "sl-p-l-t-l-t-bumrah-shorties",
       "projectId": "p-l-t-l-t-bumrah-shorties",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "- No movement since Shoot\n- Client delay\n-Group with client not made yet, Mohit said this week",
       "addedBy": "u-delivery-management-gayatri",
@@ -6542,7 +18443,7 @@ const workbookSeed = {
     {
       "id": "sl-p-lawyered-lawyered",
       "projectId": "p-lawyered-lawyered",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "- Project brief will come in 1st week of June",
       "addedBy": "u-delivery-management-rajat",
@@ -6553,7 +18454,7 @@ const workbookSeed = {
     {
       "id": "sl-p-m3m-meme-videos",
       "projectId": "p-m3m-meme-videos",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Send 1 video by 4:00 PM.",
       "addedBy": "u-delivery-management-ananya",
@@ -6564,7 +18465,7 @@ const workbookSeed = {
     {
       "id": "sl-p-mars-pedigree-mars-pedigree",
       "projectId": "p-mars-pedigree-mars-pedigree",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Sitting video of KL needs to be shared by tomorrow, first half.\nUpdate: Iterations are required.",
       "addedBy": "u-delivery-management-ananya",
@@ -6575,7 +18476,7 @@ const workbookSeed = {
     {
       "id": "sl-p-muthoot-muthoot-finance",
       "projectId": "p-muthoot-muthoot-finance",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Awaiting feedback on vyapaar plus",
       "addedBy": "u-delivery-management-himali",
@@ -6586,7 +18487,7 @@ const workbookSeed = {
     {
       "id": "sl-p-novo-nordisk-awiqli",
       "projectId": "p-novo-nordisk-awiqli",
-      "date": "2026-07-01",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "Need to expedite the dummy video.",
       "addedBy": "u-delivery-management-ananya",
@@ -6597,7 +18498,7 @@ const workbookSeed = {
     {
       "id": "sl-p-nuvoco-nuvoco-retirement",
       "projectId": "p-nuvoco-nuvoco-retirement",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Group picture to be reworked",
       "addedBy": "u-delivery-management-gayatri",
@@ -6608,7 +18509,7 @@ const workbookSeed = {
     {
       "id": "sl-p-nuvoco-nuvoco-image-to-video-avatar",
       "projectId": "p-nuvoco-nuvoco-image-to-video-avatar",
-      "date": "2026-05-14",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "All videos delivered",
       "addedBy": "u-delivery-management-rajat",
@@ -6619,7 +18520,7 @@ const workbookSeed = {
     {
       "id": "sl-p-olyv-olyv",
       "projectId": "p-olyv-olyv",
-      "date": "2026-07-03",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "2 videos + 1 audio file extra to be shared by 3rd July",
       "addedBy": "u-delivery-management-himali",
@@ -6630,7 +18531,7 @@ const workbookSeed = {
     {
       "id": "sl-p-orkla-mtr-orkla-mtr-ai-tvc",
       "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "Need to send updated SOW and commercials",
       "addedBy": "u-delivery-management-prakriti",
@@ -6641,7 +18542,7 @@ const workbookSeed = {
     {
       "id": "sl-p-ozone-overseas-ozone-tvc-part-1",
       "projectId": "p-ozone-overseas-ozone-tvc-part-1",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Dealer byte to be shared by tomorrow 01/07",
       "addedBy": "u-delivery-management-himali",
@@ -6652,7 +18553,7 @@ const workbookSeed = {
     {
       "id": "sl-p-phonepe-phonepe",
       "projectId": "p-phonepe-phonepe",
-      "date": "2026-06-11",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Update on Priya Nech Issue",
       "addedBy": "u-delivery-management-mayank",
@@ -6663,7 +18564,7 @@ const workbookSeed = {
     {
       "id": "sl-p-piramal-finance-piramal-finance-e2e",
       "projectId": "p-piramal-finance-piramal-finance-e2e",
-      "date": "2026-05-08",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "Audio sent and approved. Lip sync to be done",
       "addedBy": "u-delivery-management-himali",
@@ -6674,7 +18575,7 @@ const workbookSeed = {
     {
       "id": "sl-p-portico-portico",
       "projectId": "p-portico-portico",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "Delivered all videos except 2 folders - renaming to be done by Amit tomorrow 1st half - 01/07/2026",
       "addedBy": "u-delivery-management-himali",
@@ -6685,7 +18586,7 @@ const workbookSeed = {
     {
       "id": "sl-p-rapido-rakhi-video",
       "projectId": "p-rapido-rakhi-video",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Storyboard will be finalised on 06/07/26.",
       "addedBy": "u-delivery-management-ananya",
@@ -6696,7 +18597,7 @@ const workbookSeed = {
     {
       "id": "sl-p-rapido-translation-video",
       "projectId": "p-rapido-translation-video",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "-",
       "addedBy": "u-delivery-management-ananya",
@@ -6707,7 +18608,7 @@ const workbookSeed = {
     {
       "id": "sl-p-ripplehire-ripplehire",
       "projectId": "p-ripplehire-ripplehire",
-      "date": "2026-07-08",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "5 samples + live campaign",
       "addedBy": "u-delivery-management-rajat",
@@ -6718,7 +18619,7 @@ const workbookSeed = {
     {
       "id": "sl-p-sanofi-sanofi",
       "projectId": "p-sanofi-sanofi",
-      "date": "2026-07-01",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "Hindi Sent. Marathi, Bengali audios are locked - to be picked up next.",
       "addedBy": "u-delivery-management-gayatri",
@@ -6729,7 +18630,7 @@ const workbookSeed = {
     {
       "id": "sl-p-savvy-savvy",
       "projectId": "p-savvy-savvy",
-      "date": "2026-07-01",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "- 4 videos shared. Costing too high for client.",
       "addedBy": "u-delivery-management-aman",
@@ -6740,7 +18641,7 @@ const workbookSeed = {
     {
       "id": "sl-p-sbi-sbi-life-digital",
       "projectId": "p-sbi-sbi-life-digital",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "Feedback received on sports - to be shared revised - 01/07",
       "addedBy": "u-delivery-management-gayatri",
@@ -6751,7 +18652,7 @@ const workbookSeed = {
     {
       "id": "sl-p-scapia-scapia",
       "projectId": "p-scapia-scapia",
-      "date": "2026-06-08",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "-All 5 videos delivered with feedback incorporated",
       "addedBy": "u-delivery-management-aman",
@@ -6762,7 +18663,7 @@ const workbookSeed = {
     {
       "id": "sl-p-shiprocket-shiprocket",
       "projectId": "p-shiprocket-shiprocket",
-      "date": "2026-06-10",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "- CC to be done and video to be shared again\n- Can be pushed to Wednesday",
       "addedBy": "u-delivery-management-shreyansh",
@@ -6773,7 +18674,7 @@ const workbookSeed = {
     {
       "id": "sl-p-shriram-finance-ltd-shriram-finance-limited",
       "projectId": "p-shriram-finance-ltd-shriram-finance-limited",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "1 video to be shared 15/6",
       "addedBy": "u-delivery-management-gayatri",
@@ -6784,7 +18685,7 @@ const workbookSeed = {
     {
       "id": "sl-p-shyam-metalics-tvc",
       "projectId": "p-shyam-metalics-tvc",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Timelines to be shared.characters to be locked, assets to recieve",
       "addedBy": "u-delivery-management-himali",
@@ -6795,7 +18696,7 @@ const workbookSeed = {
     {
       "id": "sl-p-sun-pharma-sun-pharma-nasal",
       "projectId": "p-sun-pharma-sun-pharma-nasal",
-      "date": "2026-07-01",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "Nasal Spray Video Approved; awaiting approval on translations and Go Live for English language",
       "addedBy": "u-delivery-management-rajat",
@@ -6806,7 +18707,7 @@ const workbookSeed = {
     {
       "id": "sl-p-sun-pharma-sun-pharma-dermatology",
       "projectId": "p-sun-pharma-sun-pharma-dermatology",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Have shared latest creative video awaiting feedback on same & approval on timelines",
       "addedBy": "u-delivery-management-rajat",
@@ -6817,7 +18718,7 @@ const workbookSeed = {
     {
       "id": "sl-p-sun-pharma-sun-pharma-tufpro",
       "projectId": "p-sun-pharma-sun-pharma-tufpro",
-      "date": "2026-07-07",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Share all multilingiual videos by 7-Jul-2026",
       "addedBy": "u-delivery-management-rajat",
@@ -6828,7 +18729,7 @@ const workbookSeed = {
     {
       "id": "sl-p-sun-pharma-neuropathy",
       "projectId": "p-sun-pharma-neuropathy",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "-Script sent, awaiting approval",
       "addedBy": "u-delivery-management-rajat",
@@ -6839,7 +18740,7 @@ const workbookSeed = {
     {
       "id": "sl-p-tide-tide",
       "projectId": "p-tide-tide",
-      "date": "2026-07-01",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "New video received",
       "addedBy": "u-delivery-management-himali",
@@ -6850,7 +18751,7 @@ const workbookSeed = {
     {
       "id": "sl-p-titan-titan-father-s-day-multilingual-tamil",
       "projectId": "p-titan-titan-father-s-day-multilingual-tamil",
-      "date": "2026-07-01",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "-Delivered",
       "addedBy": "u-delivery-management-aman",
@@ -6861,7 +18762,7 @@ const workbookSeed = {
     {
       "id": "sl-p-uti-model-training-14-bytes-1-consolidated-v",
       "projectId": "p-uti-model-training-14-bytes-1-consolidated-v",
-      "date": "2026-07-01",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "-",
       "addedBy": "u-delivery-management-ananya",
@@ -6872,7 +18773,7 @@ const workbookSeed = {
     {
       "id": "sl-p-vicco-audio-change-multilingual",
       "projectId": "p-vicco-audio-change-multilingual",
-      "date": "2026-07-01",
+      "date": "2026-07-18",
       "updateType": "DM update",
       "text": "Change the dimensions. Will discuss the requirements.",
       "addedBy": "u-delivery-management-ananya",
@@ -6883,7 +18784,7 @@ const workbookSeed = {
     {
       "id": "sl-p-vistaar-finance-vistaar-finance",
       "projectId": "p-vistaar-finance-vistaar-finance",
-      "date": "2026-06-15",
+      "date": "2026-07-16",
       "updateType": "DM update",
       "text": "Resend videos",
       "addedBy": "u-delivery-management-himali",
@@ -6894,7 +18795,7 @@ const workbookSeed = {
     {
       "id": "sl-p-voltas-voltas-personalisation",
       "projectId": "p-voltas-voltas-personalisation",
-      "date": "2026-07-01",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "Data clean up + sanitization pending.",
       "addedBy": "u-delivery-management-gayatri",
@@ -6905,7 +18806,7 @@ const workbookSeed = {
     {
       "id": "sl-p-voltas-voltas",
       "projectId": "p-voltas-voltas",
-      "date": "2026-06-02",
+      "date": "2026-07-08",
       "updateType": "DM update",
       "text": "Share multilingual videos for approval",
       "addedBy": "u-delivery-management-rajat",
@@ -6916,11 +18817,44 @@ const workbookSeed = {
   ],
   "escalations": [
     {
+      "id": "e-p-amli-amli-par-bonus-communication",
+      "projectId": "p-amli-amli-par-bonus-communication",
+      "escalationType": "Quality concern",
+      "severity": "High",
+      "reason": "Send updated video",
+      "ownerId": "u-delivery-management-rajat",
+      "status": "open",
+      "createdDate": "2026-07-10",
+      "resolutionNotes": ""
+    },
+    {
+      "id": "e-p-amli-amli-aurous-club-aurum-club",
+      "projectId": "p-amli-amli-aurous-club-aurum-club",
+      "escalationType": "Quality concern",
+      "severity": "High",
+      "reason": "Send updated video",
+      "ownerId": "u-delivery-management-rajat",
+      "status": "open",
+      "createdDate": "2026-07-10",
+      "resolutionNotes": ""
+    },
+    {
+      "id": "e-p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "escalationType": "Quality concern",
+      "severity": "High",
+      "reason": "Awaiting approval from client then automation",
+      "ownerId": "u-delivery-management-rajat",
+      "status": "open",
+      "createdDate": "2026-07-01",
+      "resolutionNotes": ""
+    },
+    {
       "id": "e-p-amli-amli-cc-liability-segment",
       "projectId": "p-amli-amli-cc-liability-segment",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
-      "reason": "Project on hold in the delivery tracker.",
+      "escalationType": "Timeline risk",
+      "severity": "High",
+      "reason": "SOW/PO missing — commercial readiness blocked.",
       "ownerId": "u-delivery-management-rajat",
       "status": "open",
       "createdDate": "2026-06-10",
@@ -6929,8 +18863,8 @@ const workbookSeed = {
     {
       "id": "e-p-amli-amli-loan-against-a-policy",
       "projectId": "p-amli-amli-loan-against-a-policy",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Client dependency",
+      "severity": "High",
       "reason": "-Creative shared, feedback awaited",
       "ownerId": "u-delivery-management-rajat",
       "status": "open",
@@ -6940,8 +18874,8 @@ const workbookSeed = {
     {
       "id": "e-p-amli-amli-mpitch-pro",
       "projectId": "p-amli-amli-mpitch-pro",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "- 1 video delivered",
       "ownerId": "u-delivery-management-rajat",
       "status": "open",
@@ -6951,9 +18885,9 @@ const workbookSeed = {
     {
       "id": "e-p-astrazeneca-astrazeneca-mkt",
       "projectId": "p-astrazeneca-astrazeneca-mkt",
-      "escalationType": "Client dependency",
-      "severity": "Medium",
-      "reason": "Project on hold in the delivery tracker.",
+      "escalationType": "Timeline risk",
+      "severity": "High",
+      "reason": "Flagged from the delivery tracker for attention.",
       "ownerId": "u-delivery-management-himali",
       "status": "open",
       "createdDate": "2026-07-01",
@@ -6962,8 +18896,8 @@ const workbookSeed = {
     {
       "id": "e-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
       "projectId": "p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "3  to be delivered  on Tuesday (16/06)",
       "ownerId": "u-delivery-management-shreyansh",
       "status": "open",
@@ -6973,8 +18907,8 @@ const workbookSeed = {
     {
       "id": "e-p-canara-hsbc-app-explainer-videos",
       "projectId": "p-canara-hsbc-app-explainer-videos",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "1 video by thursday",
       "ownerId": "u-delivery-management-shreyansh",
       "status": "open",
@@ -6984,9 +18918,9 @@ const workbookSeed = {
     {
       "id": "e-p-canara-hsbc-bumrah-thank-you-video",
       "projectId": "p-canara-hsbc-bumrah-thank-you-video",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
-      "reason": "Project on hold in the delivery tracker.",
+      "escalationType": "Timeline risk",
+      "severity": "High",
+      "reason": "SOW/PO missing — commercial readiness blocked.",
       "ownerId": "u-delivery-management-shreyansh",
       "status": "open",
       "createdDate": "2026-07-01",
@@ -6995,8 +18929,8 @@ const workbookSeed = {
     {
       "id": "e-p-danube-danube",
       "projectId": "p-danube-danube",
-      "escalationType": "Client dependency",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "Audio model trained, moving sample done, project on hold till august",
       "ownerId": "u-delivery-management-himali",
       "status": "open",
@@ -7006,8 +18940,8 @@ const workbookSeed = {
     {
       "id": "e-p-fortis-fortis",
       "projectId": "p-fortis-fortis",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "Call today at 3 for new brief",
       "ownerId": "u-delivery-management-gayatri",
       "status": "open",
@@ -7017,9 +18951,9 @@ const workbookSeed = {
     {
       "id": "e-p-impronics-x",
       "projectId": "p-impronics-x",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
-      "reason": "Project on hold in the delivery tracker.",
+      "escalationType": "Timeline risk",
+      "severity": "High",
+      "reason": "SOW/PO missing — commercial readiness blocked.",
       "ownerId": "u-delivery-management-himali",
       "status": "open",
       "createdDate": "2026-07-01",
@@ -7028,8 +18962,8 @@ const workbookSeed = {
     {
       "id": "e-p-jsw-jsw-wood-finish",
       "projectId": "p-jsw-jsw-wood-finish",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "- 4 trial videos shared: Approval pending",
       "ownerId": "u-delivery-management-rajat",
       "status": "open",
@@ -7039,8 +18973,8 @@ const workbookSeed = {
     {
       "id": "e-p-jsw-jsw-retailer-yogesh",
       "projectId": "p-jsw-jsw-retailer-yogesh",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Client dependency",
+      "severity": "High",
       "reason": "Awaiting updated scripts from Binu",
       "ownerId": "u-delivery-management-rajat",
       "status": "open",
@@ -7050,8 +18984,8 @@ const workbookSeed = {
     {
       "id": "e-p-just-in-time-just-in-time",
       "projectId": "p-just-in-time-just-in-time",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Client dependency",
+      "severity": "High",
       "reason": "- Feedback received, complete rework",
       "ownerId": "u-delivery-management-mayank",
       "status": "open",
@@ -7061,8 +18995,8 @@ const workbookSeed = {
     {
       "id": "e-p-kissht-x",
       "projectId": "p-kissht-x",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "Waiting go ahead from Rahul",
       "ownerId": "u-delivery-management-prabhav",
       "status": "open",
@@ -7072,8 +19006,8 @@ const workbookSeed = {
     {
       "id": "e-p-l-t-l-t-leadership",
       "projectId": "p-l-t-l-t-leadership",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Client dependency",
+      "severity": "High",
       "reason": "- No movement since Shoot\n- Client delay",
       "ownerId": "u-delivery-management-mayank",
       "status": "open",
@@ -7083,8 +19017,8 @@ const workbookSeed = {
     {
       "id": "e-p-lawyered-lawyered",
       "projectId": "p-lawyered-lawyered",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "- Project brief will come in 1st week of June",
       "ownerId": "u-delivery-management-rajat",
       "status": "open",
@@ -7094,9 +19028,9 @@ const workbookSeed = {
     {
       "id": "e-p-mmt-mybiz-founder-led-ai-campaign",
       "projectId": "p-mmt-mybiz-founder-led-ai-campaign",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
-      "reason": "Project on hold in the delivery tracker.",
+      "escalationType": "Timeline risk",
+      "severity": "High",
+      "reason": "SOW/PO missing — commercial readiness blocked.",
       "ownerId": "u-delivery-management-rajat",
       "status": "open",
       "createdDate": "2026-07-01",
@@ -7105,8 +19039,8 @@ const workbookSeed = {
     {
       "id": "e-p-olyv-olyv",
       "projectId": "p-olyv-olyv",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "2 videos + 1 audio file extra to be shared by 3rd July",
       "ownerId": "u-delivery-management-himali",
       "status": "open",
@@ -7116,8 +19050,8 @@ const workbookSeed = {
     {
       "id": "e-p-orkla-mtr-orkla-mtr-ai-tvc",
       "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "Need to send updated SOW and commercials",
       "ownerId": "u-delivery-management-prakriti",
       "status": "open",
@@ -7127,9 +19061,9 @@ const workbookSeed = {
     {
       "id": "e-p-ozone-overseas-ozone-f2c-alok",
       "projectId": "p-ozone-overseas-ozone-f2c-alok",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
-      "reason": "Project on hold in the delivery tracker.",
+      "escalationType": "Timeline risk",
+      "severity": "High",
+      "reason": "SOW/PO missing — commercial readiness blocked.",
       "ownerId": "u-delivery-management-himali",
       "status": "open",
       "createdDate": "2026-07-01",
@@ -7138,9 +19072,9 @@ const workbookSeed = {
     {
       "id": "e-p-paytm-paytm",
       "projectId": "p-paytm-paytm",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
-      "reason": "Project on hold in the delivery tracker.",
+      "escalationType": "Timeline risk",
+      "severity": "High",
+      "reason": "SOW/PO missing — commercial readiness blocked.",
       "ownerId": "u-delivery-management-shreyansh",
       "status": "open",
       "createdDate": "2026-07-01",
@@ -7149,8 +19083,8 @@ const workbookSeed = {
     {
       "id": "e-p-portico-portico",
       "projectId": "p-portico-portico",
-      "escalationType": "Client dependency",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "Delivered all videos except 2 folders - renaming to be done by Amit tomorrow 1st half - 01/07/2026",
       "ownerId": "u-delivery-management-himali",
       "status": "open",
@@ -7160,8 +19094,8 @@ const workbookSeed = {
     {
       "id": "e-p-rapido-translation-video",
       "projectId": "p-rapido-translation-video",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "-",
       "ownerId": "u-delivery-management-ananya",
       "status": "open",
@@ -7171,8 +19105,8 @@ const workbookSeed = {
     {
       "id": "e-p-sbi-sbi-life-digital",
       "projectId": "p-sbi-sbi-life-digital",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Client dependency",
+      "severity": "High",
       "reason": "Feedback received on sports - to be shared revised - 01/07",
       "ownerId": "u-delivery-management-gayatri",
       "status": "open",
@@ -7182,9 +19116,9 @@ const workbookSeed = {
     {
       "id": "e-p-sbi-sbi-life-product",
       "projectId": "p-sbi-sbi-life-product",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
-      "reason": "Project on hold in the delivery tracker.",
+      "escalationType": "Timeline risk",
+      "severity": "High",
+      "reason": "SOW/PO missing — commercial readiness blocked.",
       "ownerId": "u-delivery-management-gayatri",
       "status": "open",
       "createdDate": "2026-07-01",
@@ -7193,8 +19127,8 @@ const workbookSeed = {
     {
       "id": "e-p-shiprocket-shiprocket",
       "projectId": "p-shiprocket-shiprocket",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "- CC to be done and video to be shared again\n- Can be pushed to Wednesday",
       "ownerId": "u-delivery-management-shreyansh",
       "status": "open",
@@ -7204,8 +19138,8 @@ const workbookSeed = {
     {
       "id": "e-p-shriram-finance-ltd-shriram-finance-limited",
       "projectId": "p-shriram-finance-ltd-shriram-finance-limited",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "1 video to be shared 15/6",
       "ownerId": "u-delivery-management-gayatri",
       "status": "open",
@@ -7215,10 +19149,43 @@ const workbookSeed = {
     {
       "id": "e-p-shriram-life-insurance-shriram-life-insurance",
       "projectId": "p-shriram-life-insurance-shriram-life-insurance",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
-      "reason": "Project on hold in the delivery tracker.",
+      "escalationType": "Timeline risk",
+      "severity": "High",
+      "reason": "SOW/PO missing — commercial readiness blocked.",
       "ownerId": "u-delivery-management-gayatri",
+      "status": "open",
+      "createdDate": "2026-07-01",
+      "resolutionNotes": ""
+    },
+    {
+      "id": "e-p-sun-pharma-sun-pharma-dermatology",
+      "projectId": "p-sun-pharma-sun-pharma-dermatology",
+      "escalationType": "Quality concern",
+      "severity": "High",
+      "reason": "Have shared latest creative video awaiting feedback on same & approval on timelines",
+      "ownerId": "u-delivery-management-rajat",
+      "status": "open",
+      "createdDate": "2026-07-01",
+      "resolutionNotes": ""
+    },
+    {
+      "id": "e-p-sun-pharma-sun-pharma-tufpro",
+      "projectId": "p-sun-pharma-sun-pharma-tufpro",
+      "escalationType": "Quality concern",
+      "severity": "Critical",
+      "reason": "Share all multilingiual videos by 7-Jul-2026",
+      "ownerId": "u-delivery-management-rajat",
+      "status": "open",
+      "createdDate": "2026-07-07",
+      "resolutionNotes": ""
+    },
+    {
+      "id": "e-p-sun-pharma-neuropathy",
+      "projectId": "p-sun-pharma-neuropathy",
+      "escalationType": "Quality concern",
+      "severity": "High",
+      "reason": "-Script sent, awaiting approval",
+      "ownerId": "u-delivery-management-rajat",
       "status": "open",
       "createdDate": "2026-07-01",
       "resolutionNotes": ""
@@ -7226,8 +19193,8 @@ const workbookSeed = {
     {
       "id": "e-p-uti-model-training-14-bytes-1-consolidated-v",
       "projectId": "p-uti-model-training-14-bytes-1-consolidated-v",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "-",
       "ownerId": "u-delivery-management-ananya",
       "status": "open",
@@ -7237,8 +19204,8 @@ const workbookSeed = {
     {
       "id": "e-p-vistaar-finance-vistaar-finance",
       "projectId": "p-vistaar-finance-vistaar-finance",
-      "escalationType": "Bandwidth conflict",
-      "severity": "Medium",
+      "escalationType": "Timeline risk",
+      "severity": "High",
       "reason": "Resend videos",
       "ownerId": "u-delivery-management-himali",
       "status": "open",
@@ -10069,9 +22036,48 @@ const workbookSeed = {
       "readBy": []
     },
     {
+      "id": "n-esc-e-p-amli-amli-par-bonus-communication",
+      "title": "Escalation raised",
+      "message": "AMLI — Quality concern (High).",
+      "targetRoles": [
+        "delivery",
+        "admin"
+      ],
+      "projectId": "p-amli-amli-par-bonus-communication",
+      "createdAt": "2026-07-18T10:00:00",
+      "priority": "high",
+      "readBy": []
+    },
+    {
+      "id": "n-esc-e-p-amli-amli-aurous-club-aurum-club",
+      "title": "Escalation raised",
+      "message": "AMLI — Quality concern (High).",
+      "targetRoles": [
+        "delivery",
+        "admin"
+      ],
+      "projectId": "p-amli-amli-aurous-club-aurum-club",
+      "createdAt": "2026-07-18T10:00:00",
+      "priority": "high",
+      "readBy": []
+    },
+    {
+      "id": "n-esc-e-p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "title": "Escalation raised",
+      "message": "AMLI — Quality concern (High).",
+      "targetRoles": [
+        "delivery",
+        "admin"
+      ],
+      "projectId": "p-amli-amli-cc-liability-joint-life-guranteed-l",
+      "createdAt": "2026-07-18T10:00:00",
+      "priority": "high",
+      "readBy": []
+    },
+    {
       "id": "n-esc-e-p-amli-amli-cc-liability-segment",
       "title": "Escalation raised",
-      "message": "AMLI — Bandwidth conflict (Medium).",
+      "message": "AMLI — Timeline risk (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10084,7 +22090,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-amli-amli-loan-against-a-policy",
       "title": "Escalation raised",
-      "message": "AMLI — Bandwidth conflict (Medium).",
+      "message": "AMLI — Client dependency (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10097,7 +22103,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-amli-amli-mpitch-pro",
       "title": "Escalation raised",
-      "message": "AMLI — Bandwidth conflict (Medium).",
+      "message": "AMLI — Timeline risk (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10110,7 +22116,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-astrazeneca-astrazeneca-mkt",
       "title": "Escalation raised",
-      "message": "Astrazeneca — Client dependency (Medium).",
+      "message": "Astrazeneca — Timeline risk (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10123,7 +22129,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-canara-hsbc-hsbc-canara-change-the-lead-gen-video-s-",
       "title": "Escalation raised",
-      "message": "Canara HSBC — Bandwidth conflict (Medium).",
+      "message": "Canara HSBC — Timeline risk (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10136,7 +22142,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-canara-hsbc-app-explainer-videos",
       "title": "Escalation raised",
-      "message": "Canara HSBC — Bandwidth conflict (Medium).",
+      "message": "Canara HSBC — Timeline risk (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10149,7 +22155,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-canara-hsbc-bumrah-thank-you-video",
       "title": "Escalation raised",
-      "message": "Canara HSBC — Bandwidth conflict (Medium).",
+      "message": "Canara HSBC — Timeline risk (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10162,7 +22168,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-danube-danube",
       "title": "Escalation raised",
-      "message": "Danube — Client dependency (Medium).",
+      "message": "Danube — Timeline risk (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10175,7 +22181,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-fortis-fortis",
       "title": "Escalation raised",
-      "message": "Fortis — Bandwidth conflict (Medium).",
+      "message": "Fortis — Timeline risk (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10188,7 +22194,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-impronics-x",
       "title": "Escalation raised",
-      "message": "Impronics — Bandwidth conflict (Medium).",
+      "message": "Impronics — Timeline risk (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10201,7 +22207,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-jsw-jsw-wood-finish",
       "title": "Escalation raised",
-      "message": "JSW — Bandwidth conflict (Medium).",
+      "message": "JSW — Timeline risk (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10214,7 +22220,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-jsw-jsw-retailer-yogesh",
       "title": "Escalation raised",
-      "message": "JSW — Bandwidth conflict (Medium).",
+      "message": "JSW — Client dependency (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10227,7 +22233,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-just-in-time-just-in-time",
       "title": "Escalation raised",
-      "message": "Just In Time — Bandwidth conflict (Medium).",
+      "message": "Just In Time — Client dependency (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10240,7 +22246,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-kissht-x",
       "title": "Escalation raised",
-      "message": "Kissht — Bandwidth conflict (Medium).",
+      "message": "Kissht — Timeline risk (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10253,7 +22259,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-l-t-l-t-leadership",
       "title": "Escalation raised",
-      "message": "L&T — Bandwidth conflict (Medium).",
+      "message": "L&T — Client dependency (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10266,7 +22272,7 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-lawyered-lawyered",
       "title": "Escalation raised",
-      "message": "Lawyered — Bandwidth conflict (Medium).",
+      "message": "Lawyered — Timeline risk (High).",
       "targetRoles": [
         "delivery",
         "admin"
@@ -10279,51 +22285,12 @@ const workbookSeed = {
     {
       "id": "n-esc-e-p-mmt-mybiz-founder-led-ai-campaign",
       "title": "Escalation raised",
-      "message": "MMT — Bandwidth conflict (Medium).",
+      "message": "MMT — Timeline risk (High).",
       "targetRoles": [
         "delivery",
         "admin"
       ],
       "projectId": "p-mmt-mybiz-founder-led-ai-campaign",
-      "createdAt": "2026-07-18T10:00:00",
-      "priority": "high",
-      "readBy": []
-    },
-    {
-      "id": "n-esc-e-p-olyv-olyv",
-      "title": "Escalation raised",
-      "message": "Olyv — Bandwidth conflict (Medium).",
-      "targetRoles": [
-        "delivery",
-        "admin"
-      ],
-      "projectId": "p-olyv-olyv",
-      "createdAt": "2026-07-18T10:00:00",
-      "priority": "high",
-      "readBy": []
-    },
-    {
-      "id": "n-esc-e-p-orkla-mtr-orkla-mtr-ai-tvc",
-      "title": "Escalation raised",
-      "message": "Orkla (MTR) — Bandwidth conflict (Medium).",
-      "targetRoles": [
-        "delivery",
-        "admin"
-      ],
-      "projectId": "p-orkla-mtr-orkla-mtr-ai-tvc",
-      "createdAt": "2026-07-18T10:00:00",
-      "priority": "high",
-      "readBy": []
-    },
-    {
-      "id": "n-esc-e-p-ozone-overseas-ozone-f2c-alok",
-      "title": "Escalation raised",
-      "message": "Ozone Overseas — Bandwidth conflict (Medium).",
-      "targetRoles": [
-        "delivery",
-        "admin"
-      ],
-      "projectId": "p-ozone-overseas-ozone-f2c-alok",
       "createdAt": "2026-07-18T10:00:00",
       "priority": "high",
       "readBy": []

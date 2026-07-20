@@ -22,7 +22,9 @@ import {
   ListChecks,
   LogOut,
   Mail,
+  Menu,
   MessageSquare,
+  Moon,
   Paperclip,
   Phone,
   Plus,
@@ -32,9 +34,11 @@ import {
   Shield,
   SlidersHorizontal,
   Sparkles,
+  Sun,
   Upload,
   UserCog,
-  Users
+  Users,
+  X
 } from "lucide-react";
 import logoUrl from "../truefan_ai_logo_1740991244975.jpg";
 import {
@@ -118,6 +122,7 @@ function formatDateTime(value) {
 }
 
 function formatMoney(value = 0) {
+  if (!value) return "—";
   if (value >= 10000000) {
     return `INR ${(value / 10000000).toFixed(1)} Cr`;
   }
@@ -476,6 +481,13 @@ function App() {
   const [page, setPage] = useState("overview");
   const [selectedProjectId, setSelectedProjectId] = useState(store.projects[0]?.id);
   const [showNotifications, setShowNotifications] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [theme, setTheme] = useState(() => (typeof localStorage !== "undefined" && localStorage.getItem("truefan-theme")) || "light");
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    try { localStorage.setItem("truefan-theme", theme); } catch (error) { /* ignore */ }
+  }, [theme]);
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
@@ -544,17 +556,22 @@ function App() {
   const allowedNav = navItems.filter((item) => item.roles.includes(session.role));
 
   return (
-    <div className="app-shell">
-      <aside className="sidebar">
-        <button className="brand" onClick={() => setPage("overview")} type="button">
-          <img src={logoUrl} alt="TrueFan AI" />
-          <span>Command Center</span>
-        </button>
+    <div className={menuOpen ? "app-shell menu-open" : "app-shell"}>
+      <aside className={menuOpen ? "sidebar open" : "sidebar"}>
+        <div className="sidebar-top">
+          <button className="brand" onClick={() => { setPage("overview"); setMenuOpen(false); }} type="button">
+            <img src={logoUrl} alt="TrueFan AI" />
+            <span>Command Center</span>
+          </button>
+          <button className="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)}>
+            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
         <nav className="sidebar-nav" aria-label="Main navigation">
           {allowedNav.map((item) => {
             const Icon = item.icon;
             return (
-              <button key={item.id} className={page === item.id ? "nav-item active" : "nav-item"} onClick={() => setPage(item.id)} type="button">
+              <button key={item.id} className={page === item.id ? "nav-item active" : "nav-item"} onClick={() => { setPage(item.id); setMenuOpen(false); }} type="button">
                 <Icon size={18} />
                 <span>{item.label}</span>
               </button>
@@ -578,6 +595,8 @@ function App() {
           setShowNotifications={setShowNotifications}
           setStore={setStore}
           logout={logout}
+          theme={theme}
+          setTheme={setTheme}
         />
         <section className="content-area">
           <PageRouter
@@ -725,7 +744,7 @@ function LoginPage({ store, onLogin }) {
   );
 }
 
-function Topbar({ page, session, currentUser, store, showNotifications, setShowNotifications, setStore, logout }) {
+function Topbar({ page, session, currentUser, store, showNotifications, setShowNotifications, setStore, logout, theme, setTheme }) {
   const canSeeNotification = (item) => {
     if (session.role === "admin") return true;
     const targetUsers = item.targetUsers || [];
@@ -789,6 +808,9 @@ function Topbar({ page, session, currentUser, store, showNotifications, setShowN
             </div>
           )}
         </div>
+        <button className="icon-button" type="button" onClick={() => setTheme(theme === "dark" ? "light" : "dark")} aria-label="Toggle theme" title={theme === "dark" ? "Switch to light" : "Switch to dark"}>
+          {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+        </button>
         <button className="ghost-button" type="button" onClick={logout}>
           <LogOut size={16} />
           Logout
@@ -2164,12 +2186,51 @@ function TimelineBuilder({ store, setStore, session, addActivity }) {
 
 function GanttTimelineView({ store, session }) {
   const projects = getAccessibleProjects(store, session.role === "admin" ? "admin" : "delivery", session.userId);
-  const projectIds = new Set(projects.map((project) => project.id));
-  const rows = store.timelines.filter((row) => projectIds.has(row.projectId));
-  const dates = rows.flatMap((row) => [row.startDate, row.endDate]).map(dateOnly);
-  const minDate = dates.length ? new Date(Math.min(...dates)) : dateOnly(new Date());
-  const maxDate = dates.length ? new Date(Math.max(...dates)) : dateOnly(dateInputDefault(7));
+  const [dmFilter, setDmFilter] = useState("all");
+  const [statusFilter, setStatusFilter] = useState("active");
+  const [expanded, setExpanded] = useState({});
+
+  const dmOptions = Array.from(new Set(projects.map((p) => p.deliveryManagerId).filter(Boolean)))
+    .map((id) => ({ id, name: userName(store, id) }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  const groups = projects
+    .filter((p) => statusFilter === "all" || p.status === statusFilter)
+    .filter((p) => dmFilter === "all" || p.deliveryManagerId === dmFilter)
+    .map((project) => {
+      const rows = store.timelines
+        .filter((row) => row.projectId === project.id)
+        .sort((a, b) => dateOnly(a.startDate) - dateOnly(b.startDate));
+      if (!rows.length) return null;
+      const start = new Date(Math.min(...rows.map((r) => dateOnly(r.startDate))));
+      const end = new Date(Math.max(...rows.map((r) => dateOnly(r.endDate))));
+      return { project, rows, start, end };
+    })
+    .filter(Boolean)
+    .sort((a, b) => a.start - b.start);
+
+  const allDates = groups.flatMap((g) => [g.start, g.end]);
+  const minDate = allDates.length ? new Date(Math.min(...allDates)) : dateOnly(new Date());
+  const maxDate = allDates.length ? new Date(Math.max(...allDates)) : dateOnly(dateInputDefault(30));
   const span = Math.max(1, Math.round((maxDate - minDate) / dayMs) + 1);
+  const pct = (d) => Math.max(0, Math.min(100, ((dateOnly(d) - minDate) / dayMs / span) * 100));
+  const barWidth = (s, e) => Math.max(1.5, (((dateOnly(e) - dateOnly(s)) / dayMs + 1) / span) * 100);
+
+  const months = [];
+  const cursor = new Date(minDate.getFullYear(), minDate.getMonth(), 1);
+  while (cursor <= maxDate) {
+    months.push(new Date(cursor));
+    cursor.setMonth(cursor.getMonth() + 1);
+  }
+  const monthLabel = (d) => d.toLocaleDateString("en-GB", { month: "short", year: "2-digit" });
+  const todayLeft = pct(new Date());
+  const allExpanded = groups.length > 0 && groups.every((g) => expanded[g.project.id]);
+  const toggleAll = () => {
+    if (allExpanded) return setExpanded({});
+    const next = {};
+    groups.forEach((g) => { next[g.project.id] = true; });
+    setExpanded(next);
+  };
 
   return (
     <div className="page-stack">
@@ -2179,29 +2240,74 @@ function GanttTimelineView({ store, session }) {
             <p className="eyebrow">Gantt timeline</p>
             <h3>Delivery windows by project</h3>
           </div>
-          <span className="mini-badge">{formatDate(minDate)} to {formatDate(maxDate)}</span>
+          <div className="filter-row">
+            <select value={statusFilter} onChange={(event) => setStatusFilter(event.target.value)}>
+              <option value="active">Active</option>
+              <option value="hold">On hold</option>
+              <option value="completed">Completed</option>
+              <option value="all">All statuses</option>
+            </select>
+            <select value={dmFilter} onChange={(event) => setDmFilter(event.target.value)}>
+              <option value="all">All delivery managers</option>
+              {dmOptions.map((dm) => <option key={dm.id} value={dm.id}>{dm.name}</option>)}
+            </select>
+            <button className="soft-button" type="button" onClick={toggleAll}>
+              {allExpanded ? "Collapse all" : "Expand all"}
+            </button>
+          </div>
         </div>
-        <div className="gantt">
-          {rows.map((row) => {
-            const left = Math.max(0, Math.round(((dateOnly(row.startDate) - minDate) / dayMs / span) * 100));
-            const width = Math.max(6, Math.round((((dateOnly(row.endDate) - dateOnly(row.startDate)) / dayMs + 1) / span) * 100));
-            const project = getProject(store, row.projectId);
-            return (
-              <div className="gantt-row" key={row.id}>
-                <div className="gantt-label">
-                  <strong>{row.item}</strong>
-                  <small>{project?.clientName} - {userName(store, row.ownerId)}</small>
-                </div>
-                <div className="gantt-track">
-                  <span className={`gantt-bar ${row.status}`} style={{ left: `${left}%`, width: `${width}%` }}>
-                    {statusLabel(row.status)}
-                  </span>
-                </div>
+
+        {groups.length === 0 ? (
+          <EmptyState title="No projects in range" text="Adjust the status or delivery-manager filter." />
+        ) : (
+          <div className="gantt">
+            <div className="gantt-axis">
+              <div className="gantt-axis-label"><span className="mini-badge">{groups.length} projects</span></div>
+              <div className="gantt-axis-track">
+                {months.map((m) => (
+                  <span className="gantt-month" key={m.toISOString()} style={{ left: `${pct(m)}%` }}>{monthLabel(m)}</span>
+                ))}
+                {todayLeft >= 0 && todayLeft <= 100 && <span className="gantt-today" style={{ left: `${todayLeft}%` }} title="Today" />}
               </div>
-            );
-          })}
-          {rows.length === 0 && <EmptyState title="No timeline rows" text="Create timeline rows to render the Gantt view." />}
-        </div>
+            </div>
+
+            {groups.map((group) => {
+              const isOpen = !!expanded[group.project.id];
+              const health = calculateHealth(group.project, store);
+              return (
+                <div className="gantt-group" key={group.project.id}>
+                  <button className="gantt-summary" type="button" onClick={() => setExpanded((cur) => ({ ...cur, [group.project.id]: !cur[group.project.id] }))}>
+                    <div className="gantt-label">
+                      <strong><ChevronDown size={14} className={isOpen ? "chev open" : "chev"} /> {group.project.clientName}</strong>
+                      <small>{group.project.projectName} · {userName(store, group.project.deliveryManagerId)}</small>
+                    </div>
+                    <div className="gantt-track">
+                      {months.map((m) => <span className="gantt-gridline" key={m.toISOString()} style={{ left: `${pct(m)}%` }} />)}
+                      {todayLeft >= 0 && todayLeft <= 100 && <span className="gantt-today" style={{ left: `${todayLeft}%` }} />}
+                      <span className={`gantt-bar ${health.label.toLowerCase().replace(" ", "-")}`} style={{ left: `${pct(group.start)}%`, width: `${barWidth(group.start, group.end)}%` }}>
+                        {formatDate(group.start)} – {formatDate(group.end)}
+                      </span>
+                    </div>
+                  </button>
+                  {isOpen && group.rows.map((row) => (
+                    <div className="gantt-row stage" key={row.id}>
+                      <div className="gantt-label">
+                        <span>{row.item}</span>
+                        <small>{userName(store, row.ownerId)}</small>
+                      </div>
+                      <div className="gantt-track">
+                        {months.map((m) => <span className="gantt-gridline" key={m.toISOString()} style={{ left: `${pct(m)}%` }} />)}
+                        <span className={`gantt-bar ${row.status}`} style={{ left: `${pct(row.startDate)}%`, width: `${barWidth(row.startDate, row.endDate)}%` }}>
+                          {statusLabel(row.status)}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              );
+            })}
+          </div>
+        )}
       </section>
     </div>
   );
@@ -2299,7 +2405,15 @@ function EscalationPage({ store, setStore, session, addActivity, addNotification
     resolutionNotes: ""
   });
   const projectIds = new Set(projects.map((project) => project.id));
-  const escalations = store.escalations.filter((item) => projectIds.has(item.projectId));
+  const [filters, setFilters] = useState({ severity: "all", type: "all", status: "open" });
+  const severityRank = { Critical: 0, High: 1, Medium: 2, Low: 3 };
+  const escalations = store.escalations
+    .filter((item) => projectIds.has(item.projectId))
+    .filter((item) => filters.severity === "all" || item.severity === filters.severity)
+    .filter((item) => filters.type === "all" || item.escalationType === filters.type)
+    .filter((item) => filters.status === "all" || item.status === filters.status)
+    .sort((a, b) => (severityRank[a.severity] ?? 9) - (severityRank[b.severity] ?? 9));
+  const openCount = store.escalations.filter((item) => projectIds.has(item.projectId) && item.status === "open").length;
   const setField = (field, value) => setForm((current) => ({ ...current, [field]: value }));
 
   const submit = (event) => {
@@ -2346,6 +2460,27 @@ function EscalationPage({ store, setStore, session, addActivity, addNotification
       </section>
 
       <section className="panel">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Open escalations</p>
+            <h3>{openCount} open · {escalations.length} shown</h3>
+          </div>
+          <div className="filter-row">
+            <select value={filters.status} onChange={(event) => setFilters((cur) => ({ ...cur, status: event.target.value }))}>
+              <option value="open">Open</option>
+              <option value="resolved">Resolved</option>
+              <option value="all">All statuses</option>
+            </select>
+            <select value={filters.severity} onChange={(event) => setFilters((cur) => ({ ...cur, severity: event.target.value }))}>
+              <option value="all">All severities</option>
+              {["Critical", "High", "Medium", "Low"].map((s) => <option key={s} value={s}>{s}</option>)}
+            </select>
+            <select value={filters.type} onChange={(event) => setFilters((cur) => ({ ...cur, type: event.target.value }))}>
+              <option value="all">All types</option>
+              {escalationTypes.map((t) => <option key={t} value={t}>{t}</option>)}
+            </select>
+          </div>
+        </div>
         <div className="table-shell">
           <table>
             <thead>
@@ -2579,7 +2714,6 @@ function TeamBandwidthPage({ store }) {
                 <span>Active tasks <strong>{row.activeTasks}</strong></span>
                 <span>Overdue <strong>{row.overdueTasks}</strong></span>
                 <span>Deadlines <strong>{row.upcomingDeadlines}</strong></span>
-                <span>On hold <strong>{row.statusCounts.hold || 0}</strong></span>
                 <span>Active <strong>{row.statusCounts.active || 0}</strong></span>
                 <span>On hold <strong>{row.statusCounts.hold || 0}</strong></span>
               </div>
@@ -2990,13 +3124,16 @@ function computeBandwidth(store, options = {}) {
         return task.ownerId === user.id && task.status !== "completed" && project && projectMatchesStatus(project);
       });
       const activeTasks = ownedTasks.length;
+      // work-in-flight excludes not-yet-started future stages
+      const wipTasks = ownedTasks.filter((task) => ["in-progress", "delayed", "blocked"].includes(task.status)).length;
       const overdueTasks = ownedTasks.filter((task) => isOverdue(task.endDate, task.status)).length;
       const upcomingDeadlines = ownedTasks.filter((task) => daysBetween(new Date(), task.endDate) >= 0 && daysBetween(new Date(), task.endDate) <= 7).length;
       const statusCounts = ownedProjects.reduce((counts, project) => {
         counts[project.status] = (counts[project.status] || 0) + 1;
         return counts;
       }, {});
-      const score = Math.min(100, activeProjects * 6 + activeSamples * 4 + activeTasks * 8 + overdueTasks * 12 + upcomingDeadlines * 5);
+      // projects/samples already capture in-flight load (one active stage each), so weight those; overdue adds urgency
+      const score = Math.min(100, activeProjects * 6 + activeSamples * 4 + overdueTasks * 10 + Math.min(wipTasks, 3) * 2);
       const workloadStatus = score < 30 ? "Available" : score < 55 ? "Moderate" : score < 80 ? "Busy" : "Overloaded";
       return { user, activeProjects, activeSamples, activeTasks, overdueTasks, upcomingDeadlines, statusCounts, score, workloadStatus };
     })

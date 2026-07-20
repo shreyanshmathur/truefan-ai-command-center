@@ -26,17 +26,14 @@ own login this way.
 
 ## Reminders
 
-The **Reminders** page (Admin/Delivery) nudges people about overdue / due-soon
-tasks and open escalations, over two channels:
+The **Reminders** page (Admin/Delivery) emails people about overdue / due-soon
+tasks and open escalations. Sending is handled by a free Netlify Function
+(`netlify/functions/send-reminders.js`) over SMTP — no extra server.
 
-- **Email (free, recommended).** A Netlify Function
-  (`netlify/functions/send-reminders.js`) sends over SMTP — no extra server.
-  Add free SMTP credentials (e.g. a **Gmail App Password**) as Netlify env vars:
-  `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` (optional `SMTP_FROM`,
-  `REMINDER_API_KEY`). Recipient emails are prefilled from each user.
-- **WhatsApp (self-hosted).** The `whatsapp-reminders/` service uses
-  [open-wa](https://www.open-wa.org/); see its README. Needs a persistent host
-  and a QR scan, and is against WhatsApp's ToS — email is the simpler free path.
+Add free SMTP credentials (e.g. a **Gmail App Password**) as Netlify env vars:
+`SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` (optional `SMTP_FROM`,
+`REMINDER_API_KEY`). Recipient emails are prefilled from each user and editable
+on the page.
 
 ## Build And Test
 

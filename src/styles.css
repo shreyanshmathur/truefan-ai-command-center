@@ -1831,46 +1831,6 @@ td select,
   flex-wrap: wrap;
 }
 
-.channel-toggle {
-  display: inline-flex;
-  gap: 4px;
-  padding: 4px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--panel-soft);
-  margin-bottom: 14px;
-}
-
-.channel-toggle button {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  border: 0;
-  background: transparent;
-  color: var(--muted);
-  font-weight: 700;
-  font-size: 13px;
-  padding: 7px 14px;
-  border-radius: 7px;
-}
-
-.channel-toggle button.active {
-  background: var(--surface);
-  color: var(--ink);
-  box-shadow: 0 2px 8px rgba(20, 28, 45, 0.08);
-}
-
-.free-tag {
-  font-size: 10px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--green);
-  background: rgba(19, 138, 85, 0.14);
-  border-radius: 999px;
-  padding: 2px 6px;
-}
-
 .muted-note {
   margin: 0 0 16px;
   color: var(--muted);

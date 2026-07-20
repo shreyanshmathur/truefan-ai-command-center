@@ -71,6 +71,7 @@ const navItems = [
   { id: "gantt", label: "Gantt Timeline", icon: LineChart, group: "Delivery", roles: ["delivery", "admin"] },
   { id: "status-logs", label: "Status Logs", icon: FileText, group: "Delivery", roles: ["sales", "delivery", "admin"] },
   { id: "team", label: "Team Bandwidth", icon: Users, group: "Delivery", roles: ["delivery", "admin"] },
+  { id: "reminders", label: "WhatsApp Reminders", icon: MessageSquare, group: "Admin", roles: ["admin", "delivery"] },
   { id: "admin", label: "Admin Panel", icon: Settings, group: "Admin", roles: ["admin"] },
   { id: "activity", label: "Activity Log", icon: Activity, group: "Admin", roles: ["admin"] }
 ];
@@ -919,6 +920,7 @@ function PageRouter(props) {
     escalations: <EscalationPage {...props} />,
     finance: <FinanceDashboard {...props} />,
     team: <TeamBandwidthPage {...props} />,
+    reminders: <RemindersPage {...props} />,
     admin: <AdminPanel {...props} />,
     activity: <ActivityLogPage {...props} />
   };
@@ -3248,6 +3250,209 @@ function ActivityLogPage({ store }) {
             </article>
           ))}
         </div>
+      </section>
+    </div>
+  );
+}
+
+const REMINDER_CONFIG_KEY = "truefan-reminders-config";
+
+function loadReminderConfig() {
+  try {
+    return JSON.parse(localStorage.getItem(REMINDER_CONFIG_KEY)) || {};
+  } catch (error) {
+    return {};
+  }
+}
+
+function buildReminderMessage(store, user) {
+  const openTasks = store.tasks.filter((task) => task.ownerId === user.id && task.status !== "completed");
+  const overdue = openTasks.filter((task) => isOverdue(task.endDate, task.status));
+  const dueToday = openTasks.filter((task) => daysBetween(new Date(), task.endDate) === 0);
+  const dueSoon = openTasks.filter((task) => {
+    const days = daysBetween(new Date(), task.endDate);
+    return days > 0 && days <= 2;
+  });
+  const escal = store.escalations.filter((item) => item.ownerId === user.id && item.status !== "resolved");
+  const total = overdue.length + dueToday.length + dueSoon.length + escal.length;
+  if (total === 0) return null;
+  const label = (task) => `${task.title} — ${getProject(store, task.projectId)?.clientName || "project"}`;
+  const lines = [`Hi ${user.name}, your TrueFan delivery reminder for ${formatDate(new Date())}:`];
+  if (overdue.length) lines.push(`⚠️ ${overdue.length} overdue: ${overdue.slice(0, 4).map(label).join("; ")}`);
+  if (dueToday.length) lines.push(`📌 Due today: ${dueToday.map(label).join("; ")}`);
+  if (dueSoon.length) lines.push(`🗓️ Due in ≤2 days: ${dueSoon.map(label).join("; ")}`);
+  if (escal.length) lines.push(`🚩 ${escal.length} open escalation(s) to action`);
+  lines.push("— TrueFan AI Command Center");
+  return { total, message: lines.join("\n") };
+}
+
+function buildReminders(store, phones) {
+  return store.users
+    .filter((user) => ["delivery", "sales"].includes(user.role) && user.active)
+    .map((user) => {
+      const built = buildReminderMessage(store, user);
+      if (!built) return null;
+      return { userId: user.id, name: user.name, team: user.team, phone: (phones[user.id] || "").trim(), ...built };
+    })
+    .filter(Boolean);
+}
+
+function RemindersPage({ store }) {
+  const [config, setConfig] = useState(() => loadReminderConfig());
+  const [status, setStatus] = useState({ state: "unknown", text: "Not checked" });
+  const [busy, setBusy] = useState(false);
+  const [result, setResult] = useState(null);
+  const serviceUrl = (config.serviceUrl || "").replace(/\/$/, "");
+  const apiKey = config.apiKey || "";
+  const phones = config.phones || {};
+
+  const persist = (next) => {
+    setConfig(next);
+    localStorage.setItem(REMINDER_CONFIG_KEY, JSON.stringify(next));
+  };
+  const headers = () => ({ "Content-Type": "application/json", ...(apiKey ? { "x-api-key": apiKey } : {}) });
+
+  const reminders = buildReminders(store, phones);
+  const withPhone = reminders.filter((item) => item.phone);
+  const people = store.users
+    .filter((user) => ["delivery", "sales"].includes(user.role) && user.active)
+    .sort((a, b) => a.team.localeCompare(b.team) || a.name.localeCompare(b.name));
+
+  const check = async () => {
+    if (!serviceUrl) return setStatus({ state: "error", text: "Set the service URL first" });
+    setStatus({ state: "checking", text: "Checking…" });
+    try {
+      const res = await fetch(`${serviceUrl}/health`, { headers: headers() });
+      const data = await res.json();
+      setStatus(data.connected
+        ? { state: "ok", text: "Connected to WhatsApp" }
+        : { state: "warn", text: "Service up — WhatsApp not linked yet (scan the QR in its logs)" });
+    } catch (error) {
+      setStatus({ state: "error", text: "Cannot reach the service at that URL" });
+    }
+  };
+
+  const post = async (path, body, okText) => {
+    if (!serviceUrl) return setResult({ ok: false, text: "Set the service URL first" });
+    setBusy(true);
+    setResult(null);
+    try {
+      const res = await fetch(`${serviceUrl}${path}`, { method: "POST", headers: headers(), body: JSON.stringify(body) });
+      const data = await res.json();
+      setResult(res.ok ? { ok: true, text: okText(data) } : { ok: false, text: data.error || "Request failed" });
+    } catch (error) {
+      setResult({ ok: false, text: `Request failed — ${String(error?.message || error)}` });
+    }
+    setBusy(false);
+  };
+
+  const sendTest = () => {
+    const target = withPhone[0];
+    if (!target) return setResult({ ok: false, text: "Add a phone number for at least one person first" });
+    post("/reminders/send", { phone: target.phone, message: `✅ Test reminder from the TrueFan AI Command Center for ${target.name}.` }, () => `Test sent to ${target.name}`);
+  };
+  const runNow = () => post("/reminders/run", { reminders: withPhone.map((item) => ({ phone: item.phone, message: item.message, name: item.name })) }, (data) => `Sent ${data.sent}/${data.total} reminders`);
+
+  return (
+    <div className="page-stack">
+      <section className="panel">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">WhatsApp reminders</p>
+            <h3>Reminder service (open-wa)</h3>
+          </div>
+          <span className={`svc-status ${status.state}`}>{status.text}</span>
+        </div>
+        <p className="muted-note">
+          Reminders are sent by a self-hosted companion service using <strong>open-wa</strong>. Run it from
+          the <code>whatsapp-reminders/</code> folder, scan the WhatsApp QR once, then point this page at it.
+          Automating WhatsApp Web is against WhatsApp&apos;s Terms of Service — use a number you control.
+        </p>
+        <div className="form-grid dense">
+          <label className="field">
+            <span>Service URL</span>
+            <input value={config.serviceUrl || ""} placeholder="http://localhost:4300" onChange={(event) => persist({ ...config, serviceUrl: event.target.value })} />
+          </label>
+          <label className="field">
+            <span>API key (optional)</span>
+            <input value={config.apiKey || ""} placeholder="matches REMINDER_API_KEY" onChange={(event) => persist({ ...config, apiKey: event.target.value })} />
+          </label>
+          <div className="field" style={{ justifyContent: "flex-end" }}>
+            <span>&nbsp;</span>
+            <button className="soft-button" type="button" onClick={check}>
+              <RefreshCw size={16} />
+              Check connection
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="panel">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Recipients</p>
+            <h3>Phone numbers</h3>
+          </div>
+          <span className="mini-badge">{withPhone.length} ready · {reminders.length} need a nudge today</span>
+        </div>
+        <div className="table-shell">
+          <table>
+            <thead>
+              <tr><th>Name</th><th>Team</th><th>WhatsApp number</th></tr>
+            </thead>
+            <tbody>
+              {people.map((user) => (
+                <tr key={user.id}>
+                  <td>{user.name}</td>
+                  <td>{user.team}</td>
+                  <td>
+                    <input
+                      value={phones[user.id] || ""}
+                      placeholder="+91 98765 43210"
+                      onChange={(event) => persist({ ...config, phones: { ...phones, [user.id]: event.target.value } })}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="panel">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Preview</p>
+            <h3>Today&apos;s reminders</h3>
+          </div>
+          <div className="button-row">
+            <button className="soft-button" type="button" onClick={sendTest} disabled={busy}>
+              <MessageSquare size={16} />
+              Send test
+            </button>
+            <button className="primary-button" type="button" onClick={runNow} disabled={busy || withPhone.length === 0}>
+              <Upload size={16} />
+              Run reminders now
+            </button>
+          </div>
+        </div>
+        {result && <p className={result.ok ? "svc-result ok" : "svc-result err"}>{result.text}</p>}
+        {reminders.length === 0 ? (
+          <EmptyState title="Nothing to send" text="No overdue, due-soon, or escalated items for anyone right now." />
+        ) : (
+          <div className="list-stack">
+            {reminders.map((item) => (
+              <article className="reminder-preview" key={item.userId}>
+                <div className="reminder-head">
+                  <strong>{item.name}</strong>
+                  <span className="mini-badge">{item.total} item{item.total === 1 ? "" : "s"}</span>
+                  {!item.phone && <span className="svc-status warn">No number</span>}
+                </div>
+                <pre className="reminder-body">{item.message}</pre>
+              </article>
+            ))}
+          </div>
+        )}
       </section>
     </div>
   );

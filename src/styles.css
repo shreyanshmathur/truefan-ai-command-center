@@ -432,6 +432,17 @@ h3,
   text-underline-offset: 2px;
 }
 
+.credential-hint {
+  flex-basis: 100%;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.credential-hint strong {
+  color: var(--ink);
+}
+
 .admin-credentials {
   margin-bottom: 14px;
 }

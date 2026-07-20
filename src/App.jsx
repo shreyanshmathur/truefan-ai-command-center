@@ -143,6 +143,11 @@ function userName(store, id) {
   return getUser(store, id)?.name || "Unassigned";
 }
 
+function personalLogin(user) {
+  const username = (user?.name || "").toLowerCase().replace(/[^a-z0-9]+/g, "");
+  return { username, password: `${username}@truefan` };
+}
+
 function statusLabel(status) {
   return taskStatuses.find((item) => item.id === status)?.label || titleCase(status || "unknown");
 }
@@ -539,8 +544,10 @@ function App() {
     }));
   };
 
-  const loginAs = (role) => {
-    const user = store.users.find((item) => item.role === role) || store.users.find((item) => item.role === "admin");
+  const loginAs = (role, userId) => {
+    const user = (userId && getUser(store, userId))
+      || store.users.find((item) => item.role === role)
+      || store.users.find((item) => item.role === "admin");
     setSession({ role, userId: user.id });
     setPage("overview");
   };
@@ -634,27 +641,36 @@ function LoginPage({ store, onLogin }) {
   const [error, setError] = useState("");
   const [showDemo, setShowDemo] = useState(false);
   const loginCards = [
-    { role: "sales", icon: BriefcaseBusiness, description: "Create projects, samples, escalations, and track delivery commitments." },
-    { role: "delivery", icon: ClipboardList, description: "Manage delivery tasks, timelines, proof links, and bandwidth." },
+    { role: "sales", icon: BriefcaseBusiness, description: "Sales and SDM teams: create projects, samples, escalations, and track delivery commitments." },
+    { role: "delivery", icon: ClipboardList, description: "Delivery Managers sign in individually to manage their own tasks, timelines, and bandwidth." },
     { role: "finance", icon: CreditCard, description: "Track revenue, PO status, invoices, payment status, and pending amounts." },
     { role: "admin", icon: Shield, description: "Control all data, role permissions, HubSpot sync, and notification rules." }
   ];
 
   const selectedCredentials = roleCredentials[selectedRole];
+  const roleMembers = store.users.filter((user) => user.role === selectedRole && user.active);
+  const perUserLogin = roleMembers.length > 1;
   const fillCredentials = () => {
     setCredentials(selectedCredentials);
     setError("");
   };
   const submitLogin = (event) => {
     event.preventDefault();
-    if (
-      credentials.username.trim().toLowerCase() === selectedCredentials.username.toLowerCase()
-      && credentials.password === selectedCredentials.password
-    ) {
+    const uname = credentials.username.trim().toLowerCase();
+    // individual login: match a teammate of this role by their name
+    const individual = roleMembers.find((user) => personalLogin(user).username === uname);
+    if (individual && (credentials.password === personalLogin(individual).password || credentials.password === selectedCredentials.password)) {
+      onLogin(selectedRole, individual.id);
+      return;
+    }
+    // shared demo login for the role
+    if (uname === selectedCredentials.username.toLowerCase() && credentials.password === selectedCredentials.password) {
       onLogin(selectedRole);
       return;
     }
-    setError(`Use the fixed ${roleLabels[selectedRole]} section username and password.`);
+    setError(perUserLogin
+      ? `Sign in with your name (e.g. "${personalLogin(roleMembers[0]).username}") and ${personalLogin(roleMembers[0]).username}@truefan, or the shared ${roleLabels[selectedRole]} demo login.`
+      : `Use the ${roleLabels[selectedRole]} username and password.`);
   };
 
   return (
@@ -738,6 +754,11 @@ function LoginPage({ store, onLogin }) {
               <>
                 <span>{selectedCredentials.username}</span>
                 <span>{selectedCredentials.password}</span>
+                {perUserLogin && (
+                  <small className="credential-hint">
+                    Or sign in individually — e.g. <strong>{personalLogin(roleMembers[0]).username}</strong> / {personalLogin(roleMembers[0]).username}@truefan
+                  </small>
+                )}
               </>
             )}
           </div>

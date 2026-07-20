@@ -491,12 +491,26 @@ function App() {
   const [selectedProjectId, setSelectedProjectId] = useState(store.projects[0]?.id);
   const [showNotifications, setShowNotifications] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [paletteOpen, setPaletteOpen] = useState(false);
   const [theme, setTheme] = useState(() => (typeof localStorage !== "undefined" && localStorage.getItem("truefan-theme")) || "light");
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     try { localStorage.setItem("truefan-theme", theme); } catch (error) { /* ignore */ }
   }, [theme]);
+
+  useEffect(() => {
+    const onKey = (event) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        setPaletteOpen((open) => !open);
+      } else if (event.key === "Escape") {
+        setPaletteOpen(false);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
@@ -633,6 +647,16 @@ function App() {
           />
         </section>
       </main>
+      {paletteOpen && (
+        <CommandPalette
+          store={store}
+          session={session}
+          nav={allowedNav}
+          setPage={setPage}
+          setSelectedProjectId={setSelectedProjectId}
+          onClose={() => setPaletteOpen(false)}
+        />
+      )}
     </div>
   );
 }
@@ -786,6 +810,61 @@ function LoginPage({ store, onLogin }) {
   );
 }
 
+function CommandPalette({ store, session, nav, setPage, setSelectedProjectId, onClose }) {
+  const [query, setQuery] = useState("");
+  const [selected, setSelected] = useState(0);
+  const q = query.trim().toLowerCase();
+
+  const navResults = nav
+    .filter((item) => item.label.toLowerCase().includes(q))
+    .map((item) => ({ type: "Page", key: `p-${item.id}`, title: item.label, run: () => setPage(item.id) }));
+  const projResults = q.length >= 1
+    ? getAccessibleProjects(store, session.role, session.userId)
+        .filter((project) => `${project.clientName} ${project.projectName}`.toLowerCase().includes(q))
+        .slice(0, 6)
+        .map((project) => ({ type: project.projectType === "Sample" ? "Sample" : "Project", key: project.id, title: project.projectName, sub: project.clientName, run: () => { setSelectedProjectId(project.id); setPage("projects"); } }))
+    : [];
+  const taskResults = q.length >= 2
+    ? store.tasks
+        .filter((task) => task.title.toLowerCase().includes(q))
+        .slice(0, 4)
+        .map((task) => ({ type: "Task", key: task.id, title: task.title, sub: getProject(store, task.projectId)?.clientName, run: () => { setSelectedProjectId(task.projectId); setPage("projects"); } }))
+    : [];
+  const results = [...navResults, ...projResults, ...taskResults].slice(0, 12);
+  const active = Math.min(selected, Math.max(0, results.length - 1));
+
+  const activate = (result) => { result.run(); onClose(); };
+  const onKeyDown = (event) => {
+    if (event.key === "ArrowDown") { event.preventDefault(); setSelected((s) => Math.min(results.length - 1, s + 1)); }
+    else if (event.key === "ArrowUp") { event.preventDefault(); setSelected((s) => Math.max(0, s - 1)); }
+    else if (event.key === "Enter") { event.preventDefault(); if (results[active]) activate(results[active]); }
+  };
+
+  return (
+    <div className="palette-overlay" onMouseDown={onClose}>
+      <div className="palette" onMouseDown={(event) => event.stopPropagation()}>
+        <div className="palette-input">
+          <Search size={18} />
+          <input autoFocus value={query} placeholder="Search pages, projects, tasks…" onChange={(event) => { setQuery(event.target.value); setSelected(0); }} onKeyDown={onKeyDown} />
+          <kbd>esc</kbd>
+        </div>
+        <div className="palette-results">
+          {results.length === 0 ? (
+            <p className="palette-empty">No matches{q ? ` for “${query}”` : ""}.</p>
+          ) : (
+            results.map((result, index) => (
+              <button key={`${result.type}-${result.key}`} type="button" className={index === active ? "palette-item active" : "palette-item"} onMouseEnter={() => setSelected(index)} onClick={() => activate(result)}>
+                <span className={`search-kind ${result.type.toLowerCase()}`}>{result.type}</span>
+                <span className="search-text"><strong>{result.title}</strong>{result.sub && <small>{result.sub}</small>}</span>
+              </button>
+            ))
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Topbar({ page, session, currentUser, store, showNotifications, setShowNotifications, setStore, logout, theme, setTheme, setPage, setSelectedProjectId }) {
   const [query, setQuery] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
@@ -847,6 +926,7 @@ function Topbar({ page, session, currentUser, store, showNotifications, setShowN
             onBlur={() => setTimeout(() => setSearchOpen(false), 150)}
             onKeyDown={(event) => { if (event.key === "Enter" && results[0]) openResult(results[0]); }}
           />
+          <kbd className="search-kbd">⌘K</kbd>
           {searchOpen && q.length >= 2 && (
             <div className="search-results">
               {results.length === 0 ? (

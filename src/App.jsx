@@ -925,7 +925,172 @@ function PageRouter(props) {
   return pages[props.page] || pages.overview;
 }
 
-function OverviewDashboard({ store, session, setPage, setSelectedProjectId }) {
+function OverviewDashboard(props) {
+  if (props.session.role === "delivery") {
+    return <DeliveryOverview {...props} />;
+  }
+  return <CommercialOverview {...props} />;
+}
+
+function DeliveryOverview({ store, session, setPage, setSelectedProjectId }) {
+  const me = session.userId;
+  const myUser = getUser(store, me);
+  const myProjects = store.projects.filter((project) =>
+    project.deliveryManagerId === me || (project.editorIds || []).includes(me) || (project.audioIds || []).includes(me)
+  );
+  const myProjectIds = new Set(myProjects.map((project) => project.id));
+  const activeProjects = myProjects.filter(isLiveProject);
+  const myTasks = store.tasks.filter((task) => task.ownerId === me);
+  const openTasks = myTasks.filter((task) => task.status !== "completed");
+  const inProgress = myTasks.filter((task) => task.status === "in-progress");
+  const overdue = openTasks.filter((task) => isOverdue(task.endDate, task.status));
+  const blocked = myTasks.filter((task) => task.status === "blocked");
+  const dueThisWeek = openTasks.filter((task) => {
+    const days = daysBetween(new Date(), task.endDate);
+    return days >= 0 && days <= 7;
+  });
+  const statusCounts = taskStatuses.map((status) => ({ ...status, count: myTasks.filter((task) => task.status === status.id).length }));
+  const completedShare = myTasks.length ? Math.round((myTasks.filter((task) => task.status === "completed").length / myTasks.length) * 100) : 0;
+  const myBandwidth = computeBandwidth(store).find((row) => row.user.id === me);
+  const severityRank = { Critical: 0, High: 1, Medium: 2, Low: 3 };
+  const myEscalations = store.escalations
+    .filter((item) => myProjectIds.has(item.projectId) && item.status !== "resolved")
+    .sort((a, b) => (severityRank[a.severity] ?? 9) - (severityRank[b.severity] ?? 9))
+    .slice(0, 4);
+  const upcoming = openTasks
+    .filter((task) => task.endDate && daysBetween(new Date(), task.endDate) >= -1)
+    .sort((a, b) => dateOnly(a.endDate) - dateOnly(b.endDate))
+    .slice(0, 6);
+  const recentUpdates = store.statusLogs
+    .filter((log) => myProjectIds.has(log.projectId))
+    .slice()
+    .sort((a, b) => daysBetween(b.date, a.date))
+    .slice(0, 5);
+
+  return (
+    <div className="page-stack">
+      <section className="panel greeting-panel">
+        <div>
+          <p className="eyebrow">Delivery workspace</p>
+          <h3>Good day, {myUser?.name?.split(" ")[0] || "there"} — here is your day</h3>
+        </div>
+        {myBandwidth && <StatusBadge status={myBandwidth.workloadStatus} />}
+      </section>
+
+      <section className="metric-grid">
+        <MetricCard label="My active projects" value={activeProjects.length} icon={FolderKanban} detail={`${myProjects.length} total assigned`} onClick={() => setPage("projects")} />
+        <MetricCard label="Tasks in progress" value={inProgress.length} icon={ListChecks} onClick={() => setPage("delivery-board")} />
+        <MetricCard label="Due this week" value={dueThisWeek.length} icon={CalendarDays} tone={dueThisWeek.length ? "warning" : "neutral"} detail="Open Task Board" onClick={() => setPage("delivery-board")} />
+        <MetricCard label="Overdue tasks" value={overdue.length} icon={Clock} tone="danger" detail="Needs attention" onClick={() => setPage("delivery-board")} />
+        <MetricCard label="Blocked" value={blocked.length} icon={AlertTriangle} tone={blocked.length ? "danger" : "neutral"} onClick={() => setPage("delivery-board")} />
+        <MetricCard label="My workload" value={myBandwidth ? `${myBandwidth.score}` : "0"} icon={Gauge} detail={myBandwidth?.workloadStatus || "Available"} meter={myBandwidth?.score || 0} meterTone={myBandwidth ? { Available: "success", Moderate: "success", Busy: "warning", Overloaded: "warning" }[myBandwidth.workloadStatus] : "success"} onClick={() => setPage("team")} />
+      </section>
+
+      <section className="two-column">
+        <div className="panel">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">My board</p>
+              <h3>Task status</h3>
+            </div>
+            <button className="soft-button" type="button" onClick={() => setPage("delivery-board")}>
+              <ClipboardList size={16} />
+              Open board
+            </button>
+          </div>
+          <div className="status-count-grid">
+            {statusCounts.map((item) => (
+              <div key={item.id}>
+                <span>{item.label}</span>
+                <strong>{item.count}</strong>
+              </div>
+            ))}
+          </div>
+          <ProgressBar value={completedShare} tone={completedShare >= 60 ? "Available" : "Busy"} />
+        </div>
+
+        <div className="panel">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Next up</p>
+              <h3>Upcoming deadlines</h3>
+            </div>
+            <button className="soft-button" type="button" onClick={() => setPage("gantt")}>
+              <LineChart size={16} />
+              Gantt
+            </button>
+          </div>
+          {upcoming.length === 0 ? (
+            <EmptyState title="Nothing due soon" text="No open tasks with an upcoming deadline." />
+          ) : (
+            <div className="list-stack">
+              {upcoming.map((task) => {
+                const project = getProject(store, task.projectId);
+                const days = daysBetween(new Date(), task.endDate);
+                return (
+                  <button className="row-button" key={task.id} type="button" onClick={() => { setSelectedProjectId(task.projectId); setPage("projects"); }}>
+                    <span className={`due-chip ${days < 0 ? "overdue" : days <= 2 ? "soon" : "ok"}`}>{days < 0 ? `${Math.abs(days)}d late` : days === 0 ? "Today" : `${days}d`}</span>
+                    <div>
+                      <strong>{task.title}</strong>
+                      <small>{project?.clientName} · {formatDate(task.endDate)}</small>
+                    </div>
+                    <StatusBadge status={task.status} />
+                  </button>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      </section>
+
+      <section className="two-column">
+        <div className="panel">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Exceptions</p>
+              <h3>Escalations on my projects</h3>
+            </div>
+          </div>
+          {myEscalations.length === 0 ? (
+            <EmptyState title="No open escalations" text="None of your projects are flagged right now." />
+          ) : (
+            <div className="list-stack">
+              {myEscalations.map((item) => {
+                const project = getProject(store, item.projectId);
+                return (
+                  <button className="row-button" key={item.id} type="button" onClick={() => { setSelectedProjectId(item.projectId); setPage("projects"); }}>
+                    <span className={`severity ${item.severity.toLowerCase()}`}>{item.severity}</span>
+                    <div>
+                      <strong>{project?.clientName}</strong>
+                      <small>{item.escalationType} — {item.reason}</small>
+                    </div>
+                    <StatusBadge status={item.status} />
+                  </button>
+                );
+              })}
+            </div>
+          )}
+        </div>
+
+        <div className="panel">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Chronological status</p>
+              <h3>My recent updates</h3>
+            </div>
+            <button className="soft-button" type="button" onClick={() => setPage("status-logs")}>
+              <MessageSquare size={16} />
+              Status logs
+            </button>
+          </div>
+          <StatusTimeline store={store} logs={recentUpdates} />
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function CommercialOverview({ store, session, setPage, setSelectedProjectId }) {
   const projects = getAccessibleProjects(store, session.role, session.userId);
   const projectIds = projects.map((project) => project.id);
   const tasks = getProjectTasks(store, projectIds);

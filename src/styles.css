@@ -1823,6 +1823,37 @@ td select,
   font-weight: 900;
 }
 
+.greeting-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.due-chip {
+  flex: none;
+  min-width: 52px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 5px 8px;
+  background: rgba(37, 99, 235, 0.12);
+  color: var(--blue);
+}
+
+.due-chip.soon {
+  background: rgba(180, 107, 5, 0.14);
+  color: var(--amber);
+}
+
+.due-chip.overdue {
+  background: rgba(200, 63, 73, 0.14);
+  color: var(--red);
+}
+
 .credit-list {
   display: grid;
   gap: 10px;

@@ -597,6 +597,8 @@ function App() {
           logout={logout}
           theme={theme}
           setTheme={setTheme}
+          setPage={setPage}
+          setSelectedProjectId={setSelectedProjectId}
         />
         <section className="content-area">
           <PageRouter
@@ -620,6 +622,7 @@ function LoginPage({ store, onLogin }) {
   const [selectedRole, setSelectedRole] = useState("sales");
   const [credentials, setCredentials] = useState({ username: "", password: "" });
   const [error, setError] = useState("");
+  const [showDemo, setShowDemo] = useState(false);
   const loginCards = [
     { role: "sales", icon: BriefcaseBusiness, description: "Create projects, samples, escalations, and track delivery commitments." },
     { role: "delivery", icon: ClipboardList, description: "Manage delivery tasks, timelines, proof links, and bandwidth." },
@@ -699,7 +702,7 @@ function LoginPage({ store, onLogin }) {
               <input
                 value={credentials.username}
                 onChange={(event) => setCredentials((current) => ({ ...current, username: event.target.value }))}
-                placeholder={selectedCredentials.username}
+                placeholder="Enter username"
                 autoComplete="username"
               />
             </label>
@@ -709,7 +712,7 @@ function LoginPage({ store, onLogin }) {
                 type="password"
                 value={credentials.password}
                 onChange={(event) => setCredentials((current) => ({ ...current, password: event.target.value }))}
-                placeholder={selectedCredentials.password}
+                placeholder="Enter password"
                 autoComplete="current-password"
               />
             </label>
@@ -718,9 +721,15 @@ function LoginPage({ store, onLogin }) {
             </button>
           </div>
           <div className="credential-strip">
-            <strong>Fixed login:</strong>
-            <span>{selectedCredentials.username}</span>
-            <span>{selectedCredentials.password}</span>
+            <button type="button" className="link-button" onClick={() => setShowDemo((open) => !open)}>
+              {showDemo ? "Hide demo credentials" : "Show demo credentials"}
+            </button>
+            {showDemo && (
+              <>
+                <span>{selectedCredentials.username}</span>
+                <span>{selectedCredentials.password}</span>
+              </>
+            )}
           </div>
           {error && <p className="form-error">{error}</p>}
         </form>
@@ -744,7 +753,29 @@ function LoginPage({ store, onLogin }) {
   );
 }
 
-function Topbar({ page, session, currentUser, store, showNotifications, setShowNotifications, setStore, logout, theme, setTheme }) {
+function Topbar({ page, session, currentUser, store, showNotifications, setShowNotifications, setStore, logout, theme, setTheme, setPage, setSelectedProjectId }) {
+  const [query, setQuery] = useState("");
+  const [searchOpen, setSearchOpen] = useState(false);
+  const accessibleProjects = getAccessibleProjects(store, session.role, session.userId);
+  const accessibleIds = new Set(accessibleProjects.map((p) => p.id));
+  const q = query.trim().toLowerCase();
+  const results = q.length < 2 ? [] : [
+    ...accessibleProjects
+      .filter((p) => `${p.clientName} ${p.projectName}`.toLowerCase().includes(q))
+      .slice(0, 6)
+      .map((p) => ({ id: p.id, kind: p.projectType === "Sample" ? "Sample" : "Project", title: p.projectName, sub: p.clientName, projectId: p.id })),
+    ...store.tasks
+      .filter((t) => accessibleIds.has(t.projectId) && t.title.toLowerCase().includes(q))
+      .slice(0, 4)
+      .map((t) => ({ id: t.id, kind: "Task", title: t.title, sub: getProject(store, t.projectId)?.clientName || "", projectId: t.projectId }))
+  ].slice(0, 8);
+  const openResult = (result) => {
+    setSelectedProjectId(result.projectId);
+    setPage("projects");
+    setQuery("");
+    setSearchOpen(false);
+  };
+
   const canSeeNotification = (item) => {
     if (session.role === "admin") return true;
     const targetUsers = item.targetUsers || [];
@@ -774,7 +805,29 @@ function Topbar({ page, session, currentUser, store, showNotifications, setShowN
       <div className="topbar-actions">
         <div className="search-shell">
           <Search size={16} />
-          <span>Search projects, clients, tasks</span>
+          <input
+            type="text"
+            value={query}
+            placeholder="Search projects, clients, tasks"
+            onChange={(event) => { setQuery(event.target.value); setSearchOpen(true); }}
+            onFocus={() => setSearchOpen(true)}
+            onBlur={() => setTimeout(() => setSearchOpen(false), 150)}
+            onKeyDown={(event) => { if (event.key === "Enter" && results[0]) openResult(results[0]); }}
+          />
+          {searchOpen && q.length >= 2 && (
+            <div className="search-results">
+              {results.length === 0 ? (
+                <p className="search-empty">No matches for “{query}”.</p>
+              ) : (
+                results.map((result) => (
+                  <button key={`${result.kind}-${result.id}`} type="button" className="search-result" onMouseDown={() => openResult(result)}>
+                    <span className={`search-kind ${result.kind.toLowerCase()}`}>{result.kind}</span>
+                    <span className="search-text"><strong>{result.title}</strong><small>{result.sub}</small></span>
+                  </button>
+                ))
+              )}
+            </div>
+          )}
         </div>
         <span className="role-pill">
           <UserCog size={15} />
@@ -951,24 +1004,41 @@ function SalesDashboard({ store, session, setPage, setSelectedProjectId }) {
   const projects = getAccessibleProjects(store, "sales", session.userId);
   const warnings = projects.filter((project) => project.sowStatus !== "uploaded" || project.poStatus !== "received");
   const conflicts = projects.flatMap((project) => findDeliveryConflicts(store, project.expectedDeliveryDate, project.id, 1).map((conflict) => ({ project, conflict })));
+  const creditRows = salesUsers
+    .map((user) => ({ user, ...sampleCreditsFor(store, user.id) }))
+    .sort((a, b) => b.used - a.used);
+  const totalUsed = creditRows.reduce((sum, row) => sum + row.used, 0);
+  const totalCap = creditRows.reduce((sum, row) => sum + row.total, 0);
+  const creditTone = (pct) => (pct >= 90 ? "Overloaded" : pct >= 70 ? "Busy" : pct >= 40 ? "Moderate" : "Available");
 
   return (
     <div className="page-stack">
       <section className="metric-grid compact">
-        {salesUsers.map((user) => {
-          const credits = sampleCreditsFor(store, user.id);
-          return (
-            <MetricCard
-              key={user.id}
-              label={`${user.name} sample credits`}
-              value={`${credits.remaining}/${credits.total}`}
-              icon={Sparkles}
-              detail={`${credits.used} samples created`}
-            />
-          );
-        })}
+        <MetricCard label="Samples this cycle" value={totalUsed} icon={Sparkles} detail={`across ${salesUsers.length} SDMs · ${totalCap - totalUsed} credits left`} />
         <MetricCard label="Commercial warnings" value={warnings.length} icon={AlertTriangle} tone="warning" />
         <MetricCard label="Date conflicts" value={conflicts.length} icon={CalendarDays} tone="warning" />
+      </section>
+
+      <section className="panel">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Sample credits</p>
+            <h3>Credit usage by SDM</h3>
+          </div>
+          <span className="mini-badge">{totalUsed} / {totalCap} used</span>
+        </div>
+        <div className="credit-list">
+          {creditRows.map((row) => {
+            const pct = Math.round((row.used / row.total) * 100);
+            return (
+              <div className="credit-row" key={row.user.id}>
+                <span className="credit-name">{row.user.name}</span>
+                <ProgressBar value={pct} tone={creditTone(pct)} />
+                <span className="credit-value">{row.used}<em>/{row.total}</em></span>
+              </div>
+            );
+          })}
+        </div>
       </section>
 
       <section className="two-column">

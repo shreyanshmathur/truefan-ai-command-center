@@ -339,6 +339,17 @@ h3,
   padding: 6px 9px;
 }
 
+.link-button {
+  border: 0;
+  background: transparent;
+  color: var(--pink);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .admin-credentials {
   margin-bottom: 14px;
 }
@@ -522,6 +533,7 @@ h3,
 }
 
 .search-shell {
+  position: relative;
   min-width: 260px;
   height: 38px;
   border: 1px solid var(--line);
@@ -533,6 +545,95 @@ h3,
   padding: 0 12px;
   color: var(--muted);
   font-size: 13px;
+}
+
+.search-shell:focus-within {
+  border-color: var(--pink);
+  box-shadow: 0 0 0 3px rgba(239, 43, 135, 0.12);
+}
+
+.search-shell input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: 13px;
+  outline: none;
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 6px;
+  display: grid;
+  gap: 2px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.search-empty {
+  margin: 0;
+  padding: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.search-result {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: var(--ink);
+}
+
+.search-result:hover {
+  background: var(--panel-soft);
+}
+
+.search-kind {
+  flex: none;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 999px;
+  padding: 3px 7px;
+  background: var(--panel-soft);
+  color: var(--muted);
+}
+
+.search-kind.project { color: var(--blue); background: rgba(37, 99, 235, 0.12); }
+.search-kind.sample { color: var(--violet); background: rgba(120, 56, 214, 0.12); }
+.search-kind.task { color: var(--pink); background: rgba(239, 43, 135, 0.12); }
+
+.search-text {
+  display: grid;
+  min-width: 0;
+}
+
+.search-text strong {
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-text small {
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .role-pill,
@@ -1574,6 +1675,35 @@ td select,
   padding: 6px 9px;
   font-size: 12px;
   font-weight: 900;
+}
+
+.credit-list {
+  display: grid;
+  gap: 10px;
+}
+
+.credit-row {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr) 62px;
+  align-items: center;
+  gap: 14px;
+}
+
+.credit-name {
+  font-weight: 600;
+}
+
+.credit-value {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  text-align: right;
+}
+
+.credit-value em {
+  color: var(--muted);
+  font-style: normal;
+  font-size: 12px;
 }
 
 .gantt {

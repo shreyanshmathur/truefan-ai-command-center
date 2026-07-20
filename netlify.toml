@@ -1,6 +1,16 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# SPA fallback, but never swallow the serverless functions.
+[[redirects]]
+  from = "/.netlify/functions/*"
+  status = 200
+  force = false
 
 [[redirects]]
   from = "/*"

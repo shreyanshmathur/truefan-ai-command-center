@@ -71,7 +71,7 @@ const navItems = [
   { id: "gantt", label: "Gantt Timeline", icon: LineChart, group: "Delivery", roles: ["delivery", "admin"] },
   { id: "status-logs", label: "Status Logs", icon: FileText, group: "Delivery", roles: ["sales", "delivery", "admin"] },
   { id: "team", label: "Team Bandwidth", icon: Users, group: "Delivery", roles: ["delivery", "admin"] },
-  { id: "reminders", label: "WhatsApp Reminders", icon: MessageSquare, group: "Admin", roles: ["admin", "delivery"] },
+  { id: "reminders", label: "Reminders", icon: Bell, group: "Admin", roles: ["admin", "delivery"] },
   { id: "admin", label: "Admin Panel", icon: Settings, group: "Admin", roles: ["admin"] },
   { id: "activity", label: "Activity Log", icon: Activity, group: "Admin", roles: ["admin"] }
 ];
@@ -3286,13 +3286,13 @@ function buildReminderMessage(store, user) {
   return { total, message: lines.join("\n") };
 }
 
-function buildReminders(store, phones) {
+function buildReminders(store) {
   return store.users
     .filter((user) => ["delivery", "sales"].includes(user.role) && user.active)
     .map((user) => {
       const built = buildReminderMessage(store, user);
       if (!built) return null;
-      return { userId: user.id, name: user.name, team: user.team, phone: (phones[user.id] || "").trim(), ...built };
+      return { userId: user.id, name: user.name, team: user.team, defaultEmail: user.email || "", ...built };
     })
     .filter(Boolean);
 }
@@ -3302,42 +3302,55 @@ function RemindersPage({ store }) {
   const [status, setStatus] = useState({ state: "unknown", text: "Not checked" });
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState(null);
+
+  const channel = config.channel || "email";
+  const isEmail = channel === "email";
+  const emailEndpoint = (config.emailEndpoint || "/.netlify/functions/send-reminders").replace(/\/$/, "");
   const serviceUrl = (config.serviceUrl || "").replace(/\/$/, "");
   const apiKey = config.apiKey || "";
   const phones = config.phones || {};
+  const emails = config.emails || {};
 
   const persist = (next) => {
     setConfig(next);
     localStorage.setItem(REMINDER_CONFIG_KEY, JSON.stringify(next));
+    setStatus({ state: "unknown", text: "Not checked" });
   };
   const headers = () => ({ "Content-Type": "application/json", ...(apiKey ? { "x-api-key": apiKey } : {}) });
 
-  const reminders = buildReminders(store, phones);
-  const withPhone = reminders.filter((item) => item.phone);
+  const reminders = buildReminders(store);
+  // resolve contact + payload per channel
+  const contactFor = (item) => (isEmail ? (emails[item.userId] || item.defaultEmail || "").trim() : (phones[item.userId] || "").trim());
+  const ready = reminders.filter((item) => contactFor(item));
   const people = store.users
     .filter((user) => ["delivery", "sales"].includes(user.role) && user.active)
     .sort((a, b) => a.team.localeCompare(b.team) || a.name.localeCompare(b.name));
 
+  const healthUrl = isEmail ? emailEndpoint : `${serviceUrl}/health`;
+  const runUrl = isEmail ? emailEndpoint : `${serviceUrl}/reminders/run`;
+
   const check = async () => {
-    if (!serviceUrl) return setStatus({ state: "error", text: "Set the service URL first" });
+    if (!isEmail && !serviceUrl) return setStatus({ state: "error", text: "Set the WhatsApp service URL first" });
     setStatus({ state: "checking", text: "Checking…" });
     try {
-      const res = await fetch(`${serviceUrl}/health`, { headers: headers() });
+      const res = await fetch(healthUrl, { headers: headers() });
       const data = await res.json();
-      setStatus(data.connected
-        ? { state: "ok", text: "Connected to WhatsApp" }
-        : { state: "warn", text: "Service up — WhatsApp not linked yet (scan the QR in its logs)" });
+      if (data.connected) setStatus({ state: "ok", text: isEmail ? "Email service ready (SMTP configured)" : "Connected to WhatsApp" });
+      else setStatus({ state: "warn", text: isEmail ? "Function reachable — SMTP env vars not set yet" : "Service up — WhatsApp not linked (scan the QR)" });
     } catch (error) {
-      setStatus({ state: "error", text: "Cannot reach the service at that URL" });
+      setStatus({ state: "error", text: isEmail ? "Cannot reach the email function (deploy to Netlify or run `netlify dev`)" : "Cannot reach the service at that URL" });
     }
   };
 
-  const post = async (path, body, okText) => {
-    if (!serviceUrl) return setResult({ ok: false, text: "Set the service URL first" });
+  const toPayload = (item) => isEmail
+    ? { name: item.name, email: contactFor(item), subject: `TrueFan reminder — ${item.total} item${item.total === 1 ? "" : "s"} need attention`, text: item.message }
+    : { name: item.name, phone: contactFor(item), message: item.message };
+
+  const post = async (url, body, okText) => {
     setBusy(true);
     setResult(null);
     try {
-      const res = await fetch(`${serviceUrl}${path}`, { method: "POST", headers: headers(), body: JSON.stringify(body) });
+      const res = await fetch(url, { method: "POST", headers: headers(), body: JSON.stringify(body) });
       const data = await res.json();
       setResult(res.ok ? { ok: true, text: okText(data) } : { ok: false, text: data.error || "Request failed" });
     } catch (error) {
@@ -3347,32 +3360,56 @@ function RemindersPage({ store }) {
   };
 
   const sendTest = () => {
-    const target = withPhone[0];
-    if (!target) return setResult({ ok: false, text: "Add a phone number for at least one person first" });
-    post("/reminders/send", { phone: target.phone, message: `✅ Test reminder from the TrueFan AI Command Center for ${target.name}.` }, () => `Test sent to ${target.name}`);
+    const target = ready[0];
+    if (!target) return setResult({ ok: false, text: `Add ${isEmail ? "an email" : "a phone number"} for at least one person first` });
+    const testItem = { ...target, message: `✅ Test reminder from the TrueFan AI Command Center for ${target.name}.`, total: 1 };
+    if (isEmail) post(emailEndpoint, toPayload(testItem), () => `Test email sent to ${target.name}`);
+    else post(`${serviceUrl}/reminders/send`, toPayload(testItem), () => `Test sent to ${target.name}`);
   };
-  const runNow = () => post("/reminders/run", { reminders: withPhone.map((item) => ({ phone: item.phone, message: item.message, name: item.name })) }, (data) => `Sent ${data.sent}/${data.total} reminders`);
+  const runNow = () => post(runUrl, { reminders: ready.map(toPayload) }, (data) => `Sent ${data.sent}/${data.total} reminders`);
 
   return (
     <div className="page-stack">
       <section className="panel">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">WhatsApp reminders</p>
-            <h3>Reminder service (open-wa)</h3>
+            <p className="eyebrow">Reminders</p>
+            <h3>Delivery reminders</h3>
           </div>
           <span className={`svc-status ${status.state}`}>{status.text}</span>
         </div>
-        <p className="muted-note">
-          Reminders are sent by a self-hosted companion service using <strong>open-wa</strong>. Run it from
-          the <code>whatsapp-reminders/</code> folder, scan the WhatsApp QR once, then point this page at it.
-          Automating WhatsApp Web is against WhatsApp&apos;s Terms of Service — use a number you control.
-        </p>
+        <div className="channel-toggle">
+          <button type="button" className={isEmail ? "active" : ""} onClick={() => persist({ ...config, channel: "email" })}>
+            <Mail size={15} /> Email <span className="free-tag">free</span>
+          </button>
+          <button type="button" className={!isEmail ? "active" : ""} onClick={() => persist({ ...config, channel: "whatsapp" })}>
+            <MessageSquare size={15} /> WhatsApp
+          </button>
+        </div>
+        {isEmail ? (
+          <p className="muted-note">
+            Emails are sent by a free <strong>Netlify Function</strong> (<code>netlify/functions/send-reminders.js</code>) over SMTP —
+            no extra server needed. Add free SMTP credentials (e.g. a <strong>Gmail App Password</strong>) as
+            Netlify env vars: <code>SMTP_HOST</code>, <code>SMTP_PORT</code>, <code>SMTP_USER</code>, <code>SMTP_PASS</code>.
+          </p>
+        ) : (
+          <p className="muted-note">
+            WhatsApp uses the self-hosted <strong>open-wa</strong> service in <code>whatsapp-reminders/</code> (scan the QR once).
+            Automating WhatsApp Web is against WhatsApp&apos;s Terms of Service — use a number you control.
+          </p>
+        )}
         <div className="form-grid dense">
-          <label className="field">
-            <span>Service URL</span>
-            <input value={config.serviceUrl || ""} placeholder="http://localhost:4300" onChange={(event) => persist({ ...config, serviceUrl: event.target.value })} />
-          </label>
+          {isEmail ? (
+            <label className="field">
+              <span>Email function endpoint</span>
+              <input value={config.emailEndpoint || ""} placeholder="/.netlify/functions/send-reminders" onChange={(event) => persist({ ...config, emailEndpoint: event.target.value })} />
+            </label>
+          ) : (
+            <label className="field">
+              <span>Service URL</span>
+              <input value={config.serviceUrl || ""} placeholder="http://localhost:4300" onChange={(event) => persist({ ...config, serviceUrl: event.target.value })} />
+            </label>
+          )}
           <label className="field">
             <span>API key (optional)</span>
             <input value={config.apiKey || ""} placeholder="matches REMINDER_API_KEY" onChange={(event) => persist({ ...config, apiKey: event.target.value })} />
@@ -3391,14 +3428,14 @@ function RemindersPage({ store }) {
         <div className="section-heading">
           <div>
             <p className="eyebrow">Recipients</p>
-            <h3>Phone numbers</h3>
+            <h3>{isEmail ? "Email addresses" : "Phone numbers"}</h3>
           </div>
-          <span className="mini-badge">{withPhone.length} ready · {reminders.length} need a nudge today</span>
+          <span className="mini-badge">{ready.length} ready · {reminders.length} need a nudge today</span>
         </div>
         <div className="table-shell">
           <table>
             <thead>
-              <tr><th>Name</th><th>Team</th><th>WhatsApp number</th></tr>
+              <tr><th>Name</th><th>Team</th><th>{isEmail ? "Email" : "WhatsApp number"}</th></tr>
             </thead>
             <tbody>
               {people.map((user) => (
@@ -3406,11 +3443,20 @@ function RemindersPage({ store }) {
                   <td>{user.name}</td>
                   <td>{user.team}</td>
                   <td>
-                    <input
-                      value={phones[user.id] || ""}
-                      placeholder="+91 98765 43210"
-                      onChange={(event) => persist({ ...config, phones: { ...phones, [user.id]: event.target.value } })}
-                    />
+                    {isEmail ? (
+                      <input
+                        type="email"
+                        value={emails[user.id] ?? user.email ?? ""}
+                        placeholder="name@company.com"
+                        onChange={(event) => persist({ ...config, emails: { ...emails, [user.id]: event.target.value } })}
+                      />
+                    ) : (
+                      <input
+                        value={phones[user.id] || ""}
+                        placeholder="+91 98765 43210"
+                        onChange={(event) => persist({ ...config, phones: { ...phones, [user.id]: event.target.value } })}
+                      />
+                    )}
                   </td>
                 </tr>
               ))}
@@ -3427,10 +3473,10 @@ function RemindersPage({ store }) {
           </div>
           <div className="button-row">
             <button className="soft-button" type="button" onClick={sendTest} disabled={busy}>
-              <MessageSquare size={16} />
+              {isEmail ? <Mail size={16} /> : <MessageSquare size={16} />}
               Send test
             </button>
-            <button className="primary-button" type="button" onClick={runNow} disabled={busy || withPhone.length === 0}>
+            <button className="primary-button" type="button" onClick={runNow} disabled={busy || ready.length === 0}>
               <Upload size={16} />
               Run reminders now
             </button>
@@ -3446,7 +3492,7 @@ function RemindersPage({ store }) {
                 <div className="reminder-head">
                   <strong>{item.name}</strong>
                   <span className="mini-badge">{item.total} item{item.total === 1 ? "" : "s"}</span>
-                  {!item.phone && <span className="svc-status warn">No number</span>}
+                  {!contactFor(item) && <span className="svc-status warn">No {isEmail ? "email" : "number"}</span>}
                 </div>
                 <pre className="reminder-body">{item.message}</pre>
               </article>

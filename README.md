@@ -20,6 +20,24 @@ Open `http://localhost:5173`.
 | Finance | `finance` | `finance@truefan` |
 | Admin | `admin` | `admin@truefan` |
 
+Each teammate can also sign in individually with their first name and
+`firstname@truefan` (e.g. `rajat` / `rajat@truefan`) — DMs and SDMs get their
+own login this way.
+
+## Reminders
+
+The **Reminders** page (Admin/Delivery) nudges people about overdue / due-soon
+tasks and open escalations, over two channels:
+
+- **Email (free, recommended).** A Netlify Function
+  (`netlify/functions/send-reminders.js`) sends over SMTP — no extra server.
+  Add free SMTP credentials (e.g. a **Gmail App Password**) as Netlify env vars:
+  `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` (optional `SMTP_FROM`,
+  `REMINDER_API_KEY`). Recipient emails are prefilled from each user.
+- **WhatsApp (self-hosted).** The `whatsapp-reminders/` service uses
+  [open-wa](https://www.open-wa.org/); see its README. Needs a persistent host
+  and a QR scan, and is against WhatsApp's ToS — email is the simpler free path.
+
 ## Build And Test
 
 ```bash

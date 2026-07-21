@@ -4,6 +4,7 @@ import {
   AlertTriangle,
   BarChart3,
   Bell,
+  Bot,
   BriefcaseBusiness,
   CalendarDays,
   CheckCircle2,
@@ -59,6 +60,7 @@ const dayMs = 24 * 60 * 60 * 1000;
 
 const navItems = [
   { id: "overview", label: "Overview", icon: LayoutDashboard, group: "Command", roles: ["sales", "delivery", "finance", "admin"] },
+  { id: "assistant", label: "AI Assistant", icon: Bot, group: "Command", roles: ["sales", "delivery", "finance", "admin"] },
   { id: "insights", label: "Insights", icon: LineChart, group: "Command", roles: ["sales", "delivery", "finance", "admin"] },
   { id: "projects", label: "Project Detail", icon: FolderKanban, group: "Command", roles: ["sales", "delivery", "finance", "admin"] },
   { id: "sales", label: "Sales Dashboard", icon: BarChart3, group: "Commercial", roles: ["sales", "admin"] },
@@ -989,6 +991,7 @@ function Topbar({ page, session, currentUser, store, showNotifications, setShowN
 function PageRouter(props) {
   const pages = {
     overview: <OverviewDashboard {...props} />,
+    assistant: <AIAssistantView {...props} />,
     sales: <SalesDashboard {...props} />,
     "create-project": <ProjectCreationPage {...props} />,
     "create-sample": <SampleCreationPage {...props} />,
@@ -1279,6 +1282,148 @@ function CommercialOverview({ store, session, setPage, setSelectedProjectId }) {
           </button>
         </div>
         <StatusTimeline store={store} logs={recentUpdates} />
+      </section>
+    </div>
+  );
+}
+
+function buildAssistantContext(store, session) {
+  const projects = getAccessibleProjects(store, session.role, session.userId);
+  const projectIds = projects.map((project) => project.id);
+  const tasks = getProjectTasks(store, projectIds);
+  const finance = store.financeRecords.filter((record) => projectIds.includes(record.projectId));
+  const escalations = store.escalations.filter((item) => projectIds.includes(item.projectId));
+
+  return {
+    role: session.role,
+    generatedAt: new Date().toISOString(),
+    projects: projects.map((project) => ({
+      client: project.clientName,
+      type: project.projectType,
+      status: project.status,
+      health: calculateHealth(project, store).label,
+      dueDate: project.deliveryDate || project.dueDate || null
+    })),
+    tasks: tasks.map((task) => ({
+      title: task.title || task.name,
+      status: task.status,
+      endDate: task.endDate,
+      overdue: isOverdue(task.endDate, task.status)
+    })),
+    finance: finance.map((record) => ({
+      client: getProject(store, record.projectId)?.clientName,
+      revenueBooked: record.revenueBooked,
+      pendingAmount: record.pendingAmount,
+      poStatus: record.poStatus,
+      invoiceStatus: record.invoiceStatus
+    })),
+    escalations: escalations.map((item) => ({
+      client: getProject(store, item.projectId)?.clientName,
+      severity: item.severity,
+      status: item.status,
+      reason: item.reason
+    }))
+  };
+}
+
+const ASSISTANT_SUGGESTIONS = [
+  "Which projects are at risk and why?",
+  "Summarise my overdue tasks.",
+  "How much revenue is still pending payment?",
+  "What escalations need attention right now?"
+];
+
+function AIAssistantView({ store, session }) {
+  const [question, setQuestion] = useState("");
+  const [messages, setMessages] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  const ask = async (text) => {
+    const query = (text ?? question).trim();
+    if (!query || loading) return;
+    setError("");
+    setQuestion("");
+    setMessages((current) => [...current, { role: "user", text: query }]);
+    setLoading(true);
+
+    try {
+      const context = JSON.stringify(buildAssistantContext(store, session));
+      const response = await fetch("/.netlify/functions/gemini", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question: query, context })
+      });
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.error || "Request failed.");
+      }
+      setMessages((current) => [...current, { role: "assistant", text: data.answer }]);
+    } catch (err) {
+      setError(err.message || "Something went wrong.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="page-stack">
+      <section className="panel">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Powered by Gemini</p>
+            <h3>AI Assistant</h3>
+          </div>
+        </div>
+        <p className="muted-text">
+          Ask about your projects, tasks, escalations and finances. Answers are grounded in the
+          data you can currently access.
+        </p>
+
+        <div className="assistant-thread">
+          {messages.length === 0 ? (
+            <div className="assistant-suggestions">
+              {ASSISTANT_SUGGESTIONS.map((suggestion) => (
+                <button
+                  key={suggestion}
+                  className="soft-button"
+                  type="button"
+                  onClick={() => ask(suggestion)}
+                >
+                  {suggestion}
+                </button>
+              ))}
+            </div>
+          ) : (
+            messages.map((message, index) => (
+              <div key={index} className={`assistant-bubble ${message.role}`}>
+                {message.text}
+              </div>
+            ))
+          )}
+          {loading && <div className="assistant-bubble assistant loading">Thinking…</div>}
+        </div>
+
+        {error && <p className="assistant-error">{error}</p>}
+
+        <form
+          className="assistant-input"
+          onSubmit={(event) => {
+            event.preventDefault();
+            ask();
+          }}
+        >
+          <input
+            type="text"
+            value={question}
+            placeholder="Ask a question about your workspace…"
+            onChange={(event) => setQuestion(event.target.value)}
+          />
+          <button className="primary-button" type="submit" disabled={loading || !question.trim()}>
+            <Bot size={16} />
+            Ask
+          </button>
+        </form>
       </section>
     </div>
   );
